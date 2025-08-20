@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{b0053b87-6988-47ed-8a62-5e87a7a587fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="handler">
+      <UniqueIdentifier>{4e29d6d1-14ba-4a8c-be16-50438e33d63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameModule">
+      <UniqueIdentifier>{3413fb0c-ef6a-40fb-98e2-9ecee8986348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gm">
+      <UniqueIdentifier>{aa5ffda5-1d2f-4083-86c6-01dacd8ed999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="localserver">
+      <UniqueIdentifier>{63f71814-4bdf-4421-a3a1-f60dbdcd380e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\BlockManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CacheQueue.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ConfigInitializer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MessageQueue.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MsgMgr.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SyncCache.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerKeepAlive.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerLogin.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerMgr.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModule\GameAppModule.cpp">
+      <Filter>GameModule</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerItem.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandler.cpp" />
+    <ClCompile Include="GameAppExtern.cpp" />
+    <ClCompile Include="gm\GmCfg.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="gm\GmLine.cpp">
+      <Filter>gm</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerBuilding.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerTowerBuild.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerPlant.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerSurvival.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerMonster.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerRole.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="localserver\BattleCalc.cpp">
+      <Filter>localserver</Filter>
+    </ClCompile>
+    <ClCompile Include="localserver\LocalServer.cpp">
+      <Filter>localserver</Filter>
+    </ClCompile>
+    <ClCompile Include="localserver\LocalServer_Buff.cpp">
+      <Filter>localserver</Filter>
+    </ClCompile>
+    <ClCompile Include="localserver\LocalServer_Battle.cpp">
+      <Filter>localserver</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerNpc.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerAchieve.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerCraft.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerDrop.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerFriend.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerMsg.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MyLocalization.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerHouse.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerDungeon.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerTeam.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerPublicMap.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerInteraction.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+    <ClCompile Include="localserver\LocalServer_Action.cpp">
+      <Filter>localserver</Filter>
+    </ClCompile>
+    <ClCompile Include="handler\HandlerStore.cpp">
+      <Filter>handler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\BlockManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CacheQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ConfigInitializer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\MessageQueue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\MsgMgr.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SyncCache.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerKeepAlive.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerLogin.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerMgr.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModule\GameAppModule.h">
+      <Filter>GameModule</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerItem.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandler.h" />
+    <ClInclude Include="GameAppExtern.h" />
+    <ClInclude Include="gm\GmCfg.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="gm\GmLine.h">
+      <Filter>gm</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerBuilding.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerTowerBuild.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerPlant.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerSurvival.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerMonster.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerRole.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\BattleCalc.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\LocalServer.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\LocalServer_Buff.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\SkillBuffStrategy.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\LocalServer_Battle.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerNpc.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerAchieve.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerCraft.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerDrop.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerFriend.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerMsg.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="common\MyLocalization.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerHouse.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerDungeon.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerTeam.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerPublicMap.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerInteraction.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+    <ClInclude Include="localserver\LocalServer_Action.h">
+      <Filter>localserver</Filter>
+    </ClInclude>
+    <ClInclude Include="handler\HandlerStore.h">
+      <Filter>handler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

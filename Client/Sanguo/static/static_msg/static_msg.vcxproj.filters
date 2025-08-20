@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="msg">
+      <UniqueIdentifier>{001ddd01-6c7f-430e-8eb6-b2e22fd9fe57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="msg\MsgType.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgAchieve.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgAI.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgBuff.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgBuildTower.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgCooldown.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgCraft.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgDB.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgDBAction.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgDBLog.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgDungeon.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgGameDef.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgGM.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgInteractive.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgItem.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgLogin.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMail.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMailServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMapMgrServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMapServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMatchServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMob.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgMove.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgNpc.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgNpcAutoIncome.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgNpcDak.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgNpcDakRepo.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPacketDrop.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPing.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPlant.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPlayer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPlayerDataSync.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPlayerEvent.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgProtector.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPublicMap.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPVP.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPvPRandItem.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgPvPRandMap.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgSkill.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgStore.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgSurvival.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgSyncToUserServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgTeam.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgTest.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\RegServer.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgBuild.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgTowerPVPTombstone.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgHouse.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgInteraction.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgTroops.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="msg\MsgLottery.pb.cc">
+      <Filter>msg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="msg\MsgType.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgAchieve.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgAI.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgBuff.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgBuildTower.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgCooldown.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgCraft.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgDB.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgDBAction.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgDBLog.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgDungeon.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgGameDef.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgGM.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgInteractive.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgItem.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgLogin.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMail.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMailServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMapMgrServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMapServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMatchServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMob.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgMove.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgNpc.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgNpcAutoIncome.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgNpcDak.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgNpcDakRepo.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPacketDrop.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPing.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPlant.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPlayer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPlayerDataSync.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPlayerEvent.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgProtector.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPublicMap.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPVP.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPvPRandItem.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgPvPRandMap.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgSkill.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgStore.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgSurvival.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgSyncToUserServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgTeam.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgTest.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\RegServer.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgBuild.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgTowerPVPTombstone.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgHouse.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgInteraction.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgTroops.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="msg\MsgLottery.pb.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

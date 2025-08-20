@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{7baf7c35-0171-456b-abf5-dda98a608c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{6930e1da-7ad6-42d2-b86e-a9f36e30c637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{36d63708-a9b9-4f20-97c2-fef137ae7ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\role">
+      <UniqueIdentifier>{285868a8-d6f9-407f-88ad-30803234edb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\role\skill">
+      <UniqueIdentifier>{149ba102-05bb-44d3-824c-9cdc5a4afca3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\calculate.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Heartbeat.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\PlayerPrefs.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\RandomData.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Timer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="config\GlobalCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\WeaponTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\WeaponAniEffectCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\NpcTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\RoleCreateCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\Player.cpp">
+      <Filter>data\role</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\Role.cpp">
+      <Filter>data\role</Filter>
+    </ClCompile>
+    <ClCompile Include="data\MapDataMgr.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\MapData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\EquipTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\WeaponInfoTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\SkillTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BuffTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\DefenceInfoTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BehaviorTreeTypeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\SkillFrontEffectCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\DefencePosTpyCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\WalkNpcCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\ItemData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\ItemCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BuildingCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\TowerBuildData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\PlantCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\PlantData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\SurvivalData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\MonsterCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\MapObj.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\ArmorCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BuffCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\PlayerAttrCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\PlayerAttrNameCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\SurvivalEventCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\Monsters.cpp">
+      <Filter>data\role</Filter>
+    </ClCompile>
+    <ClCompile Include="config\SkillCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ComSkillBuff.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\EffectCalculation.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SkillBuffContainer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SkillBuffInfo.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BuffGroupRuleCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\SkillData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\skill\PassiveSkillMgr.cpp">
+      <Filter>data\role\skill</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\skill\PassiveTrigger.cpp">
+      <Filter>data\role\skill</Filter>
+    </ClCompile>
+    <ClCompile Include="data\role\Npc.cpp">
+      <Filter>data\role</Filter>
+    </ClCompile>
+    <ClCompile Include="data\NpcProtectorData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CommonDataTypeDef.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="config\BuildRoomCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\NpcBadgeCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\TowerBuildingCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\FieldAdventureCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\NpcActiveCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\AchieveData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\AchieveCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\CraftData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\CraftCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\DropData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\LocalizationCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\HouseCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\HouseData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\MapSettingCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\TeamMemberData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\TroopsCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\StoreCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\StoreData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\DropCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\MedicamentCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="data\NotesData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="config\HelpCfg.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="common\EncryptUtil.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\calculate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\EffectEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Heartbeat.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\PlayerPrefs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\RandomData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Timer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="config\GlobalCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\WeaponTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\WeaponAniEffectCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\NpcTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\RoleCreateCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\Player.h">
+      <Filter>data\role</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\Role.h">
+      <Filter>data\role</Filter>
+    </ClInclude>
+    <ClInclude Include="data\MapDataMgr.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\MapData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\EquipTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\WeaponInfoTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\SkillTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BuffTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\DefenceInfoTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BehaviorTreeTypeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\SkillFrontEffectCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\DefencePosTpyCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\WalkNpcCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\ItemData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\ItemCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BuildingCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\TowerBuildData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\PlantCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\PlantData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\SurvivalData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\MonsterCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\MapObj.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\ArmorCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BuffCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\PlayerAttrCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\PlayerAttrNameCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\SurvivalEventCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SurvivalDefine.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\Monsters.h">
+      <Filter>data\role</Filter>
+    </ClInclude>
+    <ClInclude Include="config\SkillCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="common\BuffTemplate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CharacterAttr.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ClientSpec.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ComSkillBuff.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\EffectCalculation.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\GameDefine.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\MobTemplate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillBuffContainer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillBuffInfo.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillEffect.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillRoleValue.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillTemplate.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SkillType.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\stdafx.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BuffGroupRuleCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\SkillData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\skill\PassiveEvents.h">
+      <Filter>data\role\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\skill\PassiveSkillMgr.h">
+      <Filter>data\role\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\skill\PassiveTrigger.h">
+      <Filter>data\role\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="data\role\Npc.h">
+      <Filter>data\role</Filter>
+    </ClInclude>
+    <ClInclude Include="data\NpcProtectorData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CommonDataTypeDef.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="config\BuildRoomCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\NpcBadgeCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\TowerBuildingCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\FieldAdventureCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\NpcActiveCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\AchieveData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\AchieveCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="common\AchieveDefine.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="data\CraftData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\CraftCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DropData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\LocalizationCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\HouseCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\HouseData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\MapSettingCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\TeamMemberData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\TroopsCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\StoreCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\StoreData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\DropCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\MedicamentCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\NotesData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="config\HelpCfg.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="common\EncryptUtil.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\calculate.cpp" />
+    <ClCompile Include="common\CommonDataTypeDef.cpp" />
+    <ClCompile Include="common\ComSkillBuff.cpp" />
+    <ClCompile Include="common\EffectCalculation.cpp" />
+    <ClCompile Include="common\EncryptUtil.cpp" />
+    <ClCompile Include="common\Heartbeat.cpp" />
+    <ClCompile Include="common\PlayerPrefs.cpp" />
+    <ClCompile Include="common\RandomData.cpp" />
+    <ClCompile Include="common\SkillBuffContainer.cpp" />
+    <ClCompile Include="common\SkillBuffInfo.cpp" />
+    <ClCompile Include="common\Timer.cpp" />
+    <ClCompile Include="config\AchieveCfg.cpp" />
+    <ClCompile Include="config\ArmorCfg.cpp" />
+    <ClCompile Include="config\BehaviorTreeTypeCfg.cpp" />
+    <ClCompile Include="config\BuffCfg.cpp" />
+    <ClCompile Include="config\BuffGroupRuleCfg.cpp" />
+    <ClCompile Include="config\BuffTypeCfg.cpp" />
+    <ClCompile Include="config\BuildingCfg.cpp" />
+    <ClCompile Include="config\BuildRoomCfg.cpp" />
+    <ClCompile Include="config\CraftCfg.cpp" />
+    <ClCompile Include="config\DefenceInfoTypeCfg.cpp" />
+    <ClCompile Include="config\DefencePosTpyCfg.cpp" />
+    <ClCompile Include="config\DropCfg.cpp" />
+    <ClCompile Include="config\EquipTypeCfg.cpp" />
+    <ClCompile Include="config\FieldAdventureCfg.cpp" />
+    <ClCompile Include="config\GlobalCfg.cpp" />
+    <ClCompile Include="config\HelpCfg.cpp" />
+    <ClCompile Include="config\HouseCfg.cpp" />
+    <ClCompile Include="config\ItemCfg.cpp" />
+    <ClCompile Include="config\LocalizationCfg.cpp" />
+    <ClCompile Include="config\MapSettingCfg.cpp" />
+    <ClCompile Include="config\MedicamentCfg.cpp" />
+    <ClCompile Include="config\MonsterCfg.cpp" />
+    <ClCompile Include="config\NpcActiveCfg.cpp" />
+    <ClCompile Include="config\NpcBadgeCfg.cpp" />
+    <ClCompile Include="config\NpcTypeCfg.cpp" />
+    <ClCompile Include="config\PlantCfg.cpp" />
+    <ClCompile Include="config\PlayerAttrCfg.cpp" />
+    <ClCompile Include="config\PlayerAttrNameCfg.cpp" />
+    <ClCompile Include="config\RoleCreateCfg.cpp" />
+    <ClCompile Include="config\SkillCfg.cpp" />
+    <ClCompile Include="config\SkillFrontEffectCfg.cpp" />
+    <ClCompile Include="config\SkillTypeCfg.cpp" />
+    <ClCompile Include="config\StoreCfg.cpp" />
+    <ClCompile Include="config\SurvivalEventCfg.cpp" />
+    <ClCompile Include="config\TowerBuildingCfg.cpp" />
+    <ClCompile Include="config\TroopsCfg.cpp" />
+    <ClCompile Include="config\WalkNpcCfg.cpp" />
+    <ClCompile Include="config\WeaponAniEffectCfg.cpp" />
+    <ClCompile Include="config\WeaponInfoTypeCfg.cpp" />
+    <ClCompile Include="config\WeaponTypeCfg.cpp" />
+    <ClCompile Include="data\AchieveData.cpp" />
+    <ClCompile Include="data\CraftData.cpp" />
+    <ClCompile Include="data\DropData.cpp" />
+    <ClCompile Include="data\HouseData.cpp" />
+    <ClCompile Include="data\ItemData.cpp" />
+    <ClCompile Include="data\MapData.cpp" />
+    <ClCompile Include="data\MapDataMgr.cpp" />
+    <ClCompile Include="data\MapObj.cpp" />
+    <ClCompile Include="data\NotesData.cpp" />
+    <ClCompile Include="data\NpcProtectorData.cpp" />
+    <ClCompile Include="data\PlantData.cpp" />
+    <ClCompile Include="data\role\Monsters.cpp" />
+    <ClCompile Include="data\role\Npc.cpp" />
+    <ClCompile Include="data\role\Player.cpp" />
+    <ClCompile Include="data\role\Role.cpp" />
+    <ClCompile Include="data\role\skill\PassiveSkillMgr.cpp" />
+    <ClCompile Include="data\role\skill\PassiveTrigger.cpp" />
+    <ClCompile Include="data\SkillData.cpp" />
+    <ClCompile Include="data\StoreData.cpp" />
+    <ClCompile Include="data\SurvivalData.cpp" />
+    <ClCompile Include="data\TeamMemberData.cpp" />
+    <ClCompile Include="data\TowerBuildData.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\AchieveDefine.h" />
+    <ClInclude Include="common\BuffTemplate.h" />
+    <ClInclude Include="common\calculate.h" />
+    <ClInclude Include="common\CharacterAttr.h" />
+    <ClInclude Include="common\ClientSpec.h" />
+    <ClInclude Include="common\CommonDataTypeDef.h" />
+    <ClInclude Include="common\ComSkillBuff.h" />
+    <ClInclude Include="common\EffectCalculation.h" />
+    <ClInclude Include="common\EffectEnum.h" />
+    <ClInclude Include="common\EncryptUtil.h" />
+    <ClInclude Include="common\GameDefine.h" />
+    <ClInclude Include="common\Heartbeat.h" />
+    <ClInclude Include="common\MobTemplate.h" />
+    <ClInclude Include="common\PlayerPrefs.h" />
+    <ClInclude Include="common\RandomData.h" />
+    <ClInclude Include="common\SkillBuffContainer.h" />
+    <ClInclude Include="common\SkillBuffInfo.h" />
+    <ClInclude Include="common\SkillEffect.h" />
+    <ClInclude Include="common\SkillRoleValue.h" />
+    <ClInclude Include="common\SkillTemplate.h" />
+    <ClInclude Include="common\SkillType.h" />
+    <ClInclude Include="common\stdafx.h" />
+    <ClInclude Include="common\SurvivalDefine.h" />
+    <ClInclude Include="common\Timer.h" />
+    <ClInclude Include="config\AchieveCfg.h" />
+    <ClInclude Include="config\ArmorCfg.h" />
+    <ClInclude Include="config\BehaviorTreeTypeCfg.h" />
+    <ClInclude Include="config\BuffCfg.h" />
+    <ClInclude Include="config\BuffGroupRuleCfg.h" />
+    <ClInclude Include="config\BuffTypeCfg.h" />
+    <ClInclude Include="config\BuildingCfg.h" />
+    <ClInclude Include="config\BuildRoomCfg.h" />
+    <ClInclude Include="config\CraftCfg.h" />
+    <ClInclude Include="config\DefenceInfoTypeCfg.h" />
+    <ClInclude Include="config\DefencePosTpyCfg.h" />
+    <ClInclude Include="config\DropCfg.h" />
+    <ClInclude Include="config\EquipTypeCfg.h" />
+    <ClInclude Include="config\FieldAdventureCfg.h" />
+    <ClInclude Include="config\GlobalCfg.h" />
+    <ClInclude Include="config\HelpCfg.h" />
+    <ClInclude Include="config\HouseCfg.h" />
+    <ClInclude Include="config\ItemCfg.h" />
+    <ClInclude Include="config\LocalizationCfg.h" />
+    <ClInclude Include="config\MapSettingCfg.h" />
+    <ClInclude Include="config\MedicamentCfg.h" />
+    <ClInclude Include="config\MonsterCfg.h" />
+    <ClInclude Include="config\NpcActiveCfg.h" />
+    <ClInclude Include="config\NpcBadgeCfg.h" />
+    <ClInclude Include="config\NpcTypeCfg.h" />
+    <ClInclude Include="config\PlantCfg.h" />
+    <ClInclude Include="config\PlayerAttrCfg.h" />
+    <ClInclude Include="config\PlayerAttrNameCfg.h" />
+    <ClInclude Include="config\RoleCreateCfg.h" />
+    <ClInclude Include="config\SkillCfg.h" />
+    <ClInclude Include="config\SkillFrontEffectCfg.h" />
+    <ClInclude Include="config\SkillTypeCfg.h" />
+    <ClInclude Include="config\StoreCfg.h" />
+    <ClInclude Include="config\SurvivalEventCfg.h" />
+    <ClInclude Include="config\TowerBuildingCfg.h" />
+    <ClInclude Include="config\TroopsCfg.h" />
+    <ClInclude Include="config\WalkNpcCfg.h" />
+    <ClInclude Include="config\WeaponAniEffectCfg.h" />
+    <ClInclude Include="config\WeaponInfoTypeCfg.h" />
+    <ClInclude Include="config\WeaponTypeCfg.h" />
+    <ClInclude Include="data\AchieveData.h" />
+    <ClInclude Include="data\CraftData.h" />
+    <ClInclude Include="data\DropData.h" />
+    <ClInclude Include="data\HouseData.h" />
+    <ClInclude Include="data\ItemData.h" />
+    <ClInclude Include="data\MapData.h" />
+    <ClInclude Include="data\MapDataMgr.h" />
+    <ClInclude Include="data\MapObj.h" />
+    <ClInclude Include="data\NotesData.h" />
+    <ClInclude Include="data\NpcProtectorData.h" />
+    <ClInclude Include="data\PlantData.h" />
+    <ClInclude Include="data\role\Monsters.h" />
+    <ClInclude Include="data\role\Npc.h" />
+    <ClInclude Include="data\role\Player.h" />
+    <ClInclude Include="data\role\Role.h" />
+    <ClInclude Include="data\role\skill\PassiveEvents.h" />
+    <ClInclude Include="data\role\skill\PassiveSkillMgr.h" />
+    <ClInclude Include="data\role\skill\PassiveTrigger.h" />
+    <ClInclude Include="data\SkillData.h" />
+    <ClInclude Include="data\StoreData.h" />
+    <ClInclude Include="data\SurvivalData.h" />
+    <ClInclude Include="data\TeamMemberData.h" />
+    <ClInclude Include="data\TowerBuildData.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0AA1C18B-FB89-41BB-A111-1E81ED580399}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticdata</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\bzbee\libnetwork\source;..\..\bzbee\libbaseutil\source;..\..\external\libcryptopp\source;..\..\external\libprotobuf\source;..\..\bzbee\libframework\source;..\static_msg;..\static_data;..\static_logic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4018</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\bzbee\libframework\source;..\..\external\libprotobuf\source;..\..\bzbee\libbaseutil\source;..\static_data;..\static_msg</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libcryptopp\source;..\..\bzbee\libnetwork\source;..\..\bzbee\libframework\source;..\..\bzbee\libbaseutil\source;..\..\external\libprotobuf\source;..\static_msg;..\static_data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\bzbee\libbaseutil\source;..\..\external\libprotobuf\source;..\static_data;..\static_msg</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

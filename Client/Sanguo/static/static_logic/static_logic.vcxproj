@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\BlockManager.cpp" />
+    <ClCompile Include="common\CacheQueue.cpp" />
+    <ClCompile Include="common\ConfigInitializer.cpp" />
+    <ClCompile Include="common\MessageQueue.cpp" />
+    <ClCompile Include="common\MsgMgr.cpp" />
+    <ClCompile Include="common\MyLocalization.cpp" />
+    <ClCompile Include="common\SyncCache.cpp" />
+    <ClCompile Include="DataHandler.cpp" />
+    <ClCompile Include="GameAppExtern.cpp" />
+    <ClCompile Include="GameModule\GameAppModule.cpp" />
+    <ClCompile Include="gm\GmCfg.cpp" />
+    <ClCompile Include="gm\GmLine.cpp" />
+    <ClCompile Include="handler\HandlerAchieve.cpp" />
+    <ClCompile Include="handler\HandlerBuilding.cpp" />
+    <ClCompile Include="handler\HandlerCraft.cpp" />
+    <ClCompile Include="handler\HandlerDrop.cpp" />
+    <ClCompile Include="handler\HandlerDungeon.cpp" />
+    <ClCompile Include="handler\HandlerFriend.cpp" />
+    <ClCompile Include="handler\HandlerHouse.cpp" />
+    <ClCompile Include="handler\HandlerInteraction.cpp" />
+    <ClCompile Include="handler\HandlerItem.cpp" />
+    <ClCompile Include="handler\HandlerKeepAlive.cpp" />
+    <ClCompile Include="handler\HandlerLogin.cpp" />
+    <ClCompile Include="handler\HandlerMgr.cpp" />
+    <ClCompile Include="handler\HandlerMonster.cpp" />
+    <ClCompile Include="handler\HandlerMsg.cpp" />
+    <ClCompile Include="handler\HandlerNpc.cpp" />
+    <ClCompile Include="handler\HandlerPlant.cpp" />
+    <ClCompile Include="handler\HandlerPublicMap.cpp" />
+    <ClCompile Include="handler\HandlerRole.cpp" />
+    <ClCompile Include="handler\HandlerStore.cpp" />
+    <ClCompile Include="handler\HandlerSurvival.cpp" />
+    <ClCompile Include="handler\HandlerTeam.cpp" />
+    <ClCompile Include="handler\HandlerTowerBuild.cpp" />
+    <ClCompile Include="localserver\BattleCalc.cpp" />
+    <ClCompile Include="localserver\LocalServer.cpp" />
+    <ClCompile Include="localserver\LocalServer_Action.cpp" />
+    <ClCompile Include="localserver\LocalServer_Battle.cpp" />
+    <ClCompile Include="localserver\LocalServer_Buff.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\BlockManager.h" />
+    <ClInclude Include="common\CacheQueue.h" />
+    <ClInclude Include="common\ConfigInitializer.h" />
+    <ClInclude Include="common\MessageQueue.h" />
+    <ClInclude Include="common\MsgMgr.h" />
+    <ClInclude Include="common\MyLocalization.h" />
+    <ClInclude Include="common\SyncCache.h" />
+    <ClInclude Include="DataHandler.h" />
+    <ClInclude Include="GameAppExtern.h" />
+    <ClInclude Include="GameModule\GameAppModule.h" />
+    <ClInclude Include="gm\GmCfg.h" />
+    <ClInclude Include="gm\GmLine.h" />
+    <ClInclude Include="handler\HandlerAchieve.h" />
+    <ClInclude Include="handler\HandlerBuilding.h" />
+    <ClInclude Include="handler\HandlerCraft.h" />
+    <ClInclude Include="handler\HandlerDrop.h" />
+    <ClInclude Include="handler\HandlerDungeon.h" />
+    <ClInclude Include="handler\HandlerFriend.h" />
+    <ClInclude Include="handler\HandlerHouse.h" />
+    <ClInclude Include="handler\HandlerInteraction.h" />
+    <ClInclude Include="handler\HandlerItem.h" />
+    <ClInclude Include="handler\HandlerKeepAlive.h" />
+    <ClInclude Include="handler\HandlerLogin.h" />
+    <ClInclude Include="handler\HandlerMgr.h" />
+    <ClInclude Include="handler\HandlerMonster.h" />
+    <ClInclude Include="handler\HandlerMsg.h" />
+    <ClInclude Include="handler\HandlerNpc.h" />
+    <ClInclude Include="handler\HandlerPlant.h" />
+    <ClInclude Include="handler\HandlerPublicMap.h" />
+    <ClInclude Include="handler\HandlerRole.h" />
+    <ClInclude Include="handler\HandlerStore.h" />
+    <ClInclude Include="handler\HandlerSurvival.h" />
+    <ClInclude Include="handler\HandlerTeam.h" />
+    <ClInclude Include="handler\HandlerTowerBuild.h" />
+    <ClInclude Include="localserver\BattleCalc.h" />
+    <ClInclude Include="localserver\LocalServer.h" />
+    <ClInclude Include="localserver\LocalServer_Action.h" />
+    <ClInclude Include="localserver\LocalServer_Battle.h" />
+    <ClInclude Include="localserver\LocalServer_Buff.h" />
+    <ClInclude Include="localserver\SkillBuffStrategy.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{5EBF41FE-E1FF-469C-85C8-D15F692E6420}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticlogic</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libprotobuf\\source;..\..\external\libzlib\\source;..\..\bzbee\libbaseutil\source;..\..\bzbee\libnetwork\source;..\..\bzbee\libframework\source;..\static_msg;..\static_data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4018</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libprotobuf\\source;..\..\external\libzlib\\source;..\..\bzbee\libbaseutil\source;..\..\bzbee\libnetwork\source;..\..\bzbee\libframework\source;..\static_msg;..\static_data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libzlib\\source;..\..\bzbee\libframework\source;..\..\bzbee\libbaseutil\source;..\..\external\libprotobuf\source;..\..\bzbee\libnetwork\source;..\static_msg;..\static_data;..\static_logic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

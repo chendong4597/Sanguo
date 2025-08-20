@@ -1,0 +1,72 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  DataHandler.cpp
+  GameAppExtern.cpp
+  GameAppModule.cpp
+  CacheQueue.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\common\cachequeue.cpp(99): warning C4267: “参数”: 从“size_t”转换到“bzbee::uint32”，可能丢失数据
+  ConfigInitializer.cpp
+e:\thirdreich\client\thirdreich\static\static_data\data\role\skill\passiveskillmgr.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  MessageQueue.cpp
+  MsgMgr.cpp
+  MyLocalization.cpp
+  SyncCache.cpp
+  GmCfg.cpp
+  GmLine.cpp
+  HandlerAchieve.cpp
+  HandlerBuilding.cpp
+  HandlerCraft.cpp
+  HandlerDrop.cpp
+  HandlerDungeon.cpp
+  HandlerFriend.cpp
+  HandlerHouse.cpp
+  HandlerInteraction.cpp
+  HandlerItem.cpp
+  正在生成代码...
+  正在编译...
+  HandlerKeepAlive.cpp
+  HandlerLogin.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\handler\handlerlogin.cpp(150): warning C4244: “参数”: 从“google::protobuf::int64”转换到“int”，可能丢失数据
+  HandlerMgr.cpp
+  HandlerMonster.cpp
+  HandlerMsg.cpp
+  HandlerNpc.cpp
+  HandlerPlant.cpp
+  HandlerPublicMap.cpp
+  HandlerRole.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\handler\handlerrole.cpp(425): warning C4244: “参数”: 从“google::protobuf::int64”转换到“int”，可能丢失数据
+e:\thirdreich\client\thirdreich\static\static_logic\handler\handlerrole.cpp(433): warning C4244: “参数”: 从“google::protobuf::int64”转换到“int”，可能丢失数据
+e:\thirdreich\client\thirdreich\static\static_logic\handler\handlerrole.cpp(438): warning C4244: “参数”: 从“google::protobuf::int64”转换到“int”，可能丢失数据
+  HandlerStore.cpp
+  HandlerSurvival.cpp
+  HandlerTeam.cpp
+  HandlerTowerBuild.cpp
+  BattleCalc.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\battlecalc.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  LocalServer_Action.cpp
+  LocalServer_Battle.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_battle.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_battle.cpp(765): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_battle.cpp(766): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_battle.cpp(767): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_battle.cpp(768): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+  LocalServer_Buff.cpp
+e:\thirdreich\client\thirdreich\static\static_logic\localserver\localserver_buff.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+DataHandler.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+  static_logic.vcxproj -> E:\ThirdReich\Client\ThirdReich\static\static_logic\../../x64/Release\static_logic.lib

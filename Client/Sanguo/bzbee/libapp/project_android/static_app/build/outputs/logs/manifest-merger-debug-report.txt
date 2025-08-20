@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+	package
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:1-20:12
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:11:5-18:19
+	android:supportsRtl
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml:16:9-40
+uses-sdk
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libapp\project_android\static_app\src\main\AndroidManifest.xml

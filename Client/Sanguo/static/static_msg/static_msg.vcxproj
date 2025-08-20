@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="msg\MsgAchieve.pb.cc" />
+    <ClCompile Include="msg\MsgAI.pb.cc" />
+    <ClCompile Include="msg\MsgBuff.pb.cc" />
+    <ClCompile Include="msg\MsgBuild.pb.cc" />
+    <ClCompile Include="msg\MsgBuildTower.pb.cc" />
+    <ClCompile Include="msg\MsgCooldown.pb.cc" />
+    <ClCompile Include="msg\MsgCraft.pb.cc" />
+    <ClCompile Include="msg\MsgDB.pb.cc" />
+    <ClCompile Include="msg\MsgDBAction.pb.cc" />
+    <ClCompile Include="msg\MsgDBLog.pb.cc" />
+    <ClCompile Include="msg\MsgDungeon.pb.cc" />
+    <ClCompile Include="msg\MsgGameDef.pb.cc" />
+    <ClCompile Include="msg\MsgGM.pb.cc" />
+    <ClCompile Include="msg\MsgHouse.pb.cc" />
+    <ClCompile Include="msg\MsgInteraction.pb.cc" />
+    <ClCompile Include="msg\MsgInteractive.pb.cc" />
+    <ClCompile Include="msg\MsgItem.pb.cc" />
+    <ClCompile Include="msg\MsgLogin.pb.cc" />
+    <ClCompile Include="msg\MsgLottery.pb.cc" />
+    <ClCompile Include="msg\MsgMail.pb.cc" />
+    <ClCompile Include="msg\MsgMailServer.pb.cc" />
+    <ClCompile Include="msg\MsgMapMgrServer.pb.cc" />
+    <ClCompile Include="msg\MsgMapServer.pb.cc" />
+    <ClCompile Include="msg\MsgMatchServer.pb.cc" />
+    <ClCompile Include="msg\MsgMob.pb.cc" />
+    <ClCompile Include="msg\MsgMove.pb.cc" />
+    <ClCompile Include="msg\MsgNpc.pb.cc" />
+    <ClCompile Include="msg\MsgNpcAutoIncome.pb.cc" />
+    <ClCompile Include="msg\MsgNpcDak.pb.cc" />
+    <ClCompile Include="msg\MsgNpcDakRepo.pb.cc" />
+    <ClCompile Include="msg\MsgPacketDrop.pb.cc" />
+    <ClCompile Include="msg\MsgPing.pb.cc" />
+    <ClCompile Include="msg\MsgPlant.pb.cc" />
+    <ClCompile Include="msg\MsgPlayer.pb.cc" />
+    <ClCompile Include="msg\MsgPlayerDataSync.pb.cc" />
+    <ClCompile Include="msg\MsgPlayerEvent.pb.cc" />
+    <ClCompile Include="msg\MsgProtector.pb.cc" />
+    <ClCompile Include="msg\MsgPublicMap.pb.cc" />
+    <ClCompile Include="msg\MsgPVP.pb.cc" />
+    <ClCompile Include="msg\MsgPvPRandItem.pb.cc" />
+    <ClCompile Include="msg\MsgPvPRandMap.pb.cc" />
+    <ClCompile Include="msg\MsgSkill.pb.cc" />
+    <ClCompile Include="msg\MsgStore.pb.cc" />
+    <ClCompile Include="msg\MsgSurvival.pb.cc" />
+    <ClCompile Include="msg\MsgSyncToUserServer.pb.cc" />
+    <ClCompile Include="msg\MsgTeam.pb.cc" />
+    <ClCompile Include="msg\MsgTest.pb.cc" />
+    <ClCompile Include="msg\MsgTowerPVPTombstone.pb.cc" />
+    <ClCompile Include="msg\MsgTroops.pb.cc" />
+    <ClCompile Include="msg\MsgType.pb.cc" />
+    <ClCompile Include="msg\RegServer.pb.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="msg\MsgAchieve.pb.h" />
+    <ClInclude Include="msg\MsgAI.pb.h" />
+    <ClInclude Include="msg\MsgBuff.pb.h" />
+    <ClInclude Include="msg\MsgBuild.pb.h" />
+    <ClInclude Include="msg\MsgBuildTower.pb.h" />
+    <ClInclude Include="msg\MsgCooldown.pb.h" />
+    <ClInclude Include="msg\MsgCraft.pb.h" />
+    <ClInclude Include="msg\MsgDB.pb.h" />
+    <ClInclude Include="msg\MsgDBAction.pb.h" />
+    <ClInclude Include="msg\MsgDBLog.pb.h" />
+    <ClInclude Include="msg\MsgDungeon.pb.h" />
+    <ClInclude Include="msg\MsgGameDef.pb.h" />
+    <ClInclude Include="msg\MsgGM.pb.h" />
+    <ClInclude Include="msg\MsgHouse.pb.h" />
+    <ClInclude Include="msg\MsgInteraction.pb.h" />
+    <ClInclude Include="msg\MsgInteractive.pb.h" />
+    <ClInclude Include="msg\MsgItem.pb.h" />
+    <ClInclude Include="msg\MsgLogin.pb.h" />
+    <ClInclude Include="msg\MsgLottery.pb.h" />
+    <ClInclude Include="msg\MsgMail.pb.h" />
+    <ClInclude Include="msg\MsgMailServer.pb.h" />
+    <ClInclude Include="msg\MsgMapMgrServer.pb.h" />
+    <ClInclude Include="msg\MsgMapServer.pb.h" />
+    <ClInclude Include="msg\MsgMatchServer.pb.h" />
+    <ClInclude Include="msg\MsgMob.pb.h" />
+    <ClInclude Include="msg\MsgMove.pb.h" />
+    <ClInclude Include="msg\MsgNpc.pb.h" />
+    <ClInclude Include="msg\MsgNpcAutoIncome.pb.h" />
+    <ClInclude Include="msg\MsgNpcDak.pb.h" />
+    <ClInclude Include="msg\MsgNpcDakRepo.pb.h" />
+    <ClInclude Include="msg\MsgPacketDrop.pb.h" />
+    <ClInclude Include="msg\MsgPing.pb.h" />
+    <ClInclude Include="msg\MsgPlant.pb.h" />
+    <ClInclude Include="msg\MsgPlayer.pb.h" />
+    <ClInclude Include="msg\MsgPlayerDataSync.pb.h" />
+    <ClInclude Include="msg\MsgPlayerEvent.pb.h" />
+    <ClInclude Include="msg\MsgProtector.pb.h" />
+    <ClInclude Include="msg\MsgPublicMap.pb.h" />
+    <ClInclude Include="msg\MsgPVP.pb.h" />
+    <ClInclude Include="msg\MsgPvPRandItem.pb.h" />
+    <ClInclude Include="msg\MsgPvPRandMap.pb.h" />
+    <ClInclude Include="msg\MsgSkill.pb.h" />
+    <ClInclude Include="msg\MsgStore.pb.h" />
+    <ClInclude Include="msg\MsgSurvival.pb.h" />
+    <ClInclude Include="msg\MsgSyncToUserServer.pb.h" />
+    <ClInclude Include="msg\MsgTeam.pb.h" />
+    <ClInclude Include="msg\MsgTest.pb.h" />
+    <ClInclude Include="msg\MsgTowerPVPTombstone.pb.h" />
+    <ClInclude Include="msg\MsgTroops.pb.h" />
+    <ClInclude Include="msg\MsgType.pb.h" />
+    <ClInclude Include="msg\RegServer.pb.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E245A442-85AD-476A-87DC-B60A371B4920}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticmsg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../x64/Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libprotobuf\source;..\..\bzbee\libbaseutil\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4018</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\bzbee\libbaseutil\source;..\..\external\libprotobuf\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\external\libprotobuf\source;..\..\bzbee\libbaseutil\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\bzbee\libbaseutil\source;..\..\external\libprotobuf\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

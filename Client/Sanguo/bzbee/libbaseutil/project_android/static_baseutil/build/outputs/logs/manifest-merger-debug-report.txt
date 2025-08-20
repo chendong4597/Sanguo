@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:2:5-44
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:1-13:12
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:4:5-11:19
+	android:supportsRtl
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:8:9-35
+	android:label
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:7:9-41
+	android:icon
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml:9:9-40
+uses-sdk
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		ADDED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
+		INJECTED from G:\Release.1.0\client\bzbee\libbaseutil\project_android\static_baseutil\src\main\AndroidManifest.xml
