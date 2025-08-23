@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<gameActivityImportAdditions>
+        <insert>
+            import com.taptap.sdk.core.TapTapSdk;
+            import com.taptap.sdk.core.TapTapSdkOptions;
+        </insert>
+    </gameActivityImportAdditions>
+	
+	 <gameActivityClassAdditions>
+        <insert>
+            private static final String clientId = "e4hzofex4asmrb61v5";
+			private static final String clientToken = "FImGsoQ1RHdnbvflz1kAflVWCiDHQwhXWzMA3d5u";
+			private static final boolean enableLog = true;
+			
+	        public void initTapTap()
+			{
+				TapTapSdkOptions tapSdkOptions = new TapTapSdkOptions(
+					clientId, // 游戏 Client ID
+					clientToken, // 游戏 Client Token
+					0
+				);
+				//tapSdkOptions.setEnableLog(enableLog);
+				//tapSdkOptions.setEnableLog(enableLog);
+				// 初始化 TapSDK
+				TapTapSdk.init(this, tapSdkOptions);
+			}
+        </insert>
+    </gameActivityClassAdditions>
+	
+	<gameActivityOnCreateAdditions>
+        <insert>
+           GameActivity.Log.debug("onCreate: ThirdGameActivity Created");
+			// 在此处初始化你的代码
+			initTapTap();
+        </insert>
+    </gameActivityOnCreateAdditions>
+
+		
+	
+    <androidManifestUpdates>
+        <!-- 如果有需要，在这里添加manifest修改 -->
+    </androidManifestUpdates>
+    
+    <resourceCopies>
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-core-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-core-4.5.5.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-gid-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-gid-4.5.5.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-kit-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-kit-4.5.5.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-openlog-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-openlog-4.5.5.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-login-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-login-4.5.5.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap/tap-compliance-4.5.5.aar"
+            dst="$S(BuildDir)/libs/tap-compliance-4.5.5.aar" />
+	</resourceCopies>
+    
+    <gradleProperties>
+        <!-- 如果有需要，添加gradle属性 -->
+		<insert>
+			android.optionalCompilation=true
+		</insert>
+    </gradleProperties>
+    
+    <buildGradleAdditions>
+        <insert>
+			dependencies {
+			implementation 'com.google.android.material:material:1.11.0'
+			implementation('com.android.tools.build:gradle:7.4.2')
+			implementation files('src/main/libs/tap-core-4.5.5.aar')
+			implementation files('src/main/libs/tap-gid-4.5.5.aar')
+			implementation files('src/main/libs/tap-kit-4.5.5.aar')
+			implementation files('src/main/libs/tap-openlog-4.5.5.aar')
+			implementation files('src/main/libs/tap-login-4.5.5.aar')
+			implementation files('src/main/libs/tap-compliance-4.5.5.aar')
+			}
+
+			android {
+				configurations {
+				all*.exclude group: 'com.android.support', module: 'design'
+				}
+			}
+
+		</insert>
+    </buildGradleAdditions>
+
+	<buildscriptGradleAdditions>
+        <insert>
+			dependencies {
+			classpath 'com.android.tools.build:gradle:7.4.2'
+			}
+		</insert>
+    </buildscriptGradleAdditions>
+</root>

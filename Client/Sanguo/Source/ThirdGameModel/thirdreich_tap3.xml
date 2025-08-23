@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<gameActivityImportAdditions>
+        <insert>
+			import com.wskj.ThirdReich.TaptapUtils;
+		</insert>
+    </gameActivityImportAdditions>
+	
+	 <gameActivityClassAdditions>
+        <insert>
+        </insert>
+    </gameActivityClassAdditions>
+	
+	<gameActivityOnCreateAdditions>
+        <insert>
+			TaptapUtils.Taptapinit();
+			bKeepScreenOn = true;
+		</insert>
+    </gameActivityOnCreateAdditions>
+
+	<gameActivityOnPauseAdditions>
+		<insert>
+		</insert>
+	</gameActivityOnPauseAdditions>
+
+
+
+	<androidManifestUpdates>
+	</androidManifestUpdates>
+
+	<!-- 添加 FileProvider -->
+
+    <resourceCopies>
+		<copyFile src="$S(BuildDir)/../../../taptap3/AntiAddiction_3.29.7.aar"
+            dst="$S(BuildDir)/libs/AntiAddiction_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/AntiAddictionUI_3.29.7.aar"
+            dst="$S(BuildDir)/libs/AntiAddictionUI_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapBootstrap_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapBootstrap_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapCommon_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapCommon_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapLogin_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapLogin_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapDB_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapDB_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapLicense_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapLicense_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapSupport_3.29.7.aar"
+            dst="$S(BuildDir)/libs/TapSupport_3.29.7.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/TapAD_3.16.3.45.aar"
+            dst="$S(BuildDir)/libs/TapAD_3.16.3.45.aar" />
+		<copyFile src="$S(BuildDir)/../../../taptap3/PrivacyPolicy.html"
+            dst="$S(BuildDir)/assets/PrivacyPolicy.html" />
+	</resourceCopies>
+    
+    <gradleProperties>
+        <!-- 如果有需要，添加gradle属性 -->
+		<insert>
+			android.optionalCompilation=true
+		</insert>
+    </gradleProperties>
+
+	<buildGradleAdditions>
+		<insert>
+			android {
+			buildTypes {
+			release {			
+			minifyEnabled false
+			shrinkResources false
+			}
+			}
+			}
+		</insert>
+	</buildGradleAdditions>
+
+	<proguardAdditions>
+		<insert>
+			<!-- 这里写入要添加的固定文本（ProGuard规则） -->
+			-keep class com.wskj.ThirdReich.TaptapUtils { *; }
+
+			-keep class com.wskj.ThirdReich.TaptapNative { *; }
+
+			-keepnames class com.wskj.ThirdReich.** { *; }
+
+			-keepnative Java_com_wskj_ThirdReich_TaptapNative_nativeTaptapLoginSuc
+			-keepnative Java_com_wskj_ThirdReich_TaptapNative_nativeTaptapADNVideo
+			-keepnative Java_com_wskj_*
+
+			-keepattributes Signature,Exceptions,InnerClasses,EnclosingMethod
+		</insert>
+	</proguardAdditions>
+	
+	
+    
+    <buildGradleAdditions>
+        <insert>
+			dependencies {
+			implementation files('src/main/libs/AntiAddiction_3.29.7.aar')
+			implementation files('src/main/libs/AntiAddictionUI_3.29.7.aar')
+			implementation files('src/main/libs/TapBootstrap_3.29.7.aar')
+			implementation files('src/main/libs/TapCommon_3.29.7.aar')
+			implementation files('src/main/libs/TapLogin_3.29.7.aar')
+			implementation files('src/main/libs/TapDB_3.29.7.aar')
+			implementation files('src/main/libs/TapLicense_3.29.7.aar')
+			implementation files('src/main/libs/TapSupport_3.29.7.aar')
+			implementation 'com.taptap:lc-storage-android:8.2.24' // 数据存储
+			implementation 'com.taptap:lc-realtime-android:8.2.24'  // 即时通讯
+
+
+			// ...
+			implementation files('src/main/libs/TapAD_3.16.3.45.aar') // 广告 SDK
+			implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+			implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
+			implementation "com.github.bumptech.glide:glide:4.9.0"
+			// ...
+			}
+		</insert>
+    </buildGradleAdditions>
+
+	<buildscriptGradleAdditions>
+        <insert>
+			dependencies {
+			classpath 'com.taptap:lc-storage-android:8.2.24'
+			classpath 'com.taptap:lc-realtime-android:8.2.24'
+
+			classpath 'io.reactivex.rxjava2:rxandroid:2.0.1'
+			classpath 'io.reactivex.rxjava2:rxjava:2.0.1'
+			classpath 'com.github.bumptech.glide:glide:4.9.0'
+			}
+		</insert>
+    </buildscriptGradleAdditions>
+</root>

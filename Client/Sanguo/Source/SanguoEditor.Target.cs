@@ -10,6 +10,7 @@ public class SanguoEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("Sanguo");
-	}
+		//ExtraModuleNames.Add("Sanguo");
+        ExtraModuleNames.AddRange(new string[] { "Sanguo", "ThirdGameModel" });
+    }
 }

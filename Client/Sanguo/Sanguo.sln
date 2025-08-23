@@ -131,11 +131,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Static", "Static", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_data", "..\..\..\ThirdReich\Client\ThirdReich\static\static_data\static_data.vcxproj", "{0AA1C18B-FB89-41BB-A111-1E81ED580399}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_data", "static\static_data\static_data.vcxproj", "{0AA1C18B-FB89-41BB-A111-1E81ED580399}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_logic", "..\..\..\ThirdReich\Client\ThirdReich\static\static_logic\static_logic.vcxproj", "{5EBF41FE-E1FF-469C-85C8-D15F692E6420}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_logic", "static\static_logic\static_logic.vcxproj", "{5EBF41FE-E1FF-469C-85C8-D15F692E6420}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_msg", "..\..\..\ThirdReich\Client\ThirdReich\static\static_msg\static_msg.vcxproj", "{E245A442-85AD-476A-87DC-B60A371B4920}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "static_msg", "static\static_msg\static_msg.vcxproj", "{E245A442-85AD-476A-87DC-B60A371B4920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

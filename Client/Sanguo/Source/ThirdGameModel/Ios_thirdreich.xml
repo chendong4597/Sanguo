@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+    <iosPListUpdates>
+        <key>NSAppTransportSecurity</key>
+        <dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <true/>
+        </dict>
+    </iosPListUpdates>
+    
+    <iosAppDelegateImport>
+        #import "PrivacyWebViewAppDelegate.h"
+    </iosAppDelegateImport>
+    
+    <iosAppDelegateImplementation>
+        // 添加 WebView 到 AppDelegate
+        [PrivacyWebViewAppDelegate configure];
+    </iosAppDelegateImplementation>
+</root>
