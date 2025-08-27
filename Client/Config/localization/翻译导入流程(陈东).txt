@@ -1,0 +1,10 @@
+以mapcfgsetting表为例
+
+一：
+
+1：执行../ExDataConverter下ExDataConverter.exe，导出文件
+2：执行../ExDataConverter下MoveXml.bat，把文件导出到config_file下
+3：（配置有增加字段的情况下，修改export_translation.bat中需要导出的表和字段）
+4：执行export_translation.bat中需要导出的表和字段
+5：执行pack_translation_mo.bat (注意：bin\config保证要有trunk.mo  如果报错，查看temp下pack_translation_warning.xml错误信息， mo会自动拷贝到config下)
+

@@ -1,0 +1,10 @@
+<ExData>
+    <Table Name="AchieveAccumulateCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_Param" DataType="4" />
+            <Column Name="s_AchieveEventID" DataType="4" />
+        </ColumnList>
+    </Table>
+</ExData>

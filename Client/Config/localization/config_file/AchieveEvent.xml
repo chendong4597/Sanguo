@@ -1,0 +1,138 @@
+<ExData>
+    <Table Name="AchieveEvent">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_BeginDetailID" DataType="1" />
+            <Column Name="n_Param" DataType="1" />
+            <Column Name="n_JudgeType" DataType="1" />
+            <Column Name="n_Distinguish" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_achieve_num" DataType="1" Value="900" />
+        <Record n_ID="10000" s_Name="總成就" n_Type="1" n_BeginDetailID="10000001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="10001" s_Name="ok_玩家等级" n_Type="1" n_BeginDetailID="10001001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="10002" s_Name="ok_玩家最大HP上限" n_Type="1" n_BeginDetailID="10002001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="10003" s_Name="ok_玩家最大MP上限" n_Type="1" n_BeginDetailID="10003001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="10004" s_Name="ok_玩家物理攻击力" n_Type="1" n_BeginDetailID="10004001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="10005" s_Name="   玩家魔法攻击力" n_Type="1" n_BeginDetailID="10005001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20001" s_Name="ok_持有银币币数" n_Type="1" n_BeginDetailID="20001001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20002" s_Name="ok_持有金币币数" n_Type="1" n_BeginDetailID="20002001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20003" s_Name="   NPC数量" n_Type="1" n_BeginDetailID="20003001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20004" s_Name="   武将数量" n_Type="1" n_BeginDetailID="20004001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20005" s_Name="   入住Npc数量" n_Type="1" n_BeginDetailID="20005001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20006" s_Name="   入住武将数量" n_Type="1" n_BeginDetailID="20006001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20007" s_Name="   房屋数量" n_Type="1" n_BeginDetailID="20007001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20008" s_Name="   植物数量" n_Type="1" n_BeginDetailID="20008001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20009" s_Name="   低级祈福" n_Type="1" n_BeginDetailID="20009001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20010" s_Name="   中级祈福" n_Type="1" n_BeginDetailID="20010001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="20011" s_Name="   高级祈福" n_Type="1" n_BeginDetailID="20011001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30001" s_Name="   击杀第一军营怪物数量" n_Type="1" n_BeginDetailID="30001001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30002" s_Name="   击杀第二军营怪物数量" n_Type="1" n_BeginDetailID="30002001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30003" s_Name="   击杀第三军营怪物数量" n_Type="1" n_BeginDetailID="30003001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30004" s_Name="   击杀第四军营怪物数量" n_Type="1" n_BeginDetailID="30004001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30005" s_Name="   击杀第五军营怪物数量" n_Type="1" n_BeginDetailID="30005001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30006" s_Name="   击杀第六军营怪物数量" n_Type="1" n_BeginDetailID="30006001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30007" s_Name="   击杀BOSS军营怪物数量" n_Type="1" n_BeginDetailID="30007001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30101" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30101001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30102" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30102001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30103" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30103001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30104" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30104001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30105" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30105001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30106" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30106001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30201" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30201001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30202" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30202001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30203" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30203001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30204" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30204001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30205" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30205001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30301" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30301001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30302" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30302001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30303" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30303001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30304" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30304001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30305" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30305001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30306" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30306001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30401" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30401001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30402" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30402001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30403" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30403001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30404" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30404001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30405" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30405001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30406" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30406001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30501" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30501001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30502" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30502001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30503" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30503001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30504" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30504001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30505" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30505001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30506" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30506001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30507" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30507001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30508" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30508001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30509" s_Name="   征战通关 城池" n_Type="1" n_BeginDetailID="30509001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30510" s_Name="挑战地图" n_Type="1" n_BeginDetailID="30510001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30511" s_Name="挑战地图" n_Type="1" n_BeginDetailID="30511001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="30512" s_Name="挑战地图" n_Type="1" n_BeginDetailID="30512001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="40001" s_Name="   总在线时间" n_Type="1" n_BeginDetailID="40001001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="40002" s_Name="   总登入天数" n_Type="1" n_BeginDetailID="40002001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50001" s_Name="   首次使用红色药水成功" n_Type="1" n_BeginDetailID="50001001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50002" s_Name="   首次使用蓝色药水成功" n_Type="1" n_BeginDetailID="50002001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50003" s_Name="   首次使用黄色药水成功" n_Type="1" n_BeginDetailID="50003001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50004" s_Name="   首次使用食物成功" n_Type="1" n_BeginDetailID="50004001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50005" s_Name="   首次装备武器成功" n_Type="1" n_BeginDetailID="50005001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50006" s_Name="   首次装备铠甲成功" n_Type="1" n_BeginDetailID="50006001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50007" s_Name="   首次装备锦壤成功" n_Type="1" n_BeginDetailID="50007001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50008" s_Name="   首次装备兵书成功" n_Type="1" n_BeginDetailID="50008001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50009" s_Name="   首次装备披风成功" n_Type="1" n_BeginDetailID="50009001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50010" s_Name="   首次装备武魂成功" n_Type="1" n_BeginDetailID="50010001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50011" s_Name="   首次装备玉玺成功" n_Type="1" n_BeginDetailID="50011001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50012" s_Name="   首次种植成功" n_Type="1" n_BeginDetailID="50012001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50013" s_Name="   首次释放NPC成功" n_Type="1" n_BeginDetailID="50013001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50014" s_Name="   首次入住NPC成功" n_Type="1" n_BeginDetailID="50014001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50015" s_Name="   首次祈福成功" n_Type="1" n_BeginDetailID="50015001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50016" s_Name="   首次合成物品成功" n_Type="1" n_BeginDetailID="50016001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50017" s_Name="   首次建设房屋成功" n_Type="1" n_BeginDetailID="50017001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50018" s_Name="   首次购买物品成功" n_Type="1" n_BeginDetailID="50018001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50019" s_Name="   首次建设道路成功" n_Type="1" n_BeginDetailID="50019001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50020" s_Name="   首次建设城墙成功" n_Type="1" n_BeginDetailID="50020001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50021" s_Name="   首次建设纪念碑成功" n_Type="1" n_BeginDetailID="50021001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50022" s_Name="   首次击杀怪物成功" n_Type="1" n_BeginDetailID="50022001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50023" s_Name="   首次装备武将成功" n_Type="1" n_BeginDetailID="50023001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50024" s_Name="   首次装备武将全部武器成功" n_Type="1" n_BeginDetailID="50024001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50025" s_Name="   首次历练武将成功" n_Type="1" n_BeginDetailID="50025001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50026" s_Name="   首次征战成功" n_Type="1" n_BeginDetailID="50026001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50027" s_Name="开启铜矿" n_Type="1" n_BeginDetailID="50027001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50028" s_Name="开启锡矿" n_Type="1" n_BeginDetailID="50028001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50029" s_Name="开启铁矿" n_Type="1" n_BeginDetailID="50029001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50030" s_Name="开启银矿" n_Type="1" n_BeginDetailID="50030001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50031" s_Name="开启金矿" n_Type="1" n_BeginDetailID="50031001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50032" s_Name="首次种植员指导" n_Type="1" n_BeginDetailID="50032001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50033" s_Name="首次养植员指导" n_Type="1" n_BeginDetailID="50033001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50034" s_Name="首次装备战马" n_Type="1" n_BeginDetailID="50034001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50035" s_Name="首次建设房屋木屋" n_Type="1" n_BeginDetailID="50035001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50036" s_Name="首次建设房屋石屋" n_Type="1" n_BeginDetailID="50036001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50037" s_Name="首次建设房屋小院" n_Type="1" n_BeginDetailID="50037001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50038" s_Name="首次建设房屋大院" n_Type="1" n_BeginDetailID="50038001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50039" s_Name="首次建设房屋二楼叠层建筑" n_Type="1" n_BeginDetailID="50039001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50040" s_Name="入住一名铸剑师" n_Type="1" n_BeginDetailID="50040001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50041" s_Name="入住一名裁衣师" n_Type="1" n_BeginDetailID="50041001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50042" s_Name="入住一名武魂商人" n_Type="1" n_BeginDetailID="50042001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50043" s_Name="入住一名法杖师" n_Type="1" n_BeginDetailID="50043001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50044" s_Name="入住一名药剂师" n_Type="1" n_BeginDetailID="50044001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50045" s_Name="入住一名驯马师" n_Type="1" n_BeginDetailID="50045001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50046" s_Name="入住一名种子商人" n_Type="1" n_BeginDetailID="50046001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50047" s_Name="入住一名工匠" n_Type="1" n_BeginDetailID="50047001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50048" s_Name="入住一名养殖工" n_Type="1" n_BeginDetailID="50048001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50049" s_Name="入住一名种殖工" n_Type="1" n_BeginDetailID="50049001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50050" s_Name="入住一名运输工" n_Type="1" n_BeginDetailID="50050001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50051" s_Name="入住一名矿工" n_Type="1" n_BeginDetailID="50051001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50052" s_Name="入住一名伐木工" n_Type="1" n_BeginDetailID="50052001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50053" s_Name="入住一名披风制造工" n_Type="1" n_BeginDetailID="50053001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50054" s_Name="入住一名锦囊制造" n_Type="1" n_BeginDetailID="50054001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50055" s_Name="入住一名兵书制造" n_Type="1" n_BeginDetailID="50055001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50056" s_Name="入住一名兵符玉玺制造" n_Type="1" n_BeginDetailID="50056001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50057" s_Name="入住一名毒药剂师   " n_Type="1" n_BeginDetailID="50057001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50058" s_Name="入住一名厨师" n_Type="1" n_BeginDetailID="50058001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50059" s_Name="入住一名枪盾兵兵种武将" n_Type="1" n_BeginDetailID="50059001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50060" s_Name="入住一名刀骑兵兵种武将" n_Type="1" n_BeginDetailID="50060001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50061" s_Name="入住一名步弓兵兵种武将" n_Type="1" n_BeginDetailID="50061001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50062" s_Name="入住一名大刀骑兵种武将" n_Type="1" n_BeginDetailID="50062001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+        <Record n_ID="50063" s_Name="入住一名法杖兵种武将" n_Type="1" n_BeginDetailID="50063001" n_Param="0" n_JudgeType="0" n_Distinguish="0" />
+    </Table>
+</ExData>

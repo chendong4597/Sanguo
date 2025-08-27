@@ -1,0 +1,345 @@
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\Player\UIRoleHud.cpp:854
+msgid "UI_HUD_STALL_NAME"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UIArmyDonate.cpp:141
+msgid "UI_ARMY_DONATE_MATERIAL_CONFIRM"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UIArmyDonateSubItem.cpp:65
+msgid "UI_ARMY_DONATE_RATE_TIP"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UIConvoy.cpp:94
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITrade.cpp:221
+msgid "UI_TRADE_IS_FULL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UINpcTalk.cpp:89
+msgid "UI_NPC_TALK_CONVOY_RECALL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITimeShow.cpp:35
+msgid "UI_TIME_SHOW_HOURS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITimeShow.cpp:39
+msgid "UI_TIME_SHOW_DAYS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITrade.cpp:283
+msgid "UI_TRADE_GO_BEING"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:131
+msgid "UI_TRADE_CONFIRM_T_BUY"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:131
+msgid "UI_TRADE_CONFIRM_T_SELL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:136
+msgid "UI_TRADE_CONFIRM_BUY"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:136
+msgid "UI_TRADE_CONFIRM_SELL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:226
+msgid "UI_TRADE_BUY_CONFIRM_NOT_ENOUGH"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeConfirm.cpp:244
+msgid "UI_TRADE_SELL_CONFIRM_NOT_ENOUGH"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeItem.cpp:218
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeItem.cpp:226
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeItem.cpp:235
+msgid "UI_TRADE_NOT_GUID"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeNpc.cpp:110
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecall.cpp:116
+msgid "UI_TXT_TITLE_TRADE1"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeNpc.cpp:113
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecall.cpp:119
+msgid "UI_TXT_TITLE_TRADE2"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeNpc.cpp:131
+msgid "UI_TRADE_NPC_BUY_FAILED"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeNpc.cpp:135
+msgid "UI_TRADE_NPC_SELL_FAILED"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecall.cpp:126
+msgid "UI_TXT_DES_G_TRADE1"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecall.cpp:129
+msgid "UI_TXT_DES_G_TRADE2"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecall.cpp:197
+msgid "UI_TRADE_GO_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecallItem.cpp:61
+msgid "UI_TRADE_RECALLITEM_GET"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecallItem.cpp:64
+msgid "UI_TRADE_RECALLITEM_COST"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecallItem.cpp:108
+msgid "UI_TRADE_RECALLITEM_SELL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\Source\ThirdReich\UI\UITradeRecallItem.cpp:111
+msgid "UI_TRADE_RECALLITEM_BUY"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\config\DonateCfg.cpp:97
+msgid "cfg_donate_name_0"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\config\NpcBadgeCfg.cpp:71
+msgid "CLI_Npc-Availible Gift For LV{0}:"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\AchieveData.cpp:997
+msgid "CLI_ItemTipBox-First Eating food: {0}+{1}"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:88
+msgid "UI_NOTES_TIPS_NPC_LV"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:105
+msgid "UI_NOTES_TIPS_PLANT_IN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:108
+msgid "UI_NOTES_TIPS_PLANT_FARM_IN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:112
+msgid "UI_NOTES_TIPS_PLANT_MINE_IN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:130
+msgid "UI_NOTES_TIPS_PLANT_CUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:133
+msgid "UI_NOTES_TIPS_PLANT_FARM_CUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:167
+msgid "UI_NOTES_TIPS_PLANT_OUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:170
+msgid "UI_NOTES_TIPS_PLANT_OUT_NPC"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:178
+msgid "UI_NOTES_TIPS_PLANT_FARM_OUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:181
+msgid "UI_NOTES_TIPS_PLANT_FARM_OUT_NPC"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:186
+msgid "UI_NOTES_TIPS_PLANT_MINE_OUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:212
+msgid "UI_NOTES_TIPS_PLANT_MAN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:225
+msgid "UI_NOTES_TIPS_NPC_IN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:238
+msgid "UI_NOTES_TIPS_NPC_OUT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:251
+msgid "UI_NOTES_TIPS_HOUSE_UP_WALL_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:254
+msgid "UI_NOTES_TIPS_HOUSE_UP_FLAG_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:258
+msgid "UI_NOTES_TIPS_HOUSE_UP_ROAD_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:261
+msgid "UI_NOTES_TIPS_HOUSE_UP_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:274
+msgid "UI_NOTES_TIPS_HOUSE_UP_WALL_BEGIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:278
+msgid "UI_NOTES_TIPS_HOUSE_UP_FLAG_BEGIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:282
+msgid "UI_NOTES_TIPS_HOUSE_UP_ROAD_BEGIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:285
+msgid "UI_NOTES_TIPS_HOUSE_UP_BEGIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:318
+msgid "UI_NOTES_TIPS_CRAFT_BEGIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:321
+msgid "UI_NOTES_TIPS_CRAFT_END"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:325
+msgid "UI_NOTES_TIPS_CRAFT_GET"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:338
+msgid "UI_NOTES_TIPS_LOTTERY_0"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:341
+msgid "UI_NOTES_TIPS_LOTTERY_1"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:345
+msgid "UI_NOTES_TIPS_LOTTERY_2"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NotesData.cpp:351
+msgid "UI_NOTES_TIPS_RENT"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NpcProtectorData.cpp:368
+msgid "CLI_NpcBadgeSys-Undefined BuildRoom config!"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NpcProtectorData.cpp:377
+msgid "CLI_NpcBadgeSys-room space param error"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NpcProtectorData.cpp:388
+msgid "CLI_NpcBadgeSys-room comfort is not enough"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NpcProtectorData.cpp:392
+msgid "CLI_NpcBadgeSys-room height not enough"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\NpcProtectorData.cpp:397
+msgid "CLI_NpcBadgeSys-Undefined Room Condition Type"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_data\data\role\Role.cpp:324
+msgid "REVIVE_IN_CD"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerAchieve.cpp:169
+msgid "CLI_HandlerAchieve-ACHIEVE_RESUT_FAILURE"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerAchieve.cpp:172
+msgid "CLI_HandlerAchieve-ACHIEVE_RESUT_NOT_ACCOMPLISH"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerAchieve.cpp:175
+msgid "CLI_HandlerAchieve-ACHIEVE_RESUT_RECEIVED"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerAchieve.cpp:178
+msgid "CLI_HandlerAchieve-ACHIEVE_RESUT_TEMPLATE_ERROR"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerAchieve.cpp:181
+msgid "CLI_HandlerAchieve-ACHIEVE_RESUT_ITEM_FULL"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerItem.cpp:271
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:300
+msgid "UI_NPC_QUIP_SUCCESS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerItem.cpp:373
+msgid "UI_USE_ITEM_SUCCESS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:127
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:176
+msgid "CLI_NpcBadgeSys-NPC_REVIVE_FAILURE"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:130
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:167
+msgid "CLI_NpcBadgeSys-NPC_REVIVE_SUCCESS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:133
+msgid "CLI_NpcBadgeSys-NPC_REVIVE_FAILURE_BECAUSE_OF_NO_ENOUGH_COIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:170
+msgid "SRV_MsgProtectorRebornAtOnceS2C-EC_ProtectorResult_NpcNotExist"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:173
+msgid "SRV_MsgProtectorRebornAtOnceS2C-EC_ProtectorResult_RebornLackCost"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:359
+msgid ""
+"SRV_MsgProtectorEquipResS2C-MsgProtectorUseEssenceResS2C_RESULT_SUCCESS , "
+"then use les = {0}/{1}"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:1100
+msgid "UI_HOUSE_IN_TIPS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerNpc.cpp:1108
+msgid "UI_HOUSE_OUT_TIPS"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerRole.cpp:443
+msgid "UI_COMMON_PLAYER_GET_COIN"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerRole.cpp:456
+msgid "UI_COMMON_PLAYER_GET_CASH"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerRole.cpp:484
+msgid "UI_DONATE_SHOW"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerRole.cpp:1108
+msgid "MsgConvoyS2C_Result_suc"
+msgstr ""
+
+#: E:\ThirdReich\Client\ThirdConfig\..\ThirdReich\static\static_logic\handler\HandlerRole.cpp:1115
+msgid "MsgConvoyS2C_recall_suc"
+msgstr ""

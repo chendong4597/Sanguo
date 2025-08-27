@@ -1,0 +1,50 @@
+<ExData>
+    <Table Name="WeaponAniEffect">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_WeaponTpy" DataType="1" />
+            <Column Name="n_ComboIdx" DataType="1" />
+            <Column Name="s_SockName" DataType="4" />
+            <Column Name="s_AssertPath" DataType="4" />
+            <Column Name="f_DisplayTm" DataType="3" />
+            <Column Name="n_AttachTpy" DataType="1" />
+            <Column Name="s_HitAssertPath" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" n_WeaponTpy="1" n_ComboIdx="1" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/sword/BP_SWord01.BP_Sword01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="2" n_WeaponTpy="1" n_ComboIdx="2" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword02.BP_Sword02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="3" n_WeaponTpy="1" n_ComboIdx="3" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword03.BP_Sword03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="4" n_WeaponTpy="1" n_ComboIdx="4" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword04.BP_Sword04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="5" n_WeaponTpy="2" n_ComboIdx="1" s_SockName="E_TwinSword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/TwinSword/BP_TwinSWord01.BP_TwinSWord01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="6" n_WeaponTpy="2" n_ComboIdx="2" s_SockName="E_TwinSword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/TwinSword/BP_TwinSWord02.BP_TwinSWord02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="7" n_WeaponTpy="2" n_ComboIdx="3" s_SockName="E_TwinSword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/TwinSword/BP_TwinSWord03.BP_TwinSWord03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="8" n_WeaponTpy="2" n_ComboIdx="4" s_SockName="E_TwinSword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/TwinSword/BP_TwinSWord04.BP_TwinSWord04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="9" n_WeaponTpy="3" n_ComboIdx="1" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/sword/BP_SWord01.BP_Sword01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="10" n_WeaponTpy="3" n_ComboIdx="2" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword02.BP_Sword02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="11" n_WeaponTpy="3" n_ComboIdx="3" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword03.BP_Sword03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="12" n_WeaponTpy="3" n_ComboIdx="4" s_SockName="E_Sword" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Sword/BP_Sword04.BP_Sword04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="13" n_WeaponTpy="4" n_ComboIdx="1" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade01.BP_Blade01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="14" n_WeaponTpy="4" n_ComboIdx="2" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade02.BP_Blade02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="15" n_WeaponTpy="4" n_ComboIdx="3" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade03.BP_Blade03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="16" n_WeaponTpy="4" n_ComboIdx="4" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade04.BP_Blade04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="17" n_WeaponTpy="5" n_ComboIdx="1" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade01.BP_Blade01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="18" n_WeaponTpy="5" n_ComboIdx="2" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade02.BP_Blade02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="19" n_WeaponTpy="5" n_ComboIdx="3" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade03.BP_Blade03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="20" n_WeaponTpy="5" n_ComboIdx="4" s_SockName="E_Blade" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Blade/BP_Blade04.BP_Blade04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="21" n_WeaponTpy="6" n_ComboIdx="1" s_SockName="E_Claw" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Claw/BP_Claw01.BP_Claw01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="22" n_WeaponTpy="6" n_ComboIdx="2" s_SockName="E_Claw" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Claw/BP_Claw02.BP_Claw02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="23" n_WeaponTpy="6" n_ComboIdx="3" s_SockName="E_Claw" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Claw/BP_Claw03.BP_Claw03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="24" n_WeaponTpy="6" n_ComboIdx="4" s_SockName="E_Claw" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Claw/BP_Claw04.BP_Claw04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="25" n_WeaponTpy="14" n_ComboIdx="1" s_SockName="E_Sword01" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hammer/BP_Hammer01.BP_Hammer01&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="26" n_WeaponTpy="14" n_ComboIdx="2" s_SockName="E_Sword02" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hammer/BP_Hammer02.BP_Hammer02&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="27" n_WeaponTpy="14" n_ComboIdx="3" s_SockName="E_Sword03" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hammer/BP_Hammer03.BP_Hammer03&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="28" n_WeaponTpy="14" n_ComboIdx="4" s_SockName="E_Sword04" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hammer/BP_Hammer04.BP_Hammer04&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="29" n_WeaponTpy="0" n_ComboIdx="1" s_SockName="L_Hand" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/Warriror_Atk_01.Warriror_Atk_01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="30" n_WeaponTpy="0" n_ComboIdx="2" s_SockName="R_Hand" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/Warrior_Atk_02.Warrior_Atk_02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="31" n_WeaponTpy="0" n_ComboIdx="3" s_SockName="R_Leg" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/Warrior_Atk_03.Warrior_Atk_03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_HandHitEffect.BP_HandHitEffect_C&apos;" />
+        <Record n_ID="32" n_WeaponTpy="0" n_ComboIdx="4" s_SockName="E_Hand" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Hand/BP_Warrior_Atk01.BP_Warrior_Atk01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="33" n_WeaponTpy="16" n_ComboIdx="1" s_SockName="E_Spear" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Spear/BP_Spear01.BP_Spear01_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="34" n_WeaponTpy="16" n_ComboIdx="2" s_SockName="E_Spear" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Spear/BP_Spear02.BP_Spear02_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="35" n_WeaponTpy="16" n_ComboIdx="3" s_SockName="E_Spear" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Spear/BP_Spear03.BP_Spear03_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+        <Record n_ID="36" n_WeaponTpy="16" n_ComboIdx="4" s_SockName="E_Spear" s_AssertPath="Blueprint&apos;/Game/effect/player/weapon/Spear/BP_Spear04.BP_Spear04_C&apos;" f_DisplayTm="0.400000" n_AttachTpy="0" s_HitAssertPath="" />
+    </Table>
+</ExData>

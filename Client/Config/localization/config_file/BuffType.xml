@@ -1,0 +1,37 @@
+<ExData>
+    <Table Name="BuffTpyCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="s_MeshTag" DataType="4" />
+            <Column Name="s_SockName" DataType="4" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="n_nOverlay" DataType="1" />
+            <Column Name="f_tm" DataType="3" />
+            <Column Name="n_FollowRot" DataType="1" />
+            <Column Name="s_path" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_BuffPath" DataType="4" Value="/Game/effect/buff" />
+        <Record n_ID="1001" s_Name="·ÀÓù¶Ü" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1001" n_nOverlay="5" f_tm="60.000000" n_FollowRot="0" s_path="SperePartical/BP_ShieldEff.BP_ShieldEff" s_desc="" />
+        <Record n_ID="1002" s_Name="3¸ö·ÀÓù¶Ü" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="ThreeStun/ThreeStun.ThreeStun" s_desc="" />
+        <Record n_ID="1003" s_Name="ÐÇÐÇ" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="stun/BP_Stars.BP_Stars" s_desc="" />
+        <Record n_ID="1004" s_Name="ÃÔ»ó" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="Love/BP_Love.BP_Love" s_desc="" />
+        <Record n_ID="1005" s_Name="¼ÓËÙ" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="1" s_path="Speed/BP_BuffAddApeed.BP_BuffAddApeed" s_desc="" />
+        <Record n_ID="1006" s_Name="¶¾" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="Posion/BP_Posion.BP_Posion" s_desc="" />
+        <Record n_ID="1007" s_Name="Ñ©" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="snow/BP_Snow.BP_Snow" s_desc="" />
+        <Record n_ID="1008" s_Name="¶¨Éí" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="Ding/BP_Ding.BP_Ding" s_desc="" />
+        <Record n_ID="1009" s_Name="ÅÜÌ¤Ð§¹û" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="AddSpead/BP_AddSpeed.BP_AddSpeed" s_desc="" />
+        <Record n_ID="1010" s_Name="ÐéÈõ" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="weak/BP_weak.BP_weak" s_desc="" />
+        <Record n_ID="1011" s_Name="¼ÓÑª" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="life_add/BP_LifeAdd.BP_LifeAdd" s_desc="" />
+        <Record n_ID="1012" s_Name="ºÚÑÌ" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="smoke/BP_Smoke.BP_Smoke" s_desc="" />
+        <Record n_ID="1013" s_Name="Ê¥¹â" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="statusflower/BP_StaFlower.BP_StaFlower" s_desc="" />
+        <Record n_ID="1014" s_Name="Áú»ê" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="0" s_path="dragon/BP_Dragon.BP_Dragon" s_desc="" />
+        <Record n_ID="1015" s_Name="±©»÷" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="atkcri/BP_atkcri.BP_atkcri" s_desc="" />
+        <Record n_ID="1016" s_Name="ÆÆ·À" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="dedefance/BP_DeDefance.BP_DeDefance" s_desc="" />
+        <Record n_ID="1017" s_Name="·ÀÓù" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="defence/BP_Defence.BP_Defence" s_desc="" />
+        <Record n_ID="1018" s_Name="ÆÆ¹¥" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="reattack/BP_reattack.BP_reattack" s_desc="" />
+        <Record n_ID="1019" s_Name="¹¥»÷" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="attack/BP_attack.BP_attack" s_desc="" />
+        <Record n_ID="1020" s_Name="ÆÆ±¬" s_MeshTag="MainMesh" s_SockName="S_Buff" s_icon="buff_1002" n_nOverlay="1" f_tm="60.000000" n_FollowRot="2" s_path="reatkcrit/BP_reatkcrit.BP_reatkcrit" s_desc="" />
+    </Table>
+</ExData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+	<version_set v1="0" v2="9" v3="5" svn_base_version = "0"/>
+	<Sight min="400" max="3500" />
+	<NpcSign armLen="-100" Pitch="10" />
+	<SelfSign armLen="300" Roll="0" Pitch="-20" Yaw="180" />
+	<CullDis count="3" size1="100" distance1="120" size2="500" distance2="500" size3="1000" distance3="0" />
+</data>
+

@@ -1,0 +1,20 @@
+<ExData>
+    <Table Name="ArmorRepairRatio">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_quality_param" DataType="1" />
+            <Column Name="n_coin_param_a" DataType="1" />
+            <Column Name="n_coin_param_b" DataType="1" />
+            <Column Name="n_cash_param_a" DataType="1" />
+            <Column Name="n_cash_param_b" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_quality_param="20" n_coin_param_a="2" n_coin_param_b="400" n_cash_param_a="1" n_cash_param_b="6000" />
+        <Record n_ID="2" n_quality_param="30" n_coin_param_a="2" n_coin_param_b="400" n_cash_param_a="1" n_cash_param_b="5000" />
+        <Record n_ID="3" n_quality_param="45" n_coin_param_a="4" n_coin_param_b="400" n_cash_param_a="2" n_cash_param_b="6000" />
+        <Record n_ID="4" n_quality_param="60" n_coin_param_a="5" n_coin_param_b="400" n_cash_param_a="2" n_cash_param_b="5000" />
+        <Record n_ID="5" n_quality_param="80" n_coin_param_a="6" n_coin_param_b="500" n_cash_param_a="3" n_cash_param_b="10000" />
+        <Record n_ID="6" n_quality_param="100" n_coin_param_a="6" n_coin_param_b="500" n_cash_param_a="3" n_cash_param_b="10000" />
+        <Record n_ID="99" n_quality_param="20" n_coin_param_a="2" n_coin_param_b="400" n_cash_param_a="1" n_cash_param_b="6000" />
+        <Record n_ID="10000" n_quality_param="60" n_coin_param_a="5" n_coin_param_b="400" n_cash_param_a="2" n_cash_param_b="5000" />
+    </Table>
+</ExData>

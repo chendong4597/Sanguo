@@ -1,0 +1,103 @@
+<ExData>
+    <Table Name="CraftLock">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_Param" DataType="1" />
+            <Column Name="n_Extract" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_Type="2" n_Param="2010096" n_Extract="0" />
+        <Record n_ID="2" n_Type="5" n_Param="5" n_Extract="1" />
+        <Record n_ID="3" n_Type="3" n_Param="301004" n_Extract="0" />
+        <Record n_ID="4" n_Type="4" n_Param="20012" n_Extract="0" />
+        <Record n_ID="5" n_Type="1" n_Param="1" n_Extract="1" />
+        <Record n_ID="6" n_Type="1" n_Param="2" n_Extract="1" />
+        <Record n_ID="7" n_Type="1" n_Param="3" n_Extract="1" />
+        <Record n_ID="8" n_Type="1" n_Param="4" n_Extract="1" />
+        <Record n_ID="9" n_Type="1" n_Param="5" n_Extract="1" />
+        <Record n_ID="10" n_Type="1" n_Param="6" n_Extract="1" />
+        <Record n_ID="11" n_Type="1" n_Param="7" n_Extract="1" />
+        <Record n_ID="12" n_Type="1" n_Param="8" n_Extract="1" />
+        <Record n_ID="13" n_Type="1" n_Param="9" n_Extract="1" />
+        <Record n_ID="14" n_Type="1" n_Param="10" n_Extract="1" />
+        <Record n_ID="15" n_Type="1" n_Param="11" n_Extract="1" />
+        <Record n_ID="16" n_Type="1" n_Param="12" n_Extract="1" />
+        <Record n_ID="17" n_Type="1" n_Param="13" n_Extract="1" />
+        <Record n_ID="18" n_Type="1" n_Param="1" n_Extract="2" />
+        <Record n_ID="19" n_Type="1" n_Param="2" n_Extract="2" />
+        <Record n_ID="20" n_Type="1" n_Param="3" n_Extract="2" />
+        <Record n_ID="21" n_Type="1" n_Param="4" n_Extract="2" />
+        <Record n_ID="22" n_Type="1" n_Param="5" n_Extract="2" />
+        <Record n_ID="23" n_Type="1" n_Param="6" n_Extract="2" />
+        <Record n_ID="24" n_Type="1" n_Param="7" n_Extract="2" />
+        <Record n_ID="25" n_Type="1" n_Param="8" n_Extract="2" />
+        <Record n_ID="26" n_Type="1" n_Param="9" n_Extract="2" />
+        <Record n_ID="27" n_Type="1" n_Param="10" n_Extract="2" />
+        <Record n_ID="28" n_Type="1" n_Param="11" n_Extract="2" />
+        <Record n_ID="29" n_Type="1" n_Param="12" n_Extract="2" />
+        <Record n_ID="30" n_Type="1" n_Param="13" n_Extract="2" />
+        <Record n_ID="31" n_Type="2" n_Param="2030003" n_Extract="0" />
+        <Record n_ID="32" n_Type="2" n_Param="2030102" n_Extract="0" />
+        <Record n_ID="33" n_Type="5" n_Param="5" n_Extract="0" />
+        <Record n_ID="34" n_Type="5" n_Param="10" n_Extract="0" />
+        <Record n_ID="35" n_Type="5" n_Param="15" n_Extract="0" />
+        <Record n_ID="50" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="51" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="52" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="53" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="54" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="55" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="56" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="57" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="58" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="59" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="60" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="61" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="62" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="63" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="64" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="65" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="66" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="67" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="68" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="69" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="70" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="71" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="72" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="73" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="74" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="75" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="100" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="101" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="102" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="103" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="104" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="105" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="106" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="107" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="108" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="109" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="110" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="111" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="112" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="113" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="114" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="115" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="116" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="117" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="118" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="119" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="120" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="121" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="122" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="123" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="124" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="125" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="126" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="127" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="128" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="129" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="130" n_Type="0" n_Param="0" n_Extract="0" />
+        <Record n_ID="131" n_Type="0" n_Param="0" n_Extract="0" />
+    </Table>
+</ExData>

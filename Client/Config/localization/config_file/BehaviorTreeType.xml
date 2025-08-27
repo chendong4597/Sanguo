@@ -1,0 +1,13 @@
+<ExData>
+    <Table Name="BehaviorTreeType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_Path" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" n_Type="1" s_Path="BehaviorTree&apos;/Game/Models/Monster/AI/Behavior_Monster.Behavior_Monster&apos;" s_desc="怪物AI 1" />
+        <Record n_ID="2" n_Type="2" s_Path="BehaviorTree&apos;/Game/Models/defence/AI/Behavior_DefenceBuild.Behavior_DefenceBuild_C&apos;" s_desc="防御塔AI 1" />
+        <Record n_ID="1000" n_Type="2" s_Path="BehaviorTree&apos;/Game/Player/BP/PlayerAI/BTree_Player.BTree_Player&apos;" s_desc="其他玩家" />
+    </Table>
+</ExData>

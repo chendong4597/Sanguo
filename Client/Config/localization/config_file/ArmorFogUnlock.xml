@@ -1,0 +1,10 @@
+<ExData>
+    <Table Name="ArmorFogUnlock">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Unlock_Radius" DataType="1" />
+            <Column Name="n_Unlock_Angle" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1382148" n_Unlock_Radius="5" n_Unlock_Angle="30" />
+    </Table>
+</ExData>

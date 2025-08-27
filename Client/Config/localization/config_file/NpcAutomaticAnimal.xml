@@ -1,0 +1,23 @@
+<ExData>
+    <Table Name="NpcAutomaticAnimal">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_mature_time" DataType="1" />
+            <Column Name="n_feedingneed_id" DataType="1" />
+            <Column Name="n_feedingneed_num" DataType="1" />
+            <Column Name="n_reward_id" DataType="1" />
+            <Column Name="n_order_id" DataType="1" />
+            <Column Name="n_max_num" DataType="1" />
+            <Column Name="n_cost_type" DataType="1" />
+            <Column Name="n_cost_num" DataType="1" />
+            <Column Name="n_time1" DataType="1" />
+            <Column Name="n_time2" DataType="1" />
+            <Column Name="n_time3" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1451020" n_mature_time="7500" n_feedingneed_id="2010034" n_feedingneed_num="1" n_reward_id="2001" n_order_id="4" n_max_num="1" n_cost_type="1" n_cost_num="3000" n_time1="380" n_time2="530" n_time3="750" />
+        <Record n_ID="1451017" n_mature_time="8900" n_feedingneed_id="2010001" n_feedingneed_num="1" n_reward_id="2002" n_order_id="1" n_max_num="1" n_cost_type="1" n_cost_num="6000" n_time1="450" n_time2="620" n_time3="890" />
+        <Record n_ID="1451019" n_mature_time="10300" n_feedingneed_id="2010037" n_feedingneed_num="1" n_reward_id="2003" n_order_id="3" n_max_num="1" n_cost_type="1" n_cost_num="12000" n_time1="520" n_time2="720" n_time3="1030" />
+        <Record n_ID="1451018" n_mature_time="13300" n_feedingneed_id="1811000" n_feedingneed_num="1" n_reward_id="2004" n_order_id="2" n_max_num="1" n_cost_type="1" n_cost_num="20000" n_time1="670" n_time2="930" n_time3="1330" />
+        <Record n_ID="1451021" n_mature_time="22700" n_feedingneed_id="1811001" n_feedingneed_num="1" n_reward_id="2005" n_order_id="5" n_max_num="1" n_cost_type="1" n_cost_num="30000" n_time1="1140" n_time2="1590" n_time3="2270" />
+    </Table>
+</ExData>

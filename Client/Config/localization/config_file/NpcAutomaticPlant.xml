@@ -1,0 +1,33 @@
+<ExData>
+    <Table Name="NpcAutomaticPlant">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_mature_time" DataType="1" />
+            <Column Name="n_reward_id" DataType="1" />
+            <Column Name="n_max_num" DataType="1" />
+            <Column Name="n_max_num_01" DataType="1" />
+            <Column Name="n_time1" DataType="1" />
+            <Column Name="n_time2" DataType="1" />
+            <Column Name="n_time3" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_plot_num" DataType="1" Value="5" />
+        <Attribute Name="s_cost_1" DataType="4" Value="1,2500" />
+        <Attribute Name="s_cost_2" DataType="4" Value="1,5000" />
+        <Attribute Name="s_cost_3" DataType="4" Value="1,7500" />
+        <Attribute Name="s_cost_4" DataType="4" Value="1,10000" />
+        <Attribute Name="s_cost_5" DataType="4" Value="1,13000" />
+        <Attribute Name="s_initial_position_01" DataType="4" Value="330,8" />
+        <Attribute Name="s_initial_position_02" DataType="4" Value="337,8" />
+        <Attribute Name="s_initial_position_03" DataType="4" Value="344,8" />
+        <Attribute Name="s_initial_position_04" DataType="4" Value="333,13" />
+        <Attribute Name="s_initial_position_05" DataType="4" Value="341,13" />
+        <Record n_ID="1700300" n_mature_time="1100" n_reward_id="1001" n_max_num="5" n_max_num_01="6" n_time1="60" n_time2="80" n_time3="110" />
+        <Record n_ID="1700310" n_mature_time="3000" n_reward_id="1002" n_max_num="5" n_max_num_01="6" n_time1="150" n_time2="210" n_time3="300" />
+        <Record n_ID="1701210" n_mature_time="5400" n_reward_id="1003" n_max_num="3" n_max_num_01="3" n_time1="270" n_time2="380" n_time3="0" />
+        <Record n_ID="1700330" n_mature_time="4200" n_reward_id="1004" n_max_num="3" n_max_num_01="6" n_time1="210" n_time2="290" n_time3="420" />
+        <Record n_ID="1700320" n_mature_time="14400" n_reward_id="1005" n_max_num="3" n_max_num_01="6" n_time1="720" n_time2="1010" n_time3="1440" />
+        <Record n_ID="1700340" n_mature_time="5300" n_reward_id="1006" n_max_num="3" n_max_num_01="6" n_time1="270" n_time2="370" n_time3="530" />
+        <Record n_ID="1700350" n_mature_time="20000" n_reward_id="1007" n_max_num="3" n_max_num_01="3" n_time1="1000" n_time2="1400" n_time3="2000" />
+        <Record n_ID="1700360" n_mature_time="25000" n_reward_id="1008" n_max_num="2" n_max_num_01="2" n_time1="1250" n_time2="1750" n_time3="2500" />
+    </Table>
+</ExData>

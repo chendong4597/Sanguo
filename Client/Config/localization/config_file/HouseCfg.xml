@@ -1,0 +1,73 @@
+<ExData>
+    <Table Name="HouseCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_X" DataType="1" />
+            <Column Name="n_Y" DataType="1" />
+            <Column Name="n_HouseTpy" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_HouseNum" DataType="1" Value="100" />
+        <Record n_ID="1000" n_X="0" n_Y="0" n_HouseTpy="2001" />
+        <Record n_ID="1001" n_X="0" n_Y="0" n_HouseTpy="3001" />
+        <Record n_ID="1002" n_X="0" n_Y="0" n_HouseTpy="4001" />
+        <Record n_ID="1" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="2" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="3" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="4" n_X="0" n_Y="0" n_HouseTpy="1002" />
+        <Record n_ID="5" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="6" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="7" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="8" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="9" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="10" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="11" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="12" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="13" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="14" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="15" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="16" n_X="0" n_Y="0" n_HouseTpy="1001" />
+        <Record n_ID="17" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="18" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="19" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="20" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="21" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="22" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="23" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="24" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="25" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="26" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="27" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="28" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="29" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="30" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="31" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="32" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="33" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="34" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="35" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="36" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="37" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="38" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="39" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="40" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="41" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="42" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="43" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="44" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="45" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="46" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="47" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="48" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="49" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="50" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="51" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="52" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="53" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="54" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="55" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="56" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="57" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="58" n_X="0" n_Y="0" n_HouseTpy="1000" />
+        <Record n_ID="59" n_X="0" n_Y="0" n_HouseTpy="1000" />
+    </Table>
+</ExData>

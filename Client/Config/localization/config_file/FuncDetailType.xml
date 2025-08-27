@@ -1,0 +1,27 @@
+<ExData>
+    <Table Name="FuncDetailType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_param" DataType="1" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" s_Name="cfg_func_1" n_param="0" s_desc="攻 城" />
+        <Record n_ID="2" s_Name="cfg_func_2" n_param="0" s_desc="仓 库" />
+        <Record n_ID="3" s_Name="cfg_func_3" n_param="0" s_desc="武器商店" />
+        <Record n_ID="4" s_Name="cfg_func_4" n_param="2000" s_desc="种子商店" />
+        <Record n_ID="5" s_Name="cfg_func_5" n_param="2003" s_desc="杂货商店" />
+        <Record n_ID="6" s_Name="cfg_func_6" n_param="0" s_desc="外形商店" />
+        <Record n_ID="7" s_Name="cfg_func_7" n_param="2004" s_desc="药品商店" />
+        <Record n_ID="8" s_Name="cfg_func_8" n_param="2002" s_desc="食物商店" />
+        <Record n_ID="9" s_Name="cfg_func_9" n_param="2001" s_desc="杂货铺" />
+        <Record n_ID="10" s_Name="cfg_func_10" n_param="0" s_desc="祈福" />
+        <Record n_ID="11" s_Name="cfg_func_11" n_param="0" s_desc="居民管理" />
+        <Record n_ID="12" s_Name="cfg_func_12" n_param="0" s_desc="开城门" />
+        <Record n_ID="13" s_Name="cfg_func_13" n_param="0" s_desc="图鉴" />
+        <Record n_ID="14" s_Name="cfg_func_14" n_param="0" s_desc="军营官" />
+        <Record n_ID="15" s_Name="cfg_func_15" n_param="0" s_desc="试炼战场" />
+        <Record n_ID="16" s_Name="cfg_func_16" n_param="0" s_desc="捐献" />
+        <Record n_ID="17" s_Name="cfg_func_17" n_param="0" s_desc="军粮援助" />
+    </Table>
+</ExData>

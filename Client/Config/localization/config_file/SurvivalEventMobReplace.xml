@@ -1,0 +1,11 @@
+<ExData>
+    <Table Name="SurvivalEventMobReplace">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_SurvivalEventID" DataType="1" />
+            <Column Name="n_MobID" DataType="1" />
+            <Column Name="n_ReplaceMobID" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_SurvivalEventID="1" n_MobID="109" n_ReplaceMobID="10002" />
+    </Table>
+</ExData>

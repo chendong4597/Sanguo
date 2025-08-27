@@ -1,0 +1,74 @@
+<ExData>
+    <Table Name="BuildTowerCrystalBuff">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_need_level" DataType="1" />
+            <Column Name="n_buff_id" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="s_unlock_item" DataType="4" />
+            <Column Name="n_buff_duration" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_default_crystal" DataType="1" Value="2300" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1" n_need_level="1" n_buff_id="70126" s_name="±©Å­" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="2" n_need_level="1" n_buff_id="70127" s_name="°ÁÑª" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="3" n_need_level="2" n_buff_id="70126" s_name="±©Å­" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="4" n_need_level="2" n_buff_id="70127" s_name="°ÁÑª" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="5" n_need_level="3" n_buff_id="70126" s_name="±©Å­" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="6" n_need_level="3" n_buff_id="70127" s_name="°ÁÑª" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="7" n_need_level="4" n_buff_id="70126" s_name="±©Å­" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="8" n_need_level="4" n_buff_id="70127" s_name="°ÁÑª" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="9" n_need_level="5" n_buff_id="70126" s_name="±©Å­" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="10" n_need_level="5" n_buff_id="70127" s_name="°ÁÑª" s_unlock_item="[1:1000]" n_buff_duration="300" />
+        <Record n_ID="11" n_need_level="6" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="12" n_need_level="6" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="13" n_need_level="7" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="14" n_need_level="7" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="15" n_need_level="8" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="16" n_need_level="8" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="17" n_need_level="9" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="18" n_need_level="9" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="19" n_need_level="10" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="20" n_need_level="10" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="21" n_need_level="11" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="22" n_need_level="11" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="23" n_need_level="12" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="24" n_need_level="12" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="25" n_need_level="13" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="26" n_need_level="13" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="27" n_need_level="14" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="28" n_need_level="14" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="29" n_need_level="15" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="30" n_need_level="15" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="31" n_need_level="16" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="32" n_need_level="16" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="33" n_need_level="17" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="34" n_need_level="17" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="35" n_need_level="18" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="36" n_need_level="18" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="37" n_need_level="19" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="38" n_need_level="19" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="39" n_need_level="20" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="40" n_need_level="20" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="41" n_need_level="21" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="42" n_need_level="21" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="43" n_need_level="22" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="44" n_need_level="22" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="45" n_need_level="23" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="46" n_need_level="23" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="47" n_need_level="24" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="48" n_need_level="24" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="49" n_need_level="25" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="50" n_need_level="25" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="51" n_need_level="26" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="52" n_need_level="26" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="53" n_need_level="27" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="54" n_need_level="27" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="55" n_need_level="28" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="56" n_need_level="28" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="57" n_need_level="29" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="58" n_need_level="29" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="59" n_need_level="30" n_buff_id="70128" s_name="Ç¿½¡" s_unlock_item="[2:80]" n_buff_duration="300" />
+        <Record n_ID="60" n_need_level="30" n_buff_id="70129" s_name="ÁéÓù" s_unlock_item="[2:80]" n_buff_duration="300" />
+    </Table>
+</ExData>

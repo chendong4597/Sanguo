@@ -1,0 +1,29 @@
+<ExData>
+    <Table Name="BuildCfgTemplate">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_build_type" DataType="1" />
+            <Column Name="n_direction" DataType="1" />
+            <Column Name="n_stick_type" DataType="1" />
+            <Column Name="s_offset" DataType="4" />
+            <Column Name="s_rotation" DataType="4" />
+            <Column Name="s_grids" DataType="4" />
+            <Column Name="s_stick_points" DataType="4" />
+            <Column Name="n_attach_to_block" DataType="1" />
+            <Column Name="s_TransformInfo_id" DataType="4" />
+            <Column Name="n_fog_unlock_x" DataType="1" />
+            <Column Name="n_fog_unlock_y" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_test" DataType="1" Value="5" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1481001" n_build_type="1481001" n_direction="0" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1482001" n_build_type="1482001" n_direction="3" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="[-1;0]" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1483001" n_build_type="1483001" n_direction="1" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="[1;0]" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1484001" n_build_type="1484001" n_direction="2" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="[0;-1]" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1485001" n_build_type="1485001" n_direction="0" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1486001" n_build_type="1486001" n_direction="0" n_stick_type="2" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1487001" n_build_type="1487001" n_direction="0" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1488001" n_build_type="1488001" n_direction="0" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+        <Record n_ID="1489001" n_build_type="1489001" n_direction="0" n_stick_type="1" s_offset="0,0,-1.5" s_rotation="0,0,0" s_grids="" s_stick_points="[0;0;1]" n_attach_to_block="1" s_TransformInfo_id="" n_fog_unlock_x="0" n_fog_unlock_y="0" />
+    </Table>
+</ExData>

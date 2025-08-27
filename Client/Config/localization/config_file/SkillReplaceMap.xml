@@ -1,0 +1,101 @@
+<ExData>
+    <Table Name="SkillReplaceMap">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_CosSkillId" DataType="1" />
+            <Column Name="n_OldSkillId" DataType="1" />
+            <Column Name="n_NewSkillId" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_CosSkillId="20209" n_OldSkillId="19001" n_NewSkillId="20209" />
+        <Record n_ID="2" n_CosSkillId="20209" n_OldSkillId="19005" n_NewSkillId="20209" />
+        <Record n_ID="3" n_CosSkillId="20209" n_OldSkillId="20203" n_NewSkillId="20209" />
+        <Record n_ID="4" n_CosSkillId="20209" n_OldSkillId="20216" n_NewSkillId="20209" />
+        <Record n_ID="5" n_CosSkillId="20209" n_OldSkillId="50002" n_NewSkillId="20209" />
+        <Record n_ID="6" n_CosSkillId="20209" n_OldSkillId="50008" n_NewSkillId="20209" />
+        <Record n_ID="7" n_CosSkillId="20207" n_OldSkillId="19003" n_NewSkillId="20207" />
+        <Record n_ID="8" n_CosSkillId="20207" n_OldSkillId="19003" n_NewSkillId="20207" />
+        <Record n_ID="9" n_CosSkillId="20207" n_OldSkillId="20204" n_NewSkillId="20207" />
+        <Record n_ID="10" n_CosSkillId="20207" n_OldSkillId="20213" n_NewSkillId="20207" />
+        <Record n_ID="11" n_CosSkillId="20207" n_OldSkillId="50004" n_NewSkillId="20207" />
+        <Record n_ID="12" n_CosSkillId="20207" n_OldSkillId="50020" n_NewSkillId="20207" />
+        <Record n_ID="13" n_CosSkillId="130003" n_OldSkillId="20218" n_NewSkillId="130003" />
+        <Record n_ID="14" n_CosSkillId="130003" n_OldSkillId="20219" n_NewSkillId="130003" />
+        <Record n_ID="15" n_CosSkillId="130003" n_OldSkillId="20220" n_NewSkillId="130003" />
+        <Record n_ID="16" n_CosSkillId="130003" n_OldSkillId="20221" n_NewSkillId="130003" />
+        <Record n_ID="17" n_CosSkillId="130003" n_OldSkillId="20222" n_NewSkillId="130003" />
+        <Record n_ID="18" n_CosSkillId="130003" n_OldSkillId="20223" n_NewSkillId="130003" />
+        <Record n_ID="19" n_CosSkillId="130003" n_OldSkillId="20226" n_NewSkillId="130003" />
+        <Record n_ID="20" n_CosSkillId="130003" n_OldSkillId="20224" n_NewSkillId="130003" />
+        <Record n_ID="21" n_CosSkillId="130003" n_OldSkillId="20225" n_NewSkillId="130003" />
+        <Record n_ID="22" n_CosSkillId="130003" n_OldSkillId="20228" n_NewSkillId="130003" />
+        <Record n_ID="23" n_CosSkillId="130003" n_OldSkillId="20229" n_NewSkillId="130003" />
+        <Record n_ID="24" n_CosSkillId="130003" n_OldSkillId="50005" n_NewSkillId="130003" />
+        <Record n_ID="25" n_CosSkillId="130003" n_OldSkillId="50010" n_NewSkillId="130003" />
+        <Record n_ID="26" n_CosSkillId="130003" n_OldSkillId="20161" n_NewSkillId="130003" />
+        <Record n_ID="27" n_CosSkillId="130003" n_OldSkillId="20217" n_NewSkillId="130003" />
+        <Record n_ID="28" n_CosSkillId="130003" n_OldSkillId="20151" n_NewSkillId="130003" />
+        <Record n_ID="29" n_CosSkillId="20191" n_OldSkillId="31001" n_NewSkillId="20191" />
+        <Record n_ID="30" n_CosSkillId="20191" n_OldSkillId="31002" n_NewSkillId="20191" />
+        <Record n_ID="31" n_CosSkillId="20191" n_OldSkillId="110171" n_NewSkillId="20191" />
+        <Record n_ID="32" n_CosSkillId="20191" n_OldSkillId="110221" n_NewSkillId="20191" />
+        <Record n_ID="33" n_CosSkillId="20191" n_OldSkillId="10271" n_NewSkillId="20191" />
+        <Record n_ID="34" n_CosSkillId="20191" n_OldSkillId="20171" n_NewSkillId="20191" />
+        <Record n_ID="35" n_CosSkillId="20191" n_OldSkillId="20202" n_NewSkillId="20191" />
+        <Record n_ID="36" n_CosSkillId="20191" n_OldSkillId="50109" n_NewSkillId="20191" />
+        <Record n_ID="37" n_CosSkillId="20191" n_OldSkillId="31002" n_NewSkillId="20191" />
+        <Record n_ID="38" n_CosSkillId="20191" n_OldSkillId="10319" n_NewSkillId="20191" />
+        <Record n_ID="39" n_CosSkillId="20191" n_OldSkillId="50001" n_NewSkillId="20191" />
+        <Record n_ID="40" n_CosSkillId="20191" n_OldSkillId="20151" n_NewSkillId="20191" />
+        <Record n_ID="41" n_CosSkillId="20191" n_OldSkillId="50007" n_NewSkillId="20191" />
+        <Record n_ID="42" n_CosSkillId="20191" n_OldSkillId="50022" n_NewSkillId="20191" />
+        <Record n_ID="43" n_CosSkillId="20191" n_OldSkillId="50009" n_NewSkillId="20191" />
+        <Record n_ID="44" n_CosSkillId="20191" n_OldSkillId="20151" n_NewSkillId="20191" />
+        <Record n_ID="45" n_CosSkillId="20191" n_OldSkillId="50011" n_NewSkillId="20191" />
+        <Record n_ID="46" n_CosSkillId="20191" n_OldSkillId="50012" n_NewSkillId="20191" />
+        <Record n_ID="47" n_CosSkillId="20181" n_OldSkillId="20218" n_NewSkillId="20181" />
+        <Record n_ID="48" n_CosSkillId="20181" n_OldSkillId="20219" n_NewSkillId="20181" />
+        <Record n_ID="49" n_CosSkillId="20181" n_OldSkillId="20220" n_NewSkillId="20181" />
+        <Record n_ID="50" n_CosSkillId="20181" n_OldSkillId="20221" n_NewSkillId="20181" />
+        <Record n_ID="51" n_CosSkillId="20181" n_OldSkillId="20222" n_NewSkillId="20181" />
+        <Record n_ID="52" n_CosSkillId="20181" n_OldSkillId="20223" n_NewSkillId="20181" />
+        <Record n_ID="53" n_CosSkillId="20181" n_OldSkillId="20226" n_NewSkillId="20181" />
+        <Record n_ID="54" n_CosSkillId="20181" n_OldSkillId="20224" n_NewSkillId="20181" />
+        <Record n_ID="55" n_CosSkillId="20181" n_OldSkillId="20225" n_NewSkillId="20181" />
+        <Record n_ID="56" n_CosSkillId="20181" n_OldSkillId="20228" n_NewSkillId="20181" />
+        <Record n_ID="57" n_CosSkillId="20181" n_OldSkillId="20229" n_NewSkillId="20181" />
+        <Record n_ID="58" n_CosSkillId="20181" n_OldSkillId="50005" n_NewSkillId="20181" />
+        <Record n_ID="59" n_CosSkillId="20181" n_OldSkillId="50010" n_NewSkillId="20181" />
+        <Record n_ID="60" n_CosSkillId="20181" n_OldSkillId="20161" n_NewSkillId="20181" />
+        <Record n_ID="61" n_CosSkillId="20181" n_OldSkillId="20217" n_NewSkillId="20181" />
+        <Record n_ID="62" n_CosSkillId="20181" n_OldSkillId="20151" n_NewSkillId="20181" />
+        <Record n_ID="63" n_CosSkillId="20208" n_OldSkillId="20218" n_NewSkillId="20208" />
+        <Record n_ID="64" n_CosSkillId="20208" n_OldSkillId="20219" n_NewSkillId="20208" />
+        <Record n_ID="65" n_CosSkillId="20208" n_OldSkillId="20220" n_NewSkillId="20208" />
+        <Record n_ID="66" n_CosSkillId="20208" n_OldSkillId="20221" n_NewSkillId="20208" />
+        <Record n_ID="67" n_CosSkillId="20208" n_OldSkillId="20222" n_NewSkillId="20208" />
+        <Record n_ID="68" n_CosSkillId="20208" n_OldSkillId="20223" n_NewSkillId="20208" />
+        <Record n_ID="69" n_CosSkillId="20208" n_OldSkillId="20226" n_NewSkillId="20208" />
+        <Record n_ID="70" n_CosSkillId="20208" n_OldSkillId="20224" n_NewSkillId="20208" />
+        <Record n_ID="71" n_CosSkillId="20208" n_OldSkillId="20225" n_NewSkillId="20208" />
+        <Record n_ID="72" n_CosSkillId="20208" n_OldSkillId="20228" n_NewSkillId="20208" />
+        <Record n_ID="73" n_CosSkillId="20208" n_OldSkillId="20229" n_NewSkillId="20208" />
+        <Record n_ID="74" n_CosSkillId="20208" n_OldSkillId="50005" n_NewSkillId="20208" />
+        <Record n_ID="75" n_CosSkillId="20208" n_OldSkillId="50010" n_NewSkillId="20208" />
+        <Record n_ID="76" n_CosSkillId="20208" n_OldSkillId="20161" n_NewSkillId="20208" />
+        <Record n_ID="77" n_CosSkillId="20208" n_OldSkillId="20217" n_NewSkillId="20208" />
+        <Record n_ID="78" n_CosSkillId="20208" n_OldSkillId="20151" n_NewSkillId="20208" />
+        <Record n_ID="79" n_CosSkillId="20210" n_OldSkillId="20021" n_NewSkillId="20210" />
+        <Record n_ID="80" n_CosSkillId="20210" n_OldSkillId="20041" n_NewSkillId="20210" />
+        <Record n_ID="81" n_CosSkillId="20210" n_OldSkillId="20101" n_NewSkillId="20210" />
+        <Record n_ID="82" n_CosSkillId="20210" n_OldSkillId="20131" n_NewSkillId="20210" />
+        <Record n_ID="83" n_CosSkillId="20210" n_OldSkillId="20206" n_NewSkillId="20210" />
+        <Record n_ID="84" n_CosSkillId="20210" n_OldSkillId="50014" n_NewSkillId="20210" />
+        <Record n_ID="85" n_CosSkillId="20212" n_OldSkillId="19003" n_NewSkillId="20212" />
+        <Record n_ID="86" n_CosSkillId="20212" n_OldSkillId="19003" n_NewSkillId="20212" />
+        <Record n_ID="87" n_CosSkillId="20212" n_OldSkillId="20204" n_NewSkillId="20212" />
+        <Record n_ID="88" n_CosSkillId="20212" n_OldSkillId="20213" n_NewSkillId="20212" />
+        <Record n_ID="89" n_CosSkillId="20212" n_OldSkillId="50004" n_NewSkillId="20212" />
+        <Record n_ID="90" n_CosSkillId="20212" n_OldSkillId="50020" n_NewSkillId="20212" />
+        <Record n_ID="91" n_CosSkillId="19009" n_OldSkillId="19001" n_NewSkillId="19009" />
+    </Table>
+</ExData>

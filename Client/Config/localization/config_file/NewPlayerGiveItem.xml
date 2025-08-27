@@ -1,0 +1,28 @@
+<ExData>
+    <Table Name="NewPlayerGiveItem">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_type" DataType="1" />
+            <Column Name="n_itemid" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="n_count" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_type="1" n_itemid="1300001" s_name="Wood Sword" n_count="1" />
+        <Record n_ID="2" n_type="1" n_itemid="1301804" s_name="horse" n_count="1" />
+        <Record n_ID="3" n_type="1" n_itemid="1320002" s_name="equip" n_count="1" />
+        <Record n_ID="4" n_type="1" n_itemid="1460000" s_name="item1" n_count="1" />
+        <Record n_ID="5" n_type="1" n_itemid="1460800" s_name="item2" n_count="1" />
+        <Record n_ID="6" n_type="1" n_itemid="1460200" s_name="item4" n_count="1" />
+        <Record n_ID="7" n_type="1" n_itemid="1471001" s_name="item5" n_count="1" />
+        <Record n_ID="8" n_type="1" n_itemid="1700220" s_name="item6" n_count="1" />
+        <Record n_ID="9" n_type="1" n_itemid="1700150" s_name="item7" n_count="1" />
+        <Record n_ID="10" n_type="1" n_itemid="1900000" s_name="item8" n_count="10" />
+        <Record n_ID="11" n_type="1" n_itemid="1000" s_name="item9" n_count="100" />
+        <Record n_ID="12" n_type="1" n_itemid="1020" s_name="item10" n_count="100" />
+        <Record n_ID="13" n_type="1" n_itemid="1040" s_name="item11" n_count="100" />
+        <Record n_ID="14" n_type="1" n_itemid="1410001" s_name="item12" n_count="5" />
+        <Record n_ID="15" n_type="1" n_itemid="1410002" s_name="item13" n_count="3" />
+        <Record n_ID="16" n_type="1" n_itemid="1461100" s_name="item15" n_count="1" />
+        <Record n_ID="17" n_type="1" n_itemid="1700120" s_name="item16" n_count="1" />
+    </Table>
+</ExData>

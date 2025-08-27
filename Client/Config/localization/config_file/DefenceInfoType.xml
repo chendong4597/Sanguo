@@ -1,0 +1,36 @@
+<ExData>
+    <Table Name="DefenceInfoType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_PosTpy" DataType="1" />
+            <Column Name="n_Width" DataType="1" />
+            <Column Name="n_Height" DataType="1" />
+            <Column Name="n_RotaTpy" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_isContinue" DataType="1" />
+            <Column Name="n_Index" DataType="1" />
+            <Column Name="n_SkillId" DataType="1" />
+            <Column Name="f_IntertTm" DataType="3" />
+            <Column Name="n_AtkSight" DataType="1" />
+            <Column Name="n_LoseSight" DataType="1" />
+            <Column Name="n_AtkAngle" DataType="1" />
+            <Column Name="n_AtkNum" DataType="1" />
+            <Column Name="n_AI" DataType="1" />
+            <Column Name="s_Foder" DataType="4" />
+            <Column Name="s_Path" DataType="4" />
+            <Column Name="s_Mesh" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="/Game/Models/defence/entity" />
+        <Record n_ID="1481001" n_Type="0" n_PosTpy="0" n_Width="2" n_Height="1" n_RotaTpy="0" s_Name="¼ÓÅ©ÅÚ" n_isContinue="0" n_Index="1" n_SkillId="20001" f_IntertTm="5.000000" n_AtkSight="50000" n_LoseSight="20000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="fireball_cannon_01" s_Path="BP_FireCannon" s_Mesh="fireball_cannon_01" s_desc="Ã»ÓÐÎäÆ÷" />
+        <Record n_ID="1482001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="0" s_Name="´óÅÚ" n_isContinue="0" n_Index="1" n_SkillId="20002" f_IntertTm="10.000000" n_AtkSight="50000" n_LoseSight="20000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="giant_cannon" s_Path="BP_giant" s_Mesh="giant_cannon" s_desc="" />
+        <Record n_ID="1483001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="¼¤¹âÅÚåó" n_isContinue="0" n_Index="1" n_SkillId="20003" f_IntertTm="5.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="crystal_freezer" s_Path="BP_crystal_freezer" s_Mesh="crystal_freezer" s_desc="" />
+        <Record n_ID="1484001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="Ê®×Ö¹­" n_isContinue="0" n_Index="1" n_SkillId="20004" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="piercing_crossbow_01" s_Path="BP_crossbow" s_Mesh="piercing_crossbow_01" s_desc="" />
+        <Record n_ID="1485001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="¶¾åó" n_isContinue="0" n_Index="1" n_SkillId="20005" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="poison_splasher" s_Path="BP_poisionsplash" s_Mesh="poison_splasher" s_desc="" />
+        <Record n_ID="1486001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="ÅÚåó" n_isContinue="0" n_Index="1" n_SkillId="20006" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="frost_sniper" s_Path="BP_frost" s_Mesh="frost_sniper" s_desc="" />
+        <Record n_ID="1487001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="Á¬·¢åó" n_isContinue="0" n_Index="1" n_SkillId="20007" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="lightning_gun" s_Path="BP_lightning_gun" s_Mesh="lightning_gun" s_desc="" />
+        <Record n_ID="1488001" n_Type="0" n_PosTpy="0" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="³å»÷²¨ÅÚ" n_isContinue="0" n_Index="1" n_SkillId="20008" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="pulsewave_cannon" s_Path="BP_Pulsewave" s_Mesh="pulsewave_cannon" s_desc="" />
+        <Record n_ID="1489001" n_Type="0" n_PosTpy="1" n_Width="1" n_Height="1" n_RotaTpy="1" s_Name="µ¥¼ýÍ·åó" n_isContinue="0" n_Index="1" n_SkillId="20009" f_IntertTm="3.000000" n_AtkSight="50000" n_LoseSight="8000" n_AtkAngle="180" n_AtkNum="1" n_AI="2" s_Foder="spiral_harpoon_gu" s_Path="BP_spiral" s_Mesh="spiral_harpoon_gu" s_desc="" />
+    </Table>
+</ExData>

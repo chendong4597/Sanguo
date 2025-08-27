@@ -1,0 +1,28 @@
+<ExData>
+    <Table Name="DefencePosTpy">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_PosTpy" DataType="1" />
+            <Column Name="n_CameraLen" DataType="1" />
+            <Column Name="n_AnglesR" DataType="1" />
+            <Column Name="n_AnglesY" DataType="1" />
+            <Column Name="n_BeginX" DataType="1" />
+            <Column Name="n_BeginY" DataType="1" />
+            <Column Name="n_BeginZ" DataType="1" />
+            <Column Name="n_Width" DataType="1" />
+            <Column Name="n_Height" DataType="1" />
+            <Column Name="s_HeroRange" DataType="4" />
+            <Column Name="s_Range" DataType="4" />
+            <Column Name="s_BPTag" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="n_BlockHeight" DataType="1" Value="64" />
+        <Attribute Name="n_BlockWidth" DataType="1" Value="64" />
+        <Attribute Name="s_Path" DataType="4" Value="" />
+        <Record n_ID="1" n_Type="0" n_PosTpy="1" n_CameraLen="800" n_AnglesR="-45" n_AnglesY="-90" n_BeginX="13125" n_BeginY="35862" n_BeginZ="0" n_Width="70" n_Height="60" s_HeroRange="13125,35862|13125,40217|21805,40217|21805,35862" s_Range="13125,35862|13125,40217|21805,40217|21805,35862" s_BPTag="BuidPosPlane1" s_desc="Ã»ÓÐÎäÆ÷" />
+        <Record n_ID="2" n_Type="0" n_PosTpy="4" n_CameraLen="1200" n_AnglesR="0" n_AnglesY="-90" n_BeginX="13125" n_BeginY="35700" n_BeginZ="415" n_Width="70" n_Height="2" s_HeroRange="13125,35637|13125,35861|21805,35861|21805,35637" s_Range="13125,35637|13125,35861|21805,35861|21805,35637" s_BPTag="BuidPosPlane4" s_desc="" />
+        <Record n_ID="3" n_Type="0" n_PosTpy="8" n_CameraLen="800" n_AnglesR="-45" n_AnglesY="-90" n_BeginX="13125" n_BeginY="35454" n_BeginZ="550" n_Width="70" n_Height="2" s_HeroRange="13125,35457|13125,35632|21805,35632|21805,35457" s_Range="13125,35457|13125,35632|21805,35632|21805,35457" s_BPTag="BuidPosPlane5" s_desc="" />
+        <Record n_ID="4" n_Type="1" n_PosTpy="0" n_CameraLen="800" n_AnglesR="-45" n_AnglesY="23" n_BeginX="12410" n_BeginY="22760" n_BeginZ="0" n_Width="70" n_Height="110" s_HeroRange="12456,-13566|12456,-13566|12456,-13570|" s_Range="12456,-13566|12456,-13566|12456,-13570|" s_BPTag="BuidPosPlane6" s_desc="" />
+    </Table>
+</ExData>

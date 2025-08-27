@@ -1,0 +1,65 @@
+<ExData>
+    <Table Name="MaterialType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="n_donaterate" DataType="1" />
+            <Column Name="n_army" DataType="1" />
+            <Column Name="s_desc" DataType="4" />
+            <Column Name="s_type_name" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="" />
+        <Record n_ID="1000" n_Type="0" s_icon="mat_rice" s_name="cfg_mat_rice" n_donaterate="1" n_army="1" s_desc="¹¤ÈË" s_type_name="cfg_mattype_0" />
+        <Record n_ID="1001" n_Type="0" s_icon="mat_wheat" s_name="cfg_mat_wheat" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_0" />
+        <Record n_ID="1002" n_Type="0" s_icon="mat_potato" s_name="cfg_mat_potato" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_0" />
+        <Record n_ID="1010" n_Type="1" s_icon="mat_jd" s_name="cfg_mat_jd" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1011" n_Type="1" s_icon="mat_iron_bar" s_name="cfg_mat_iron_bar" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1012" n_Type="1" s_icon="mat_bar" s_name="cfg_mat_bar" n_donaterate="3" n_army="3" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1013" n_Type="1" s_icon="mat_tie" s_name="cfg_mat_tie" n_donaterate="4" n_army="4" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1014" n_Type="1" s_icon="mat_tin_bar" s_name="cfg_mat_tin_bar" n_donaterate="5" n_army="5" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1015" n_Type="1" s_icon="mat_gold_bar" s_name="cfg_mat_gold_bar" n_donaterate="6" n_army="6" s_desc="" s_type_name="cfg_mattype_1" />
+        <Record n_ID="1020" n_Type="2" s_icon="mat_wood_1" s_name="cfg_mat_wood_1" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1021" n_Type="2" s_icon="mat_wood_2" s_name="cfg_mat_wood_2" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1022" n_Type="2" s_icon="mat_wood_3" s_name="cfg_mat_wood_3" n_donaterate="2" n_army="5" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1023" n_Type="2" s_icon="mat_wood_4" s_name="cfg_mat_wood_4" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1024" n_Type="2" s_icon="mat_wood_5" s_name="cfg_mat_wood_5" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1025" n_Type="2" s_icon="mat_wood_6" s_name="cfg_mat_wood_6" n_donaterate="5" n_army="6" s_desc="" s_type_name="cfg_mattype_2" />
+        <Record n_ID="1030" n_Type="3" s_icon="mat_chicken" s_name="cfg_mat_chicken" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_3" />
+        <Record n_ID="1031" n_Type="3" s_icon="mat_ham" s_name="cfg_mat_ham" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_3" />
+        <Record n_ID="1032" n_Type="3" s_icon="mat_cowhide" s_name="cfg_mat_cowhide" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_3" />
+        <Record n_ID="1033" n_Type="3" s_icon="mat_truffle" s_name="cfg_mat_truffle" n_donaterate="3" n_army="3" s_desc="" s_type_name="cfg_mattype_3" />
+        <Record n_ID="1034" n_Type="3" s_icon="mat_egg" s_name="cfg_mat_egg" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_3" />
+        <Record n_ID="1040" n_Type="4" s_icon="mat_ss" s_name="cfg_mat_ss" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_4" />
+        <Record n_ID="1041" n_Type="4" s_icon="mat_z" s_name="cfg_mat_z" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_4" />
+        <Record n_ID="1042" n_Type="4" s_icon="mat_sz" s_name="cfg_mat_sz" n_donaterate="2" n_army="1" s_desc="" s_type_name="cfg_mattype_4" />
+        <Record n_ID="1043" n_Type="4" s_icon="mat_glass" s_name="cfg_mat_glass" n_donaterate="4" n_army="1" s_desc="" s_type_name="cfg_mattype_4" />
+        <Record n_ID="1050" n_Type="5" s_icon="mat_milk" s_name="cfg_mat_milk" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_5" />
+        <Record n_ID="1051" n_Type="5" s_icon="mat_mutated_bat_stool" s_name="cfg_mat_mutated_bat_stool" n_donaterate="2" n_army="1" s_desc="" s_type_name="cfg_mattype_5" />
+        <Record n_ID="1052" n_Type="5" s_icon="mat_watermelon" s_name="cfg_mat_watermelon" n_donaterate="2" n_army="1" s_desc="" s_type_name="cfg_mattype_5" />
+        <Record n_ID="1053" n_Type="5" s_icon="mat_grape" s_name="cfg_mat_grape" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_5" />
+        <Record n_ID="1054" n_Type="5" s_icon="mat_grape1" s_name="cfg_mat_grape1" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_5" />
+        <Record n_ID="1060" n_Type="6" s_icon="mat_four_leaf_clover" s_name="cfg_mat_four_leaf_clover" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_6" />
+        <Record n_ID="1061" n_Type="6" s_icon="mat_succulent_sphere" s_name="cfg_mat_succulent_sphere" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_6" />
+        <Record n_ID="1062" n_Type="6" s_icon="mat_cactus" s_name="cfg_mat_cactus" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_6" />
+        <Record n_ID="1063" n_Type="6" s_icon="mat_mushroom" s_name="cfg_mat_mushroom" n_donaterate="4" n_army="4" s_desc="" s_type_name="cfg_mattype_6" />
+        <Record n_ID="1064" n_Type="6" s_icon="mat_lizar_posion" s_name="cfg_mat_lizar_posion" n_donaterate="10" n_army="6" s_desc="" s_type_name="cfg_mattype_6" />
+        <Record n_ID="1070" n_Type="7" s_icon="mat_sunflower" s_name="cfg_mat_sunflower" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_7" />
+        <Record n_ID="1071" n_Type="7" s_icon="mat_palm" s_name="cfg_mat_palm" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_7" />
+        <Record n_ID="1072" n_Type="7" s_icon="mat_magic_bean" s_name="cfg_mat_magic_bean" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_7" />
+        <Record n_ID="1080" n_Type="8" s_icon="mat_horsehide" s_name="cfg_mat_horsehide" n_donaterate="4" n_army="2" s_desc="" s_type_name="cfg_mattype_8" />
+        <Record n_ID="1081" n_Type="8" s_icon="mat_cotton" s_name="cfg_mat_cotton" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_8" />
+        <Record n_ID="1082" n_Type="8" s_icon="mat_fox" s_name="cfg_mat_fox" n_donaterate="9" n_army="6" s_desc="" s_type_name="cfg_mattype_8" />
+        <Record n_ID="1090" n_Type="9" s_icon="mat_hor" s_name="cfg_mat_hor" n_donaterate="5" n_army="1" s_desc="" s_type_name="cfg_mattype_9" />
+        <Record n_ID="1091" n_Type="9" s_icon="mat_hor_soul" s_name="cfg_mat_hor_soul" n_donaterate="7" n_army="5" s_desc="" s_type_name="cfg_mattype_9" />
+        <Record n_ID="1100" n_Type="10" s_icon="mat_lavender_violet" s_name="cfg_mat_lavender_violet" n_donaterate="1" n_army="1" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1101" n_Type="10" s_icon="mat_flowers_02" s_name="cfg_mat_flowers_02" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1102" n_Type="10" s_icon="mat_footprints" s_name="cfg_mat_footprints" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1103" n_Type="10" s_icon="mat_huangjin" s_name="cfg_mat_huangjin" n_donaterate="2" n_army="2" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1104" n_Type="10" s_icon="mat_fuling" s_name="cfg_mat_fuling" n_donaterate="3" n_army="3" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1105" n_Type="10" s_icon="mat_heshouw" s_name="cfg_mat_heshouw" n_donaterate="4" n_army="4" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1106" n_Type="10" s_icon="mat_rensheng" s_name="cfg_mat_rensheng" n_donaterate="5" n_army="5" s_desc="" s_type_name="cfg_mattype_10" />
+        <Record n_ID="1200" n_Type="11" s_icon="mat_rock" s_name="cfg_mat_rock" n_donaterate="8" n_army="8" s_desc="" s_type_name="cfg_mattype_11" />
+    </Table>
+</ExData>

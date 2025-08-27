@@ -1,0 +1,25 @@
+<ExData>
+    <Table Name="FuncNpcType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="s_say" DataType="4" />
+            <Column Name="s_HudIcon" DataType="4" />
+            <Column Name="s_func" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" s_icon="head_1019_1" s_Name="cfg_funcnpc_1" s_say="cfg_funcnpcsay_1" s_HudIcon="ps_icon_rent" s_func="" s_desc="守卫将士" />
+        <Record n_ID="2" s_icon="head_1003_3" s_Name="cfg_funcnpc_2" s_say="cfg_funcnpcsay_2" s_HudIcon="ps_game_icon_blood" s_func="11" s_desc="官府捕快" />
+        <Record n_ID="3" s_icon="head_1018_3" s_Name="cfg_funcnpc_3" s_say="cfg_funcnpcsay_3" s_HudIcon="ps_full" s_func="2,17" s_desc="仓库管理员" />
+        <Record n_ID="4" s_icon="head_1012_3" s_Name="cfg_funcnpc_4" s_say="cfg_funcnpcsay_4" s_HudIcon="ps_buy_animal" s_func="4,9" s_desc="杂货铺" />
+        <Record n_ID="5" s_icon="head_1023_3" s_Name="cfg_funcnpc_5" s_say="cfg_funcnpcsay_5" s_HudIcon="ps_npc_button_005" s_func="1,15" s_desc="副本传送" />
+        <Record n_ID="6" s_icon="head_1005_3" s_Name="cfg_funcnpc_6" s_say="cfg_funcnpcsay_6" s_HudIcon="ps_game_icon_charge" s_func="5" s_desc="衣服商店" />
+        <Record n_ID="7" s_icon="head_1008_3" s_Name="cfg_funcnpc_7" s_say="cfg_funcnpcsay_7" s_HudIcon="ps_npc_button_007" s_func="7" s_desc="药店" />
+        <Record n_ID="8" s_icon="head_1001_3" s_Name="cfg_funcnpc_8" s_say="cfg_funcnpcsay_8" s_HudIcon="ps_ignite" s_func="10" s_desc="镇妖塔传送" />
+        <Record n_ID="9" s_icon="head_1022_3" s_Name="cfg_funcnpc_9" s_say="cfg_funcnpcsay_9" s_HudIcon="ps_icon_resurrection" s_func="8,5" s_desc="酒家" />
+        <Record n_ID="10" s_icon="head_1019_3" s_Name="cfg_funcnpc_10" s_say="cfg_funcnpcsay_10" s_HudIcon="ps_control_bar" s_func="12" s_desc="开门官" />
+        <Record n_ID="11" s_icon="head_1019_3" s_Name="cfg_funcnpc_11" s_say="cfg_funcnpcsay_11" s_HudIcon="ps_game_icon_blood" s_func="13,16" s_desc="师爷 图鉴" />
+        <Record n_ID="12" s_icon="head_1019_3" s_Name="cfg_funcnpc_12" s_say="cfg_funcnpcsay_12" s_HudIcon="ps_tower_defense_button04" s_func="14" s_desc="军营官" />
+    </Table>
+</ExData>

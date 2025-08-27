@@ -1,0 +1,21 @@
+<ExData>
+    <Table Name="AchieveGroup">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_DetailID_0" DataType="1" />
+            <Column Name="n_DetailID_1" DataType="1" />
+            <Column Name="n_DetailID_2" DataType="1" />
+            <Column Name="n_DetailID_3" DataType="1" />
+            <Column Name="n_DetailID_4" DataType="1" />
+            <Column Name="n_DetailID_5" DataType="1" />
+            <Column Name="n_DetailID_6" DataType="1" />
+            <Column Name="n_DetailID_7" DataType="1" />
+            <Column Name="n_DetailID_8" DataType="1" />
+            <Column Name="n_DetailID_9" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1001" n_DetailID_0="60101001" n_DetailID_1="60102001" n_DetailID_2="60103001" n_DetailID_3="60104001" n_DetailID_4="60105001" n_DetailID_5="60107001" n_DetailID_6="60108001" n_DetailID_7="0" n_DetailID_8="0" n_DetailID_9="0" />
+        <Record n_ID="1002" n_DetailID_0="60201001" n_DetailID_1="60202001" n_DetailID_2="60203001" n_DetailID_3="60204001" n_DetailID_4="0" n_DetailID_5="0" n_DetailID_6="0" n_DetailID_7="0" n_DetailID_8="0" n_DetailID_9="0" />
+        <Record n_ID="1003" n_DetailID_0="60301001" n_DetailID_1="60302001" n_DetailID_2="60303001" n_DetailID_3="60304001" n_DetailID_4="60305001" n_DetailID_5="0" n_DetailID_6="0" n_DetailID_7="0" n_DetailID_8="0" n_DetailID_9="0" />
+        <Record n_ID="1004" n_DetailID_0="60401001" n_DetailID_1="60402001" n_DetailID_2="60403001" n_DetailID_3="60404001" n_DetailID_4="60405001" n_DetailID_5="60406001" n_DetailID_6="60407001" n_DetailID_7="0" n_DetailID_8="0" n_DetailID_9="0" />
+    </Table>
+</ExData>

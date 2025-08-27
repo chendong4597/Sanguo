@@ -1,0 +1,123 @@
+<ExData>
+    <Table Name="PlayerAttr">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_exp" DataType="1" />
+            <Column Name="n_HPM" DataType="1" />
+            <Column Name="n_HPR" DataType="1" />
+            <Column Name="n_MPM" DataType="1" />
+            <Column Name="n_MPR" DataType="1" />
+            <Column Name="n_AD" DataType="1" />
+            <Column Name="n_AP" DataType="1" />
+            <Column Name="n_ARM" DataType="1" />
+            <Column Name="n_MARM" DataType="1" />
+            <Column Name="n_Speed" DataType="1" />
+            <Column Name="n_MaxHuman" DataType="1" />
+            <Column Name="n_SellNpcs" DataType="1" />
+            <Column Name="n_BuyNpcs" DataType="1" />
+        </ColumnList>
+        <Attribute Name="f_AtkRange" DataType="3" Value="2.500000" />
+        <Attribute Name="f_AtkSpeed" DataType="3" Value="1.000000" />
+        <Attribute Name="f_HpUICheck" DataType="3" Value="2.000000" />
+        <Attribute Name="f_InitialVerticalVelocity" DataType="3" Value="4.800000" />
+        <Attribute Name="f_LongJumpTime" DataType="3" Value="0.400000" />
+        <Attribute Name="f_Move" DataType="3" Value="100.000000" />
+        <Attribute Name="f_PlayerHeight" DataType="3" Value="2.000000" />
+        <Attribute Name="f_PlayerWidth" DataType="3" Value="1.000000" />
+        <Attribute Name="f_Run" DataType="3" Value="100.000000" />
+        <Attribute Name="f_ShortJumpTime" DataType="3" Value="0.200000" />
+        <Attribute Name="f_Swim" DataType="3" Value="0.500000" />
+        <Attribute Name="n_AR" DataType="1" Value="0" />
+        <Attribute Name="n_ARP" DataType="1" Value="0" />
+        <Attribute Name="n_Breath" DataType="1" Value="100" />
+        <Attribute Name="n_CC_Hit" DataType="1" Value="0" />
+        <Attribute Name="n_CC_Res" DataType="1" Value="0" />
+        <Attribute Name="n_CRI" DataType="1" Value="10" />
+        <Attribute Name="n_CRID" DataType="1" Value="1000" />
+        <Attribute Name="n_Catch" DataType="1" Value="2" />
+        <Attribute Name="n_CharacterType" DataType="1" Value="1" />
+        <Attribute Name="n_DeadCoins" DataType="1" Value="50" />
+        <Attribute Name="n_DeadDurability" DataType="1" Value="50" />
+        <Attribute Name="n_DeadExp" DataType="1" Value="0" />
+        <Attribute Name="n_Dig" DataType="1" Value="1" />
+        <Attribute Name="n_FOV" DataType="1" Value="10" />
+        <Attribute Name="n_Fish" DataType="1" Value="10" />
+        <Attribute Name="n_Food" DataType="1" Value="10000" />
+        <Attribute Name="n_HPRS" DataType="1" Value="5" />
+        <Attribute Name="n_Jump" DataType="1" Value="3" />
+        <Attribute Name="n_Log" DataType="1" Value="1" />
+        <Attribute Name="n_MCRI" DataType="1" Value="10" />
+        <Attribute Name="n_MCRID" DataType="1" Value="1000" />
+        <Attribute Name="n_MPRS" DataType="1" Value="5" />
+        <Attribute Name="n_MRES" DataType="1" Value="0" />
+        <Attribute Name="n_MRP" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Dark" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Earth" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Fire" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Forst" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Light" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Poison" DataType="1" Value="0" />
+        <Attribute Name="n_MR_Thunder" DataType="1" Value="0" />
+        <Attribute Name="n_RES" DataType="1" Value="0" />
+        <Record n_ID="1" n_exp="100" n_HPM="60" n_HPR="1" n_MPM="60" n_MPR="1" n_AD="3" n_AP="3" n_ARM="1" n_MARM="1" n_Speed="450" n_MaxHuman="50" n_SellNpcs="0" n_BuyNpcs="0" />
+        <Record n_ID="2" n_exp="200" n_HPM="65" n_HPR="1" n_MPM="65" n_MPR="1" n_AD="3" n_AP="3" n_ARM="1" n_MARM="1" n_Speed="450" n_MaxHuman="54" n_SellNpcs="0" n_BuyNpcs="0" />
+        <Record n_ID="3" n_exp="300" n_HPM="70" n_HPR="1" n_MPM="70" n_MPR="1" n_AD="4" n_AP="4" n_ARM="2" n_MARM="2" n_Speed="455" n_MaxHuman="58" n_SellNpcs="0" n_BuyNpcs="0" />
+        <Record n_ID="4" n_exp="400" n_HPM="80" n_HPR="1" n_MPM="80" n_MPR="1" n_AD="4" n_AP="4" n_ARM="2" n_MARM="2" n_Speed="455" n_MaxHuman="62" n_SellNpcs="0" n_BuyNpcs="0" />
+        <Record n_ID="5" n_exp="500" n_HPM="90" n_HPR="1" n_MPM="90" n_MPR="1" n_AD="5" n_AP="5" n_ARM="2" n_MARM="2" n_Speed="460" n_MaxHuman="66" n_SellNpcs="1" n_BuyNpcs="1" />
+        <Record n_ID="6" n_exp="630" n_HPM="100" n_HPR="1" n_MPM="100" n_MPR="1" n_AD="5" n_AP="5" n_ARM="2" n_MARM="2" n_Speed="460" n_MaxHuman="70" n_SellNpcs="1" n_BuyNpcs="1" />
+        <Record n_ID="7" n_exp="770" n_HPM="110" n_HPR="1" n_MPM="110" n_MPR="1" n_AD="5" n_AP="5" n_ARM="2" n_MARM="2" n_Speed="460" n_MaxHuman="74" n_SellNpcs="1" n_BuyNpcs="1" />
+        <Record n_ID="8" n_exp="920" n_HPM="120" n_HPR="1" n_MPM="120" n_MPR="1" n_AD="6" n_AP="6" n_ARM="3" n_MARM="3" n_Speed="465" n_MaxHuman="78" n_SellNpcs="1" n_BuyNpcs="1" />
+        <Record n_ID="9" n_exp="1090" n_HPM="130" n_HPR="1" n_MPM="130" n_MPR="1" n_AD="6" n_AP="6" n_ARM="3" n_MARM="3" n_Speed="465" n_MaxHuman="82" n_SellNpcs="1" n_BuyNpcs="1" />
+        <Record n_ID="10" n_exp="1260" n_HPM="140" n_HPR="1" n_MPM="140" n_MPR="1" n_AD="7" n_AP="7" n_ARM="3" n_MARM="3" n_Speed="470" n_MaxHuman="86" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="11" n_exp="1450" n_HPM="152" n_HPR="1" n_MPM="152" n_MPR="1" n_AD="7" n_AP="7" n_ARM="3" n_MARM="3" n_Speed="470" n_MaxHuman="90" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="12" n_exp="1660" n_HPM="164" n_HPR="2" n_MPM="164" n_MPR="2" n_AD="8" n_AP="8" n_ARM="3" n_MARM="3" n_Speed="475" n_MaxHuman="94" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="13" n_exp="1880" n_HPM="176" n_HPR="2" n_MPM="176" n_MPR="2" n_AD="8" n_AP="8" n_ARM="4" n_MARM="4" n_Speed="480" n_MaxHuman="98" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="14" n_exp="2120" n_HPM="188" n_HPR="2" n_MPM="188" n_MPR="2" n_AD="9" n_AP="9" n_ARM="4" n_MARM="4" n_Speed="480" n_MaxHuman="102" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="15" n_exp="2380" n_HPM="200" n_HPR="2" n_MPM="200" n_MPR="2" n_AD="10" n_AP="10" n_ARM="5" n_MARM="5" n_Speed="485" n_MaxHuman="106" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="16" n_exp="2660" n_HPM="215" n_HPR="2" n_MPM="215" n_MPR="2" n_AD="10" n_AP="10" n_ARM="5" n_MARM="5" n_Speed="490" n_MaxHuman="110" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="17" n_exp="2960" n_HPM="230" n_HPR="2" n_MPM="230" n_MPR="2" n_AD="11" n_AP="11" n_ARM="5" n_MARM="5" n_Speed="490" n_MaxHuman="114" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="18" n_exp="3280" n_HPM="245" n_HPR="2" n_MPM="245" n_MPR="2" n_AD="11" n_AP="11" n_ARM="5" n_MARM="5" n_Speed="495" n_MaxHuman="118" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="19" n_exp="3620" n_HPM="260" n_HPR="2" n_MPM="260" n_MPR="2" n_AD="12" n_AP="12" n_ARM="5" n_MARM="5" n_Speed="495" n_MaxHuman="122" n_SellNpcs="2" n_BuyNpcs="2" />
+        <Record n_ID="20" n_exp="3990" n_HPM="275" n_HPR="2" n_MPM="275" n_MPR="2" n_AD="13" n_AP="13" n_ARM="6" n_MARM="6" n_Speed="500" n_MaxHuman="126" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="21" n_exp="4390" n_HPM="295" n_HPR="2" n_MPM="295" n_MPR="2" n_AD="14" n_AP="14" n_ARM="6" n_MARM="6" n_Speed="500" n_MaxHuman="130" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="22" n_exp="4820" n_HPM="315" n_HPR="2" n_MPM="315" n_MPR="2" n_AD="15" n_AP="15" n_ARM="7" n_MARM="7" n_Speed="505" n_MaxHuman="134" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="23" n_exp="5270" n_HPM="335" n_HPR="2" n_MPM="335" n_MPR="2" n_AD="16" n_AP="16" n_ARM="7" n_MARM="7" n_Speed="510" n_MaxHuman="138" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="24" n_exp="5760" n_HPM="355" n_HPR="2" n_MPM="355" n_MPR="2" n_AD="17" n_AP="17" n_ARM="8" n_MARM="8" n_Speed="510" n_MaxHuman="142" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="25" n_exp="6280" n_HPM="375" n_HPR="3" n_MPM="375" n_MPR="3" n_AD="18" n_AP="18" n_ARM="9" n_MARM="9" n_Speed="515" n_MaxHuman="146" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="26" n_exp="6840" n_HPM="400" n_HPR="3" n_MPM="400" n_MPR="3" n_AD="19" n_AP="19" n_ARM="9" n_MARM="9" n_Speed="520" n_MaxHuman="150" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="27" n_exp="7440" n_HPM="425" n_HPR="3" n_MPM="425" n_MPR="3" n_AD="20" n_AP="20" n_ARM="10" n_MARM="10" n_Speed="520" n_MaxHuman="154" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="28" n_exp="8080" n_HPM="450" n_HPR="3" n_MPM="450" n_MPR="3" n_AD="22" n_AP="22" n_ARM="10" n_MARM="10" n_Speed="525" n_MaxHuman="158" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="29" n_exp="8760" n_HPM="475" n_HPR="3" n_MPM="475" n_MPR="3" n_AD="23" n_AP="23" n_ARM="11" n_MARM="11" n_Speed="530" n_MaxHuman="162" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="30" n_exp="9490" n_HPM="500" n_HPR="3" n_MPM="500" n_MPR="3" n_AD="25" n_AP="25" n_ARM="12" n_MARM="12" n_Speed="530" n_MaxHuman="166" n_SellNpcs="3" n_BuyNpcs="3" />
+        <Record n_ID="31" n_exp="10270" n_HPM="530" n_HPR="3" n_MPM="530" n_MPR="3" n_AD="26" n_AP="26" n_ARM="12" n_MARM="12" n_Speed="535" n_MaxHuman="170" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="32" n_exp="11100" n_HPM="560" n_HPR="3" n_MPM="560" n_MPR="3" n_AD="27" n_AP="27" n_ARM="13" n_MARM="13" n_Speed="540" n_MaxHuman="174" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="33" n_exp="11990" n_HPM="590" n_HPR="3" n_MPM="590" n_MPR="3" n_AD="29" n_AP="29" n_ARM="14" n_MARM="14" n_Speed="540" n_MaxHuman="178" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="34" n_exp="12930" n_HPM="620" n_HPR="3" n_MPM="620" n_MPR="3" n_AD="30" n_AP="30" n_ARM="15" n_MARM="15" n_Speed="545" n_MaxHuman="182" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="35" n_exp="13940" n_HPM="650" n_HPR="4" n_MPM="650" n_MPR="4" n_AD="32" n_AP="32" n_ARM="16" n_MARM="16" n_Speed="550" n_MaxHuman="186" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="36" n_exp="15010" n_HPM="690" n_HPR="4" n_MPM="690" n_MPR="4" n_AD="34" n_AP="34" n_ARM="17" n_MARM="17" n_Speed="550" n_MaxHuman="190" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="37" n_exp="16160" n_HPM="730" n_HPR="4" n_MPM="730" n_MPR="4" n_AD="36" n_AP="36" n_ARM="18" n_MARM="18" n_Speed="550" n_MaxHuman="194" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="38" n_exp="17370" n_HPM="770" n_HPR="4" n_MPM="770" n_MPR="4" n_AD="38" n_AP="38" n_ARM="19" n_MARM="19" n_Speed="555" n_MaxHuman="198" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="39" n_exp="18670" n_HPM="810" n_HPR="4" n_MPM="810" n_MPR="4" n_AD="40" n_AP="40" n_ARM="20" n_MARM="20" n_Speed="555" n_MaxHuman="202" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="40" n_exp="20050" n_HPM="850" n_HPR="4" n_MPM="850" n_MPR="4" n_AD="42" n_AP="42" n_ARM="21" n_MARM="21" n_Speed="560" n_MaxHuman="206" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="41" n_exp="21520" n_HPM="890" n_HPR="5" n_MPM="890" n_MPR="5" n_AD="44" n_AP="44" n_ARM="22" n_MARM="22" n_Speed="560" n_MaxHuman="210" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="42" n_exp="23080" n_HPM="930" n_HPR="5" n_MPM="930" n_MPR="5" n_AD="46" n_AP="46" n_ARM="23" n_MARM="23" n_Speed="560" n_MaxHuman="214" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="43" n_exp="24750" n_HPM="970" n_HPR="5" n_MPM="970" n_MPR="5" n_AD="48" n_AP="48" n_ARM="24" n_MARM="24" n_Speed="565" n_MaxHuman="218" n_SellNpcs="4" n_BuyNpcs="4" />
+        <Record n_ID="44" n_exp="26520" n_HPM="1010" n_HPR="5" n_MPM="1010" n_MPR="5" n_AD="50" n_AP="50" n_ARM="25" n_MARM="25" n_Speed="565" n_MaxHuman="222" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="45" n_exp="28400" n_HPM="1050" n_HPR="5" n_MPM="1050" n_MPR="5" n_AD="52" n_AP="52" n_ARM="26" n_MARM="26" n_Speed="570" n_MaxHuman="226" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="46" n_exp="30400" n_HPM="1090" n_HPR="5" n_MPM="1090" n_MPR="5" n_AD="54" n_AP="54" n_ARM="27" n_MARM="27" n_Speed="570" n_MaxHuman="230" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="47" n_exp="32520" n_HPM="1130" n_HPR="5" n_MPM="1130" n_MPR="5" n_AD="56" n_AP="56" n_ARM="28" n_MARM="28" n_Speed="570" n_MaxHuman="234" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="48" n_exp="34780" n_HPM="1170" n_HPR="6" n_MPM="1170" n_MPR="6" n_AD="58" n_AP="58" n_ARM="29" n_MARM="29" n_Speed="575" n_MaxHuman="238" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="49" n_exp="37170" n_HPM="1210" n_HPR="6" n_MPM="1210" n_MPR="6" n_AD="60" n_AP="60" n_ARM="30" n_MARM="30" n_Speed="575" n_MaxHuman="242" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="50" n_exp="39720" n_HPM="1250" n_HPR="6" n_MPM="1250" n_MPR="6" n_AD="62" n_AP="62" n_ARM="31" n_MARM="31" n_Speed="580" n_MaxHuman="246" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="51" n_exp="42420" n_HPM="1300" n_HPR="6" n_MPM="1300" n_MPR="6" n_AD="64" n_AP="64" n_ARM="32" n_MARM="32" n_Speed="580" n_MaxHuman="250" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="52" n_exp="45290" n_HPM="1350" n_HPR="6" n_MPM="1350" n_MPR="6" n_AD="67" n_AP="67" n_ARM="33" n_MARM="33" n_Speed="580" n_MaxHuman="254" n_SellNpcs="5" n_BuyNpcs="5" />
+        <Record n_ID="53" n_exp="48340" n_HPM="1400" n_HPR="6" n_MPM="1400" n_MPR="6" n_AD="69" n_AP="69" n_ARM="34" n_MARM="34" n_Speed="590" n_MaxHuman="258" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="54" n_exp="51570" n_HPM="1450" n_HPR="6" n_MPM="1450" n_MPR="6" n_AD="72" n_AP="72" n_ARM="35" n_MARM="35" n_Speed="590" n_MaxHuman="262" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="55" n_exp="55000" n_HPM="1500" n_HPR="7" n_MPM="1500" n_MPR="7" n_AD="75" n_AP="75" n_ARM="37" n_MARM="37" n_Speed="590" n_MaxHuman="266" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="56" n_exp="58640" n_HPM="1550" n_HPR="7" n_MPM="1550" n_MPR="7" n_AD="77" n_AP="77" n_ARM="38" n_MARM="38" n_Speed="595" n_MaxHuman="270" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="57" n_exp="62500" n_HPM="1600" n_HPR="7" n_MPM="1600" n_MPR="7" n_AD="79" n_AP="79" n_ARM="39" n_MARM="39" n_Speed="595" n_MaxHuman="274" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="58" n_exp="66600" n_HPM="1650" n_HPR="7" n_MPM="1650" n_MPR="7" n_AD="82" n_AP="82" n_ARM="40" n_MARM="40" n_Speed="595" n_MaxHuman="278" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="59" n_exp="70940" n_HPM="1700" n_HPR="7" n_MPM="1700" n_MPR="7" n_AD="84" n_AP="84" n_ARM="41" n_MARM="41" n_Speed="595" n_MaxHuman="282" n_SellNpcs="6" n_BuyNpcs="6" />
+        <Record n_ID="60" n_exp="75540" n_HPM="1750" n_HPR="7" n_MPM="1750" n_MPR="7" n_AD="87" n_AP="87" n_ARM="43" n_MARM="43" n_Speed="600" n_MaxHuman="286" n_SellNpcs="6" n_BuyNpcs="6" />
+    </Table>
+</ExData>

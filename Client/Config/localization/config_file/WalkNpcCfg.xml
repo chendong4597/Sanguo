@@ -1,0 +1,28 @@
+<ExData>
+    <Table Name="AalkNpcCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_MonsterTpy" DataType="1" />
+            <Column Name="n_rate" DataType="1" />
+            <Column Name="n_speed" DataType="1" />
+            <Column Name="s_Foder" DataType="4" />
+            <Column Name="s_path" DataType="4" />
+            <Column Name="s_Talk" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="n_MaxStdayTm" DataType="1" Value="10" />
+        <Attribute Name="n_MaxTarget" DataType="1" Value="5" />
+        <Attribute Name="n_MaxWalkNum" DataType="1" Value="15" />
+        <Attribute Name="n_MidX" DataType="1" Value="17290" />
+        <Attribute Name="n_MinStdayTm" DataType="1" Value="2" />
+        <Attribute Name="n_MinTarget" DataType="1" Value="1" />
+        <Attribute Name="n_PosZ" DataType="1" Value="25" />
+        <Attribute Name="s_MidY" DataType="4" Value="33802|31912|29647|27382|25087|32035|37745" />
+        <Attribute Name="s_Path" DataType="4" Value="/Game/Models/NPC/entity_s" />
+        <Attribute Name="s_Pos" DataType="4" Value="21493,34087|18958,33497|13723,33332|15483,31472|20628,31082|18883,29982|12973,29117|13788,26887|20618,26887|19826,25142|15168,25082" />
+        <Record n_ID="1001" s_Name="行走NPC1" n_Type="0" n_MonsterTpy="10001" n_rate="5" n_speed="200" s_Foder="girl" s_path="BP_Girl" s_Talk="" s_desc="" />
+        <Record n_ID="1002" s_Name="行走NPC2" n_Type="1" n_MonsterTpy="120001" n_rate="1" n_speed="200" s_Foder="girl" s_path="BP_Girl" s_Talk="" s_desc="" />
+    </Table>
+</ExData>

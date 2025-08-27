@@ -1,0 +1,31 @@
+<ExData>
+    <Table Name="ArmorSpecialEffectCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_type" DataType="1" />
+            <Column Name="s_armor_sub_type" DataType="4" />
+            <Column Name="n_value" DataType="1" />
+            <Column Name="n_buff_id" DataType="1" />
+            <Column Name="n_replace" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1001" n_type="1" s_armor_sub_type="34,35" n_value="100" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1002" n_type="2" s_armor_sub_type="30" n_value="800" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1003" n_type="2" s_armor_sub_type="31" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1004" n_type="2" s_armor_sub_type="32" n_value="600" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1005" n_type="2" s_armor_sub_type="33" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1006" n_type="2" s_armor_sub_type="34" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1007" n_type="2" s_armor_sub_type="35" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1008" n_type="2" s_armor_sub_type="36" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1009" n_type="2" s_armor_sub_type="37" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1010" n_type="2" s_armor_sub_type="38" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="1011" n_type="2" s_armor_sub_type="39" n_value="1000" n_buff_id="0" n_replace="1" />
+        <Record n_ID="2001" n_type="3" s_armor_sub_type="30,31,32" n_value="0" n_buff_id="1088" n_replace="2" />
+        <Record n_ID="3001" n_type="3" s_armor_sub_type="36,37" n_value="0" n_buff_id="1372128" n_replace="2" />
+        <Record n_ID="3002" n_type="3" s_armor_sub_type="36,37" n_value="0" n_buff_id="1372129" n_replace="2" />
+        <Record n_ID="3003" n_type="3" s_armor_sub_type="30,31,32" n_value="0" n_buff_id="1372130" n_replace="2" />
+        <Record n_ID="3004" n_type="3" s_armor_sub_type="30,31,32" n_value="0" n_buff_id="1372131" n_replace="2" />
+        <Record n_ID="3005" n_type="3" s_armor_sub_type="38,33" n_value="0" n_buff_id="1372132" n_replace="2" />
+        <Record n_ID="3006" n_type="3" s_armor_sub_type="38,33" n_value="0" n_buff_id="1372133" n_replace="2" />
+        <Record n_ID="3007" n_type="3" s_armor_sub_type="34,35" n_value="0" n_buff_id="1372134" n_replace="2" />
+    </Table>
+</ExData>

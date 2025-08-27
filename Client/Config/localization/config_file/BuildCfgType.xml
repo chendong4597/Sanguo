@@ -1,0 +1,83 @@
+<ExData>
+    <Table Name="BuildCfgType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="s_note" DataType="4" />
+            <Column Name="n_rate_level" DataType="1" />
+            <Column Name="n_ratecount_boole" DataType="1" />
+            <Column Name="n_terrian_type" DataType="1" />
+            <Column Name="n_map_type" DataType="1" />
+            <Column Name="n_drop_item_id" DataType="1" />
+            <Column Name="n_drop_id" DataType="1" />
+            <Column Name="n_grid_x" DataType="1" />
+            <Column Name="n_grid_y" DataType="1" />
+            <Column Name="n_sell_price" DataType="1" />
+            <Column Name="n_hp" DataType="1" />
+            <Column Name="n_remove_tool" DataType="1" />
+            <Column Name="n_remove_level" DataType="1" />
+            <Column Name="n_illumination_range" DataType="1" />
+            <Column Name="n_illumination_r" DataType="1" />
+            <Column Name="n_move" DataType="1" />
+            <Column Name="n_illumination_g" DataType="1" />
+            <Column Name="n_illumination_b" DataType="1" />
+            <Column Name="n_illumination_x" DataType="1" />
+            <Column Name="n_illumination_y" DataType="1" />
+            <Column Name="n_category" DataType="1" />
+            <Column Name="n_plane" DataType="1" />
+            <Column Name="n_function" DataType="1" />
+            <Column Name="n_features" DataType="1" />
+            <Column Name="n_groupID" DataType="1" />
+            <Column Name="n_groupChange" DataType="1" />
+            <Column Name="n_resource" DataType="1" />
+            <Column Name="n_hurtid" DataType="1" />
+            <Column Name="n_color_card" DataType="1" />
+            <Column Name="n_comfortable" DataType="1" />
+            <Column Name="n_block" DataType="1" />
+            <Column Name="n_land" DataType="1" />
+            <Column Name="n_climb" DataType="1" />
+            <Column Name="n_RoomBound" DataType="1" />
+            <Column Name="n_RoomFlag" DataType="1" />
+            <Column Name="n_Room_Trigger_Find" DataType="1" />
+            <Column Name="n_door" DataType="1" />
+            <Column Name="n_reject" DataType="1" />
+            <Column Name="n_room_function_type" DataType="1" />
+            <Column Name="n_TypeId" DataType="1" />
+            <Column Name="n_SubTypeId" DataType="1" />
+            <Column Name="n_side_hanging" DataType="1" />
+            <Column Name="n_hold_stick_block" DataType="1" />
+            <Column Name="s_resource" DataType="4" />
+            <Column Name="s_thumbnails" DataType="4" />
+            <Column Name="n_hold_depend" DataType="1" />
+            <Column Name="n_limit_count" DataType="1" />
+            <Column Name="n_limit_place_range" DataType="1" />
+            <Column Name="s_place_id" DataType="4" />
+            <Column Name="n_kind" DataType="1" />
+            <Column Name="n_colour" DataType="1" />
+            <Column Name="f_x_offset" DataType="3" />
+            <Column Name="f_y_offset" DataType="3" />
+            <Column Name="n_Damage_Build" DataType="1" />
+            <Column Name="n_hide_grass" DataType="1" />
+            <Column Name="s_res_sound" DataType="4" />
+            <Column Name="n_damage_door" DataType="1" />
+            <Column Name="s_feedback_effect" DataType="4" />
+            <Column Name="s_feedback_sound" DataType="4" />
+            <Column Name="n_isBlockLiquid" DataType="1" />
+            <Column Name="n_need_ai" DataType="1" />
+            <Column Name="s_switch_sound" DataType="4" />
+            <Column Name="n_isGameObjectKeep" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_mail_id" DataType="1" Value="2101" />
+        <Attribute Name="n_test" DataType="1" Value="5" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1481001" s_name="wooden_platform_01" s_note="wooden_platform_01" n_rate_level="1" n_ratecount_boole="0" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="1" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="1" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="0" n_block="1" n_land="1" n_climb="0" n_RoomBound="1" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="6" n_SubTypeId="1" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_platform_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1482001" s_name="wooden_platform_stair_01" s_note="wooden_platform_stair_01" n_rate_level="1" n_ratecount_boole="0" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="1" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="1" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="0" n_block="1" n_land="1" n_climb="1" n_RoomBound="1" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="6" n_SubTypeId="2" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_platform_stair_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1483001" s_name="wooden_close_door_01" s_note="door_close" n_rate_level="1" n_ratecount_boole="0" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="2" n_sell_price="13" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="0" n_block="1" n_land="0" n_climb="0" n_RoomBound="1" n_RoomFlag="0" n_Room_Trigger_Find="1" n_door="1" n_reject="0" n_room_function_type="0" n_TypeId="8" n_SubTypeId="1" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/interactivefurniture/wooden_close_door_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="1454008" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="1" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1484001" s_name="wooden_trap_door_01" s_note="wooden_trap_door_01" n_rate_level="1" n_ratecount_boole="0" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="0" n_block="1" n_land="0" n_climb="0" n_RoomBound="1" n_RoomFlag="0" n_Room_Trigger_Find="1" n_door="1" n_reject="0" n_room_function_type="0" n_TypeId="8" n_SubTypeId="2" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/building/wooden_trap_door_close_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="1" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1485001" s_name="wooden_bed_01" s_note="wooden_bed_01" n_rate_level="1" n_ratecount_boole="1" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="900" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="10" n_block="0" n_land="0" n_climb="0" n_RoomBound="0" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="12" n_SubTypeId="1" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/building/wooden_bed_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1486001" s_name="wooden_closet_01" s_note="wooden_closet_01" n_rate_level="1" n_ratecount_boole="1" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="900" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="10" n_block="0" n_land="0" n_climb="0" n_RoomBound="0" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="12" n_SubTypeId="2" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_closet_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1487001" s_name="wooden_table_01" s_note="wooden_table_01" n_rate_level="1" n_ratecount_boole="1" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="5" n_block="0" n_land="0" n_climb="0" n_RoomBound="0" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="12" n_SubTypeId="3" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_table_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1488001" s_name="wooden_chair_01" s_note="wooden_chair_01" n_rate_level="1" n_ratecount_boole="1" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="5" n_block="0" n_land="0" n_climb="0" n_RoomBound="0" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="12" n_SubTypeId="4" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_chair_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+        <Record n_ID="1489001" s_name="wooden_bench_01" s_note="wooden_bench_01" n_rate_level="1" n_ratecount_boole="1" n_terrian_type="2" n_map_type="15" n_drop_item_id="0" n_drop_id="0" n_grid_x="1" n_grid_y="1" n_sell_price="1" n_hp="100" n_remove_tool="1" n_remove_level="1" n_illumination_range="1" n_illumination_r="255" n_move="0" n_illumination_g="255" n_illumination_b="255" n_illumination_x="0" n_illumination_y="0" n_category="1" n_plane="0" n_function="2" n_features="0" n_groupID="0" n_groupChange="0" n_resource="1" n_hurtid="1" n_color_card="1" n_comfortable="5" n_block="0" n_land="0" n_climb="0" n_RoomBound="0" n_RoomFlag="0" n_Room_Trigger_Find="0" n_door="0" n_reject="0" n_room_function_type="0" n_TypeId="12" n_SubTypeId="15" n_side_hanging="0" n_hold_stick_block="0" s_resource="game_object/renderingbuilding/wooden_bench_01" s_thumbnails="" n_hold_depend="0" n_limit_count="0" n_limit_place_range="0" s_place_id="" n_kind="9" n_colour="0" f_x_offset="0.000000" f_y_offset="0.000000" n_Damage_Build="0" n_hide_grass="1" s_res_sound="" n_damage_door="0" s_feedback_effect="models\effects\envirorment\general\furniture_gethit\wooden_furni_gethit.model" s_feedback_sound="item_broken_wood" n_isBlockLiquid="0" n_need_ai="0" s_switch_sound="" n_isGameObjectKeep="0" />
+    </Table>
+</ExData>

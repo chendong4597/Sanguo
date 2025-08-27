@@ -1,0 +1,78 @@
+<ExData>
+    <Table Name="CreateRoleCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Sex" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_Index" DataType="1" />
+            <Column Name="s_Icon" DataType="4" />
+            <Column Name="s_Path" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_iconPath" DataType="4" Value="/Game/UI/Assert/role" />
+        <Attribute Name="s_manBPAniPath" DataType="4" Value="/Game/Player/man/BP_Anim/BP_ManAnim.BP_ManAnim" />
+        <Attribute Name="s_manHairMesh" DataType="4" Value="/Game/Player/man/mesh/hair" />
+        <Attribute Name="s_manMesh" DataType="4" Value="/Game/Player/man/mesh/man.man" />
+        <Attribute Name="s_manSkinM" DataType="4" Value="/Game/Player/man/mesh/SkinColor" />
+        <Attribute Name="s_womanBPAniPath" DataType="4" Value="/Game/Player/woman/BP_Anim/BP_WomanAnim.BP_WomanAnim" />
+        <Attribute Name="s_womanHairMesh" DataType="4" Value="/Game/Player/woman/mesh/hair" />
+        <Attribute Name="s_womanMesh" DataType="4" Value="/Game/Player/woman/mesh/woman.woman" />
+        <Attribute Name="s_womanSkinM" DataType="4" Value="/Game/Player/woman/mesh/SkinColor" />
+        <Record n_ID="1" n_Sex="0" n_Type="0" n_Index="0" s_Icon="ps_hair_01" s_Path="hair_01" />
+        <Record n_ID="2" n_Sex="0" n_Type="0" n_Index="1" s_Icon="ps_hair_02" s_Path="hair_02" />
+        <Record n_ID="3" n_Sex="0" n_Type="0" n_Index="2" s_Icon="ps_hair_03" s_Path="hair_03" />
+        <Record n_ID="4" n_Sex="0" n_Type="0" n_Index="3" s_Icon="ps_hair_04" s_Path="hair_04" />
+        <Record n_ID="5" n_Sex="0" n_Type="0" n_Index="4" s_Icon="ps_hair_05" s_Path="hair_05" />
+        <Record n_ID="6" n_Sex="0" n_Type="0" n_Index="5" s_Icon="ps_hair_06" s_Path="hair_06" />
+        <Record n_ID="7" n_Sex="0" n_Type="0" n_Index="6" s_Icon="ps_hair_07" s_Path="hair_07" />
+        <Record n_ID="8" n_Sex="0" n_Type="0" n_Index="7" s_Icon="ps_hair_08" s_Path="hair_08" />
+        <Record n_ID="9" n_Sex="0" n_Type="0" n_Index="8" s_Icon="ps_hair_09" s_Path="hair_09" />
+        <Record n_ID="10" n_Sex="0" n_Type="0" n_Index="9" s_Icon="ps_hair_10" s_Path="hair_10" />
+        <Record n_ID="11" n_Sex="0" n_Type="1" n_Index="0" s_Icon="ps_role_creation_colour_001" s_Path="man_hair_01" />
+        <Record n_ID="12" n_Sex="0" n_Type="1" n_Index="1" s_Icon="ps_role_creation_colour_002" s_Path="man_hair_02" />
+        <Record n_ID="13" n_Sex="0" n_Type="1" n_Index="2" s_Icon="ps_role_creation_colour_003" s_Path="man_hair_03" />
+        <Record n_ID="14" n_Sex="0" n_Type="1" n_Index="3" s_Icon="ps_role_creation_colour_004" s_Path="man_hair_04" />
+        <Record n_ID="15" n_Sex="0" n_Type="1" n_Index="4" s_Icon="ps_role_creation_colour_005" s_Path="man_hair_05" />
+        <Record n_ID="16" n_Sex="0" n_Type="1" n_Index="5" s_Icon="ps_role_creation_colour_006" s_Path="man_hair_06" />
+        <Record n_ID="17" n_Sex="0" n_Type="1" n_Index="6" s_Icon="ps_role_creation_colour_007" s_Path="man_hair_07" />
+        <Record n_ID="18" n_Sex="0" n_Type="1" n_Index="7" s_Icon="ps_role_creation_colour_008" s_Path="man_hair_08" />
+        <Record n_ID="19" n_Sex="0" n_Type="1" n_Index="8" s_Icon="ps_role_creation_colour_009" s_Path="man_hair_09" />
+        <Record n_ID="20" n_Sex="0" n_Type="1" n_Index="9" s_Icon="ps_role_creation_colour_010" s_Path="man_hair_10" />
+        <Record n_ID="21" n_Sex="0" n_Type="2" n_Index="0" s_Icon="ps_role_creation_colour_001" s_Path="man_naked_diffuse_01" />
+        <Record n_ID="22" n_Sex="0" n_Type="2" n_Index="1" s_Icon="ps_role_creation_colour_002" s_Path="man_naked_diffuse_02" />
+        <Record n_ID="23" n_Sex="0" n_Type="2" n_Index="2" s_Icon="ps_role_creation_colour_003" s_Path="man_naked_diffuse_03" />
+        <Record n_ID="24" n_Sex="0" n_Type="2" n_Index="3" s_Icon="ps_role_creation_colour_004" s_Path="man_naked_diffuse_04" />
+        <Record n_ID="25" n_Sex="0" n_Type="2" n_Index="4" s_Icon="ps_role_creation_colour_005" s_Path="man_naked_diffuse_05" />
+        <Record n_ID="26" n_Sex="0" n_Type="2" n_Index="5" s_Icon="ps_role_creation_colour_006" s_Path="man_naked_diffuse_06" />
+        <Record n_ID="27" n_Sex="0" n_Type="2" n_Index="6" s_Icon="ps_role_creation_colour_007" s_Path="man_naked_diffuse_07" />
+        <Record n_ID="28" n_Sex="0" n_Type="2" n_Index="7" s_Icon="ps_role_creation_colour_008" s_Path="man_naked_diffuse_08" />
+        <Record n_ID="29" n_Sex="0" n_Type="2" n_Index="8" s_Icon="ps_role_creation_colour_009" s_Path="man_naked_diffuse_09" />
+        <Record n_ID="30" n_Sex="0" n_Type="2" n_Index="9" s_Icon="ps_role_creation_colour_010" s_Path="man_naked_diffuse_10" />
+        <Record n_ID="31" n_Sex="1" n_Type="0" n_Index="0" s_Icon="ps_woman_hair_01" s_Path="hair_01" />
+        <Record n_ID="32" n_Sex="1" n_Type="0" n_Index="1" s_Icon="ps_woman_hair_02" s_Path="hair_02" />
+        <Record n_ID="33" n_Sex="1" n_Type="0" n_Index="2" s_Icon="ps_woman_hair_03" s_Path="hair_03" />
+        <Record n_ID="34" n_Sex="1" n_Type="0" n_Index="3" s_Icon="ps_woman_hair_04" s_Path="hair_04" />
+        <Record n_ID="35" n_Sex="1" n_Type="0" n_Index="4" s_Icon="ps_woman_hair_05" s_Path="hair_05" />
+        <Record n_ID="36" n_Sex="1" n_Type="0" n_Index="5" s_Icon="ps_woman_hair_06" s_Path="hair_06" />
+        <Record n_ID="37" n_Sex="1" n_Type="0" n_Index="6" s_Icon="ps_woman_hair_07" s_Path="hair_07" />
+        <Record n_ID="38" n_Sex="1" n_Type="1" n_Index="0" s_Icon="ps_role_creation_colour_001" s_Path="woman_hair_01" />
+        <Record n_ID="39" n_Sex="1" n_Type="1" n_Index="1" s_Icon="ps_role_creation_colour_002" s_Path="woman_hair_02" />
+        <Record n_ID="40" n_Sex="1" n_Type="1" n_Index="2" s_Icon="ps_role_creation_colour_003" s_Path="woman_hair_03" />
+        <Record n_ID="41" n_Sex="1" n_Type="1" n_Index="3" s_Icon="ps_role_creation_colour_004" s_Path="woman_hair_04" />
+        <Record n_ID="42" n_Sex="1" n_Type="1" n_Index="4" s_Icon="ps_role_creation_colour_005" s_Path="woman_hair_05" />
+        <Record n_ID="43" n_Sex="1" n_Type="1" n_Index="5" s_Icon="ps_role_creation_colour_006" s_Path="woman_hair_06" />
+        <Record n_ID="44" n_Sex="1" n_Type="1" n_Index="6" s_Icon="ps_role_creation_colour_007" s_Path="woman_hair_07" />
+        <Record n_ID="45" n_Sex="1" n_Type="1" n_Index="7" s_Icon="ps_role_creation_colour_008" s_Path="woman_hair_08" />
+        <Record n_ID="46" n_Sex="1" n_Type="1" n_Index="8" s_Icon="ps_role_creation_colour_009" s_Path="woman_hair_09" />
+        <Record n_ID="47" n_Sex="1" n_Type="1" n_Index="9" s_Icon="ps_role_creation_colour_010" s_Path="woman_hair_10" />
+        <Record n_ID="48" n_Sex="1" n_Type="2" n_Index="0" s_Icon="ps_role_creation_colour_001" s_Path="woman_naked_diffuse_01" />
+        <Record n_ID="49" n_Sex="1" n_Type="2" n_Index="1" s_Icon="ps_role_creation_colour_002" s_Path="woman_naked_diffuse_02" />
+        <Record n_ID="50" n_Sex="1" n_Type="2" n_Index="2" s_Icon="ps_role_creation_colour_003" s_Path="woman_naked_diffuse_03" />
+        <Record n_ID="51" n_Sex="1" n_Type="2" n_Index="3" s_Icon="ps_role_creation_colour_004" s_Path="woman_naked_diffuse_04" />
+        <Record n_ID="52" n_Sex="1" n_Type="2" n_Index="4" s_Icon="ps_role_creation_colour_005" s_Path="woman_naked_diffuse_05" />
+        <Record n_ID="53" n_Sex="1" n_Type="2" n_Index="5" s_Icon="ps_role_creation_colour_006" s_Path="woman_naked_diffuse_06" />
+        <Record n_ID="54" n_Sex="1" n_Type="2" n_Index="6" s_Icon="ps_role_creation_colour_007" s_Path="woman_naked_diffuse_07" />
+        <Record n_ID="55" n_Sex="1" n_Type="2" n_Index="7" s_Icon="ps_role_creation_colour_008" s_Path="woman_naked_diffuse_08" />
+        <Record n_ID="56" n_Sex="1" n_Type="2" n_Index="8" s_Icon="ps_role_creation_colour_009" s_Path="woman_naked_diffuse_09" />
+        <Record n_ID="57" n_Sex="1" n_Type="2" n_Index="9" s_Icon="ps_role_creation_colour_010" s_Path="woman_naked_diffuse_10" />
+    </Table>
+</ExData>

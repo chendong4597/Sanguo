@@ -1,0 +1,15 @@
+<ExData>
+    <Table Name="AchieveTitle">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_NeedPoints" DataType="1" />
+            <Column Name="n_EventID" DataType="1" />
+            <Column Name="n_GroupID" DataType="1" />
+            <Column Name="n_AchieveRewardID" DataType="1" />
+            <Column Name="s_Desc" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" s_Name="Name" n_Type="2" n_NeedPoints="3" n_EventID="4" n_GroupID="5" n_AchieveRewardID="1" s_Desc="Desc" />
+    </Table>
+</ExData>

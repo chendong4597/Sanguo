@@ -1,0 +1,11 @@
+<ExData>
+    <Table Name="SurvivalEventRateup">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_AchievementID" DataType="1" />
+            <Column Name="n_Level" DataType="1" />
+            <Column Name="f_CorrectionProbability" DataType="3" />
+        </ColumnList>
+        <Record n_ID="1" n_AchievementID="0" n_Level="13" f_CorrectionProbability="0.800000" />
+    </Table>
+</ExData>

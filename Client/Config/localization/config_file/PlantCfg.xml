@@ -1,0 +1,53 @@
+<ExData>
+    <Table Name="PlantCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="s_note" DataType="4" />
+            <Column Name="n_rate_level" DataType="1" />
+            <Column Name="n_grow_type" DataType="1" />
+            <Column Name="n_Prosperous" DataType="1" />
+            <Column Name="n_reborn_sec" DataType="1" />
+            <Column Name="s_DropSC" DataType="4" />
+            <Column Name="n_exp" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_ExpPlantLimitNum" DataType="1" Value="500" />
+        <Attribute Name="n_rare_level_rare" DataType="1" Value="4" />
+        <Attribute Name="n_test" DataType="1" Value="900" />
+        <Record n_ID="1700010" s_name="cfg_plant_name_1700010" s_note="cfg_plant_desc_1700010" n_rate_level="1" n_grow_type="1" n_Prosperous="5" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-8]" n_exp="0" />
+        <Record n_ID="1700020" s_name="cfg_plant_name_1700020" s_note="cfg_plant_desc_1700020" n_rate_level="1" n_grow_type="1" n_Prosperous="5" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-9]" n_exp="0" />
+        <Record n_ID="1700030" s_name="cfg_plant_name_1700030" s_note="cfg_plant_desc_1700030" n_rate_level="1" n_grow_type="1" n_Prosperous="5" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-10]" n_exp="0" />
+        <Record n_ID="1700040" s_name="cfg_plant_name_1700040" s_note="cfg_plant_desc_1700040" n_rate_level="1" n_grow_type="1" n_Prosperous="5" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-11]" n_exp="0" />
+        <Record n_ID="1700050" s_name="cfg_plant_name_1700050" s_note="cfg_plant_desc_1700050" n_rate_level="1" n_grow_type="1" n_Prosperous="5" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-12]" n_exp="0" />
+        <Record n_ID="1700060" s_name="cfg_plant_name_1700060" s_note="cfg_plant_desc_1700060" n_rate_level="1" n_grow_type="1" n_Prosperous="6" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-13]" n_exp="0" />
+        <Record n_ID="1700070" s_name="cfg_plant_name_1700070" s_note="cfg_plant_desc_1700070" n_rate_level="1" n_grow_type="1" n_Prosperous="10" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-14]" n_exp="0" />
+        <Record n_ID="1700080" s_name="cfg_plant_name_1700080" s_note="cfg_plant_desc_1700080" n_rate_level="1" n_grow_type="1" n_Prosperous="10" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-15]" n_exp="0" />
+        <Record n_ID="1700090" s_name="cfg_plant_name_1700090" s_note="cfg_plant_desc_1700090" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-16]" n_exp="0" />
+        <Record n_ID="1700100" s_name="cfg_plant_name_1700100" s_note="cfg_plant_desc_1700100" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-17]" n_exp="0" />
+        <Record n_ID="1700110" s_name="cfg_plant_name_1700110" s_note="cfg_plant_desc_1700110" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-18]" n_exp="0" />
+        <Record n_ID="1700120" s_name="cfg_plant_name_1700120" s_note="cfg_plant_desc_1700120" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-19]" n_exp="0" />
+        <Record n_ID="1700130" s_name="cfg_plant_name_1700130" s_note="cfg_plant_desc_1700130" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-20]" n_exp="0" />
+        <Record n_ID="1700140" s_name="cfg_plant_name_1700140" s_note="cfg_plant_desc_1700140" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-21]" n_exp="0" />
+        <Record n_ID="1700150" s_name="cfg_plant_name_1700150" s_note="cfg_plant_desc_1700150" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-22]" n_exp="0" />
+        <Record n_ID="1700160" s_name="cfg_plant_name_1700160" s_note="cfg_plant_desc_1700160" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-23]" n_exp="0" />
+        <Record n_ID="1700170" s_name="cfg_plant_name_1700170" s_note="cfg_plant_desc_1700170" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-24]" n_exp="0" />
+        <Record n_ID="1700180" s_name="cfg_plant_name_1700180" s_note="cfg_plant_desc_1700180" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-25]" n_exp="0" />
+        <Record n_ID="1700190" s_name="cfg_plant_name_1700190" s_note="cfg_plant_desc_1700190" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-26]" n_exp="0" />
+        <Record n_ID="1700200" s_name="cfg_plant_name_1700200" s_note="cfg_plant_desc_1700200" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-27]" n_exp="0" />
+        <Record n_ID="1700210" s_name="cfg_plant_name_1700210" s_note="cfg_plant_desc_1700210" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-28]" n_exp="0" />
+        <Record n_ID="1700220" s_name="cfg_plant_name_1700220" s_note="cfg_plant_desc_1700220" n_rate_level="1" n_grow_type="1" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-29]" n_exp="0" />
+        <Record n_ID="1700230" s_name="cfg_plant_name_1700230" s_note="cfg_plant_desc_1700230" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-30]" n_exp="0" />
+        <Record n_ID="1700240" s_name="cfg_plant_name_1700240" s_note="cfg_plant_desc_1700240" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-31]" n_exp="0" />
+        <Record n_ID="1700250" s_name="cfg_plant_name_1700250" s_note="cfg_plant_desc_1700250" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-32]" n_exp="0" />
+        <Record n_ID="1700260" s_name="cfg_plant_name_1700260" s_note="cfg_plant_desc_1700260" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-33]" n_exp="0" />
+        <Record n_ID="1700270" s_name="cfg_plant_name_1700270" s_note="cfg_plant_desc_1700270" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-34]" n_exp="0" />
+        <Record n_ID="1700280" s_name="cfg_plant_name_1700280" s_note="cfg_plant_desc_1700280" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-34]" n_exp="0" />
+        <Record n_ID="1700290" s_name="cfg_plant_name_1700290" s_note="cfg_plant_desc_1700290" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-35]" n_exp="0" />
+        <Record n_ID="1700300" s_name="cfg_plant_name_1700300" s_note="cfg_plant_desc_1700300" n_rate_level="1" n_grow_type="2" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-35]" n_exp="0" />
+        <Record n_ID="1701001" s_name="cfg_plant_name_1701001" s_note="cfg_plant_desc_1701001" n_rate_level="1" n_grow_type="3" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-35]" n_exp="0" />
+        <Record n_ID="1701002" s_name="cfg_plant_name_1701002" s_note="cfg_plant_desc_1701002" n_rate_level="1" n_grow_type="3" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-36]" n_exp="0" />
+        <Record n_ID="1701003" s_name="cfg_plant_name_1701003" s_note="cfg_plant_desc_1701003" n_rate_level="1" n_grow_type="3" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-37]" n_exp="0" />
+        <Record n_ID="1701004" s_name="cfg_plant_name_1701004" s_note="cfg_plant_desc_1701004" n_rate_level="1" n_grow_type="3" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-38]" n_exp="0" />
+        <Record n_ID="1701005" s_name="cfg_plant_name_1701005" s_note="cfg_plant_desc_1701005" n_rate_level="1" n_grow_type="3" n_Prosperous="20" n_reborn_sec="0" s_DropSC="[2010001-10-50],[2010002-2-39]" n_exp="0" />
+    </Table>
+</ExData>

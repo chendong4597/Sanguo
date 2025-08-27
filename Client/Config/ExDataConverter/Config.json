@@ -1,0 +1,14 @@
+{
+	"ExcelDir": "..",
+	"WhiteList": [
+		// "mapsetting"
+		// "AchieveDetail",
+		// "AchieveEvent",
+		// "AchieveGroup",
+		// "AchieveReward"
+	],
+	"XMLDir": [
+		"../server_config",
+		"../client_config"
+	]
+}

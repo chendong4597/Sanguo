@@ -1,0 +1,20 @@
+<ExData>
+    <Table Name="ConvoyCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="n_DropId" DataType="1" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="" />
+        <Record n_ID="1422010" n_Type="0" n_DropId="1422010" />
+        <Record n_ID="1422020" n_Type="0" n_DropId="1422020" />
+        <Record n_ID="1422030" n_Type="0" n_DropId="1422030" />
+        <Record n_ID="1422040" n_Type="0" n_DropId="1422040" />
+        <Record n_ID="1422050" n_Type="0" n_DropId="1422050" />
+        <Record n_ID="1422060" n_Type="0" n_DropId="1422060" />
+        <Record n_ID="1422070" n_Type="0" n_DropId="1422070" />
+        <Record n_ID="1422080" n_Type="0" n_DropId="1422080" />
+        <Record n_ID="1422090" n_Type="0" n_DropId="1422090" />
+        <Record n_ID="1422100" n_Type="0" n_DropId="1422100" />
+    </Table>
+</ExData>

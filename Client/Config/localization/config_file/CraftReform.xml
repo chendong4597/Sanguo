@@ -1,0 +1,38 @@
+<ExData>
+    <Table Name="CraftReform">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Tool" DataType="1" />
+            <Column Name="n_Tool_Reform" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_test" DataType="1" Value="0" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1" n_Tool="3" n_Tool_Reform="4" />
+        <Record n_ID="2" n_Tool="3" n_Tool_Reform="5" />
+        <Record n_ID="3" n_Tool="4" n_Tool_Reform="5" />
+        <Record n_ID="4" n_Tool="12" n_Tool_Reform="13" />
+        <Record n_ID="5" n_Tool="12" n_Tool_Reform="14" />
+        <Record n_ID="6" n_Tool="13" n_Tool_Reform="15" />
+        <Record n_ID="7" n_Tool="13" n_Tool_Reform="16" />
+        <Record n_ID="8" n_Tool="14" n_Tool_Reform="17" />
+        <Record n_ID="9" n_Tool="14" n_Tool_Reform="18" />
+        <Record n_ID="10" n_Tool="19" n_Tool_Reform="20" />
+        <Record n_ID="11" n_Tool="19" n_Tool_Reform="21" />
+        <Record n_ID="12" n_Tool="20" n_Tool_Reform="22" />
+        <Record n_ID="13" n_Tool="20" n_Tool_Reform="23" />
+        <Record n_ID="14" n_Tool="21" n_Tool_Reform="24" />
+        <Record n_ID="15" n_Tool="21" n_Tool_Reform="25" />
+        <Record n_ID="16" n_Tool="26" n_Tool_Reform="27" />
+        <Record n_ID="17" n_Tool="26" n_Tool_Reform="28" />
+        <Record n_ID="18" n_Tool="27" n_Tool_Reform="29" />
+        <Record n_ID="19" n_Tool="27" n_Tool_Reform="30" />
+        <Record n_ID="20" n_Tool="28" n_Tool_Reform="31" />
+        <Record n_ID="21" n_Tool="28" n_Tool_Reform="32" />
+        <Record n_ID="22" n_Tool="33" n_Tool_Reform="34" />
+        <Record n_ID="23" n_Tool="33" n_Tool_Reform="35" />
+        <Record n_ID="24" n_Tool="34" n_Tool_Reform="36" />
+        <Record n_ID="25" n_Tool="34" n_Tool_Reform="37" />
+        <Record n_ID="26" n_Tool="35" n_Tool_Reform="36" />
+        <Record n_ID="27" n_Tool="35" n_Tool_Reform="37" />
+    </Table>
+</ExData>

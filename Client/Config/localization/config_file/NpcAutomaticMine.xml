@@ -1,0 +1,36 @@
+<ExData>
+    <Table Name="NpcAutomaticMine">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_map_name" DataType="4" />
+            <Column Name="n_reward_id1" DataType="1" />
+            <Column Name="n_reward_id2" DataType="1" />
+            <Column Name="n_reward_id3" DataType="1" />
+            <Column Name="n_reward_id4" DataType="1" />
+            <Column Name="n_reward_id5" DataType="1" />
+        </ColumnList>
+        <Attribute Name="f_icof_positiof_x" DataType="3" Value="-0.100000" />
+        <Attribute Name="f_icof_positiof_y" DataType="3" Value="3.500000" />
+        <Attribute Name="f_initial_positiof_01_x" DataType="3" Value="410.000000" />
+        <Attribute Name="f_initial_positiof_01_y" DataType="3" Value="-2.000000" />
+        <Attribute Name="f_initial_positiof_01_z" DataType="3" Value="0.000000" />
+        <Attribute Name="f_initial_positiof_02_x" DataType="3" Value="419.000000" />
+        <Attribute Name="f_initial_positiof_02_y" DataType="3" Value="-2.000000" />
+        <Attribute Name="f_initial_positiof_02_z" DataType="3" Value="0.000000" />
+        <Attribute Name="f_initial_positiof_03_x" DataType="3" Value="409.000000" />
+        <Attribute Name="f_initial_positiof_03_y" DataType="3" Value="3.400000" />
+        <Attribute Name="f_initial_positiof_03_z" DataType="3" Value="0.000000" />
+        <Attribute Name="f_initial_positiof_04_x" DataType="3" Value="414.500000" />
+        <Attribute Name="f_initial_positiof_04_y" DataType="3" Value="3.400000" />
+        <Attribute Name="f_initial_positiof_04_z" DataType="3" Value="0.000000" />
+        <Attribute Name="f_initial_positiof_05_x" DataType="3" Value="420.000000" />
+        <Attribute Name="f_initial_positiof_05_y" DataType="3" Value="3.400000" />
+        <Attribute Name="f_initial_positiof_05_z" DataType="3" Value="0.000000" />
+        <Record n_ID="1" s_map_name="forestmap" n_reward_id1="2010021" n_reward_id2="2010096" n_reward_id3="2010097" n_reward_id4="2010098" n_reward_id5="0" />
+        <Record n_ID="2" s_map_name="desertmap" n_reward_id1="2010097" n_reward_id2="2010098" n_reward_id3="2010099" n_reward_id4="2010113" n_reward_id5="0" />
+        <Record n_ID="3" s_map_name="snowymap" n_reward_id1="2010098" n_reward_id2="2010099" n_reward_id3="2010100" n_reward_id4="2010110" n_reward_id5="0" />
+        <Record n_ID="4" s_map_name="rotmap" n_reward_id1="2010099" n_reward_id2="2010100" n_reward_id3="2010101" n_reward_id4="2010114" n_reward_id5="0" />
+        <Record n_ID="5" s_map_name="junglemap" n_reward_id1="2010100" n_reward_id2="2010101" n_reward_id3="2010102" n_reward_id4="2010112" n_reward_id5="0" />
+        <Record n_ID="6" s_map_name="lavamap" n_reward_id1="2010102" n_reward_id2="2010103" n_reward_id3="2010104" n_reward_id4="2010111" n_reward_id5="2010116" />
+    </Table>
+</ExData>

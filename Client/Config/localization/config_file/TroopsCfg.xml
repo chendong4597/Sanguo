@@ -1,0 +1,27 @@
+<ExData>
+    <Table Name="MonsterType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="n_cop" DataType="1" />
+            <Column Name="s_pos" DataType="4" />
+            <Column Name="n_needLv" DataType="1" />
+            <Column Name="n_max" DataType="1" />
+            <Column Name="n_mainPos" DataType="1" />
+            <Column Name="n_buffID" DataType="1" />
+            <Column Name="s_Attack_03" DataType="4" />
+            <Column Name="s_Attack_04" DataType="4" />
+            <Column Name="s_Attack_05" DataType="4" />
+            <Column Name="s_Attack_06" DataType="4" />
+            <Column Name="s_Attack_07" DataType="4" />
+            <Column Name="s_Attack_08" DataType="4" />
+            <Column Name="s_dead_path" DataType="4" />
+            <Column Name="s_hit_path" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1001" s_Name="ÎÞÕó" s_icon="1001" n_cop="5" s_pos="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25" n_needLv="0" n_max="24" n_mainPos="13" n_buffID="0" s_Attack_03="" s_Attack_04="" s_Attack_05="" s_Attack_06="" s_Attack_07="" s_Attack_08="" s_dead_path="" s_hit_path="" s_desc="" />
+        <Record n_ID="1002" s_Name="³¤ÉßÕó" s_icon="1001" n_cop="3" s_pos="1,2,3,5" n_needLv="1" n_max="3" n_mainPos="5" n_buffID="0" s_Attack_03="" s_Attack_04="" s_Attack_05="" s_Attack_06="" s_Attack_07="" s_Attack_08="" s_dead_path="" s_hit_path="" s_desc="" />
+        <Record n_ID="1003" s_Name="Áù¼×Õó" s_icon="1001" n_cop="4" s_pos="2,3,8,9,10,12" n_needLv="20" n_max="5" n_mainPos="10" n_buffID="0" s_Attack_03="" s_Attack_04="" s_Attack_05="" s_Attack_06="" s_Attack_07="" s_Attack_08="" s_dead_path="" s_hit_path="" s_desc="" />
+    </Table>
+</ExData>

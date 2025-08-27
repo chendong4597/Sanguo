@@ -1,0 +1,29 @@
+<ExData>
+    <Table Name="BuildTowerReform">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_build_type" DataType="1" />
+            <Column Name="n_build_type_reform" DataType="1" />
+            <Column Name="n_coin" DataType="1" />
+            <Column Name="n_item_type_1" DataType="1" />
+            <Column Name="n_item_count_1" DataType="1" />
+            <Column Name="n_item_type_2" DataType="1" />
+            <Column Name="n_item_count_2" DataType="1" />
+            <Column Name="n_item_type_3" DataType="1" />
+            <Column Name="n_item_count_3" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_test" DataType="1" Value="2300" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1" n_build_type="1482001" n_build_type_reform="1482101" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="2" n_build_type="1482001" n_build_type_reform="1482201" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="3" n_build_type="1482701" n_build_type_reform="1482801" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="4" n_build_type="1482701" n_build_type_reform="1482901" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="5" n_build_type="1483401" n_build_type_reform="1483501" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="6" n_build_type="1483401" n_build_type_reform="1483601" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="7" n_build_type="1484101" n_build_type_reform="1484201" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="8" n_build_type="1484101" n_build_type_reform="1484301" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="25" n_build_type="1484901" n_build_type_reform="1485001" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+        <Record n_ID="26" n_build_type="1485001" n_build_type_reform="1485101" n_coin="5000" n_item_type_1="2012208" n_item_count_1="55" n_item_type_2="2012207" n_item_count_2="45" n_item_type_3="2012206" n_item_count_3="45" />
+        <Record n_ID="27" n_build_type="1485901" n_build_type_reform="1486001" n_coin="2000" n_item_type_1="2012208" n_item_count_1="5" n_item_type_2="2012207" n_item_count_2="3" n_item_type_3="2012206" n_item_count_3="3" />
+    </Table>
+</ExData>

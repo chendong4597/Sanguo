@@ -1,0 +1,22 @@
+<ExData>
+    <Table Name="Cooldown">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="n_cooldown" DataType="1" />
+        </ColumnList>
+        <Record n_ID="100" s_name="測試" n_cooldown="0" />
+        <Record n_ID="1001" s_name="藥水HP" n_cooldown="10000" />
+        <Record n_ID="1002" s_name="藥水HP百分比" n_cooldown="5000" />
+        <Record n_ID="1003" s_name="藥水MP" n_cooldown="20000" />
+        <Record n_ID="1004" s_name="藥水MP百分比" n_cooldown="5000" />
+        <Record n_ID="1005" s_name="藥水HPMP" n_cooldown="20000" />
+        <Record n_ID="1006" s_name="藥水HPMP百分比" n_cooldown="5000" />
+        <Record n_ID="1007" s_name="藥水其他BUFF" n_cooldown="10000" />
+        <Record n_ID="1008" s_name="商城藥水HP" n_cooldown="30000" />
+        <Record n_ID="1009" s_name="商城藥水MP" n_cooldown="5000" />
+        <Record n_ID="1010" s_name="商城藥水HPMP" n_cooldown="5000" />
+        <Record n_ID="2000" s_name="食物" n_cooldown="20000" />
+        <Record n_ID="9999" s_name="回城物品" n_cooldown="600000" />
+    </Table>
+</ExData>

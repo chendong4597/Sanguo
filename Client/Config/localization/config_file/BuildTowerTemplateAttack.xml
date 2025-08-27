@@ -1,0 +1,32 @@
+<ExData>
+    <Table Name="BuildTowerTemplateAttack">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_shooting_point" DataType="4" />
+            <Column Name="s_shooting_direction" DataType="4" />
+            <Column Name="n_shooting_fov" DataType="1" />
+            <Column Name="s_shooting_direction1" DataType="4" />
+            <Column Name="n_shooting_fov1" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_test" DataType="1" Value="1" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1200" s_shooting_point="0,0" s_shooting_direction="1,0" n_shooting_fov="90" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="1201" s_shooting_point="0,0" s_shooting_direction="-1,0" n_shooting_fov="180" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="1251" s_shooting_point="0,0" s_shooting_direction="0,1" n_shooting_fov="60" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="1252" s_shooting_point="0,0" s_shooting_direction="0,-1" n_shooting_fov="60" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="1261" s_shooting_point="0,0" s_shooting_direction="10,10" n_shooting_fov="60" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="1262" s_shooting_point="0,0" s_shooting_direction="10,-10" n_shooting_fov="75" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2500" s_shooting_point="-100,-30" s_shooting_direction="-10,-3" n_shooting_fov="52" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2501" s_shooting_point="100,-30" s_shooting_direction="10,-3" n_shooting_fov="52" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2502" s_shooting_point="-100,-17" s_shooting_direction="-100,-17" n_shooting_fov="51" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2503" s_shooting_point="100,-17" s_shooting_direction="100,-17" n_shooting_fov="51" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2504" s_shooting_point="-100,-30" s_shooting_direction="-10,-3" n_shooting_fov="43" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2505" s_shooting_point="100,-30" s_shooting_direction="10,-3" n_shooting_fov="43" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2514" s_shooting_point="0,0" s_shooting_direction="0,1" n_shooting_fov="110" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2515" s_shooting_point="0,0" s_shooting_direction="0,1" n_shooting_fov="110" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2509" s_shooting_point="100,-19" s_shooting_direction="1,0" n_shooting_fov="60" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2508" s_shooting_point="-100,-19" s_shooting_direction="-1,0" n_shooting_fov="60" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2525" s_shooting_point="0,0" s_shooting_direction="0,1" n_shooting_fov="180" s_shooting_direction1="" n_shooting_fov1="-1" />
+        <Record n_ID="2539" s_shooting_point="0,0" s_shooting_direction="0,1" n_shooting_fov="180" s_shooting_direction1="" n_shooting_fov1="-1" />
+    </Table>
+</ExData>

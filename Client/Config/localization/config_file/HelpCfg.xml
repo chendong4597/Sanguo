@@ -1,0 +1,22 @@
+<ExData>
+    <Table Name="HelpCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_title" DataType="4" />
+            <Column Name="s_desc" DataType="4" />
+            <Column Name="s_icon" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" s_title="cfg_help_title_1" s_desc="cfg_help_desc_1" s_icon="help0" />
+        <Record n_ID="2" s_title="cfg_help_title_2" s_desc="cfg_help_desc_2" s_icon="help1" />
+        <Record n_ID="3" s_title="cfg_help_title_3" s_desc="cfg_help_desc_3" s_icon="help2" />
+        <Record n_ID="4" s_title="cfg_help_title_4" s_desc="cfg_help_desc_4" s_icon="help3" />
+        <Record n_ID="5" s_title="cfg_help_title_5" s_desc="cfg_help_desc_5" s_icon="help4" />
+        <Record n_ID="6" s_title="cfg_help_title_6" s_desc="cfg_help_desc_6" s_icon="help5" />
+        <Record n_ID="7" s_title="cfg_help_title_7" s_desc="cfg_help_desc_7" s_icon="help6" />
+        <Record n_ID="8" s_title="cfg_help_title_8" s_desc="cfg_help_desc_8" s_icon="help7" />
+        <Record n_ID="9" s_title="cfg_help_title_9" s_desc="cfg_help_desc_9" s_icon="help8" />
+        <Record n_ID="10" s_title="cfg_help_title_10" s_desc="cfg_help_desc_10" s_icon="help9" />
+        <Record n_ID="11" s_title="cfg_help_title_11" s_desc="cfg_help_desc_11" s_icon="help10" />
+        <Record n_ID="12" s_title="cfg_help_title_12" s_desc="cfg_help_desc_12" s_icon="help11" />
+    </Table>
+</ExData>

@@ -1,0 +1,30 @@
+<ExData>
+    <Table Name="AnimTemplate">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_AnimFoder" DataType="4" />
+            <Column Name="s_AnimPath" DataType="4" />
+            <Column Name="s_SoundEff" DataType="4" />
+            <Column Name="s_SoundEff1" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="/Game/Models/animals/entity" />
+        <Record n_ID="1" s_AnimFoder="chicken_02" s_AnimPath="BP_Chicken02" s_SoundEff="chicken_fly" s_SoundEff1="ckicken02" />
+        <Record n_ID="2" s_AnimFoder="chicken_01" s_AnimPath="BP_Chicken01" s_SoundEff="chicken01" s_SoundEff1="ckicken02" />
+        <Record n_ID="3" s_AnimFoder="chicken_03" s_AnimPath="BP_Chicken03" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="4" s_AnimFoder="cow_01" s_AnimPath="BP_Cow01" s_SoundEff="cow01" s_SoundEff1="" />
+        <Record n_ID="5" s_AnimFoder="cow_02" s_AnimPath="BP_Cow02" s_SoundEff="cow02" s_SoundEff1="" />
+        <Record n_ID="6" s_AnimFoder="cow_03" s_AnimPath="BP_Cow03" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="7" s_AnimFoder="horse_01" s_AnimPath="BP_Horse01" s_SoundEff="horse02" s_SoundEff1="" />
+        <Record n_ID="8" s_AnimFoder="horse_02" s_AnimPath="BP_Horse02" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="9" s_AnimFoder="horse_03" s_AnimPath="BP_Horse03" s_SoundEff="horse01" s_SoundEff1="" />
+        <Record n_ID="10" s_AnimFoder="pig_01" s_AnimPath="BP_Pig01" s_SoundEff="pig02" s_SoundEff1="" />
+        <Record n_ID="11" s_AnimFoder="pig_02" s_AnimPath="BP_Pig02" s_SoundEff="pig01" s_SoundEff1="" />
+        <Record n_ID="12" s_AnimFoder="pig_03" s_AnimPath="BP_Pig03" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="13" s_AnimFoder="sheep_01" s_AnimPath="BP_Sleep01" s_SoundEff="sleep01" s_SoundEff1="" />
+        <Record n_ID="14" s_AnimFoder="sheep_02" s_AnimPath="BP_Sleep02" s_SoundEff="sleep02" s_SoundEff1="" />
+        <Record n_ID="15" s_AnimFoder="sheep_03" s_AnimPath="BP_Sleep03" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="16" s_AnimFoder="fox_01" s_AnimPath="BP_Fox" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="17" s_AnimFoder="lizard_01" s_AnimPath="BP_Lizard" s_SoundEff="" s_SoundEff1="" />
+        <Record n_ID="18" s_AnimFoder="horse_soul" s_AnimPath="BP_Horsesoul" s_SoundEff="" s_SoundEff1="" />
+    </Table>
+</ExData>

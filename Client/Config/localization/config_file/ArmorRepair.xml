@@ -1,0 +1,14 @@
+<ExData>
+    <Table Name="ArmorRepair">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_currency_id" DataType="1" />
+            <Column Name="n_item_id" DataType="1" />
+            <Column Name="n_item_num" DataType="1" />
+            <Column Name="n_lost_num" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_currency_id="1" n_item_id="-1" n_item_num="0" n_lost_num="10" />
+        <Record n_ID="2" n_currency_id="3" n_item_id="-1" n_item_num="0" n_lost_num="0" />
+        <Record n_ID="3" n_currency_id="0" n_item_id="2012205" n_item_num="1" n_lost_num="0" />
+    </Table>
+</ExData>

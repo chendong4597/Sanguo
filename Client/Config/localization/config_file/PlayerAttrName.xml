@@ -1,0 +1,89 @@
+<ExData>
+    <Table Name="PlayerAttrName">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="n_Class" DataType="1" />
+            <Column Name="s_attri_icon" DataType="4" />
+            <Column Name="s_achieve_attri_icon" DataType="4" />
+        </ColumnList>
+        <Record n_ID="1" s_name="UI_PlayerAtterName-MaxHp" n_Class="1" s_attri_icon="role_display.ps_show_icon_004" s_achieve_attri_icon="achievement.ps_show_icon_004" />
+        <Record n_ID="2" s_name="UI_PlayerAtterName-MaxMp" n_Class="1" s_attri_icon="role_display.ps_show_icon_005" s_achieve_attri_icon="achievement.ps_show_icon_005" />
+        <Record n_ID="3" s_name="UI_PlayerAtterName-Patk" n_Class="1" s_attri_icon="role_display.ps_show_icon_006" s_achieve_attri_icon="achievement.ps_show_icon_006" />
+        <Record n_ID="4" s_name="UI_PlayerAtterName-Matk" n_Class="1" s_attri_icon="role_display.ps_show_icon_007" s_achieve_attri_icon="achievement.ps_show_icon_007" />
+        <Record n_ID="5" s_name="UI_PlayerAtterName-Pdef" n_Class="1" s_attri_icon="role_display.ps_show_icon_008" s_achieve_attri_icon="achievement.ps_show_icon_008" />
+        <Record n_ID="6" s_name="UI_PlayerAtterName-Mdef" n_Class="1" s_attri_icon="role_display.ps_show_icon_020" s_achieve_attri_icon="achievement.ps_show_icon_020" />
+        <Record n_ID="7" s_name="UI_PlayerAtterName-PysicalReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_09" s_achieve_attri_icon="formal.ps_finally_attr_icon_09" />
+        <Record n_ID="8" s_name="UI_PlayerAtterName-FireReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_10" s_achieve_attri_icon="formal.ps_finally_attr_icon_10" />
+        <Record n_ID="9" s_name="UI_PlayerAtterName-IceReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_11" s_achieve_attri_icon="formal.ps_finally_attr_icon_11" />
+        <Record n_ID="10" s_name="UI_PlayerAtterName-LightingReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_12" s_achieve_attri_icon="formal.ps_finally_attr_icon_12" />
+        <Record n_ID="11" s_name="UI_PlayerAtterName-EarthReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_13" s_achieve_attri_icon="formal.ps_finally_attr_icon_13" />
+        <Record n_ID="12" s_name="UI_PlayerAtterName-PoisonReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_14" s_achieve_attri_icon="formal.ps_finally_attr_icon_14" />
+        <Record n_ID="13" s_name="UI_PlayerAtterName-HolyReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_15" s_achieve_attri_icon="formal.ps_finally_attr_icon_15" />
+        <Record n_ID="14" s_name="UI_PlayerAtterName-DarkReduce" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_16" s_achieve_attri_icon="formal.ps_finally_attr_icon_16" />
+        <Record n_ID="15" s_name="UI_PlayerAtterName-PysicalPotency" n_Class="2" s_attri_icon="role_display.ps_show_icon_012" s_achieve_attri_icon="achievement.ps_show_icon_012" />
+        <Record n_ID="16" s_name="UI_PlayerAtterName-MagicPotency" n_Class="2" s_attri_icon="role_display.ps_show_icon_019" s_achieve_attri_icon="achievement.ps_show_icon_019" />
+        <Record n_ID="17" s_name="UI_PlayerAtterName-PysicalCri" n_Class="2" s_attri_icon="role_display.ps_show_icon_017" s_achieve_attri_icon="achievement.ps_show_icon_017" />
+        <Record n_ID="18" s_name="UI_PlayerAtterName-MagicCri" n_Class="2" s_attri_icon="role_display.ps_show_icon_016" s_achieve_attri_icon="achievement.ps_show_icon_016" />
+        <Record n_ID="19" s_name="UI_PlayerAtterName-PysicalCriDam" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_22" s_achieve_attri_icon="formal.ps_finally_attr_icon_22" />
+        <Record n_ID="20" s_name="UI_PlayerAtterName-MagicCriDam" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_23" s_achieve_attri_icon="formal.ps_finally_attr_icon_23" />
+        <Record n_ID="21" s_name="UI_PlayerAtterName-PysicalCriResist" n_Class="2" s_attri_icon="role_display.ps_show_icon_014" s_achieve_attri_icon="achievement.ps_show_icon_014" />
+        <Record n_ID="22" s_name="UI_PlayerAtterName-MagicCriResist" n_Class="2" s_attri_icon="role_display.ps_show_icon_011" s_achieve_attri_icon="achievement.ps_show_icon_011" />
+        <Record n_ID="23" s_name="UI_PlayerAtterName-ControlSuc" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_26" s_achieve_attri_icon="formal.ps_finally_attr_icon_26" />
+        <Record n_ID="24" s_name="UI_PlayerAtterName-ControlRes" n_Class="2" s_attri_icon="formal.ps_finally_attr_icon_27" s_achieve_attri_icon="formal.ps_finally_attr_icon_27" />
+        <Record n_ID="25" s_name="UI_PlayerAtterName-AttackSpd" n_Class="1" s_attri_icon="role_display.ps_show_icon_018" s_achieve_attri_icon="achievement.ps_show_icon_018" />
+        <Record n_ID="26" s_name="UI_PlayerAtterName-MoveSpd" n_Class="1" s_attri_icon="role_display.ps_show_icon_009" s_achieve_attri_icon="achievement.ps_show_icon_009" />
+        <Record n_ID="27" s_name="UI_PlayerAtterName-KnockBack" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="28" s_name="UI_PlayerAtterName-HpRevive" n_Class="1" s_attri_icon="role_display.ps_show_icon_015" s_achieve_attri_icon="achievement.ps_show_icon_015" />
+        <Record n_ID="29" s_name="UI_PlayerAtterName-HpReviveSpd" n_Class="1" s_attri_icon="role_display.ps_show_icon_015" s_achieve_attri_icon="achievement.ps_show_icon_015" />
+        <Record n_ID="30" s_name="UI_PlayerAtterName-MpRevive" n_Class="1" s_attri_icon="role_display.ps_show_icon_013" s_achieve_attri_icon="achievement.ps_show_icon_013" />
+        <Record n_ID="31" s_name="UI_PlayerAtterName-MpReviveSpd" n_Class="1" s_attri_icon="role_display.ps_show_icon_013" s_achieve_attri_icon="achievement.ps_show_icon_013" />
+        <Record n_ID="32" s_name="UI_PlayerAtterName-ResourceAtk" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="33" s_name="UI_PlayerAtterName-Jump" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="34" s_name="UI_PlayerAtterName-Swim" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="35" s_name="UI_PlayerAtterName-AttackDistance" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="36" s_name="UI_PlayerAtterName-ResourceSpd" n_Class="1" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="37" s_name="UI_PlayerAtterName-ChaseSpd" n_Class="1" s_attri_icon="role_display.ps_show_icon_009" s_achieve_attri_icon="achievement.ps_show_icon_009" />
+        <Record n_ID="38" s_name="UI_PlayerAtterName-BossDmgIncrease" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="39" s_name="UI_PlayerAtterName-BossDmgDecrease" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="101" s_name="UI_PlayerAtterName-MaxHp" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="102" s_name="UI_PlayerAtterName-MaxMp" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="103" s_name="UI_PlayerAtterName-Patk" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="104" s_name="UI_PlayerAtterName-Matk" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="105" s_name="UI_PlayerAtterName-Pdef" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="106" s_name="UI_PlayerAtterName-Mdef" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="107" s_name="UI_PlayerAtterName-PysicalReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="108" s_name="UI_PlayerAtterName-FireReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="109" s_name="UI_PlayerAtterName-IceReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="110" s_name="UI_PlayerAtterName-LightingReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="111" s_name="UI_PlayerAtterName-EarthReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="112" s_name="UI_PlayerAtterName-PoisonReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="113" s_name="UI_PlayerAtterName-HolyReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="114" s_name="UI_PlayerAtterName-DarkReduce" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="115" s_name="UI_PlayerAtterName-PysicalPotency" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="116" s_name="UI_PlayerAtterName-MagicPotency" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="117" s_name="UI_PlayerAtterName-PysicalCri" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="118" s_name="UI_PlayerAtterName-MagicCri" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="119" s_name="UI_PlayerAtterName-PysicalCriDam" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="120" s_name="UI_PlayerAtterName-MagicCriDam" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="121" s_name="UI_PlayerAtterName-PysicalCriResist" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="122" s_name="UI_PlayerAtterName-MagicCriResist" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="123" s_name="UI_PlayerAtterName-ControlSuc" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="124" s_name="UI_PlayerAtterName-ControlRes" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="125" s_name="UI_PlayerAtterName-AttackSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="126" s_name="UI_PlayerAtterName-MoveSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="127" s_name="UI_PlayerAtterName-KnockBack" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="128" s_name="UI_PlayerAtterName-HpRevive" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="129" s_name="UI_PlayerAtterName-HpReviveSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="130" s_name="UI_PlayerAtterName-MpRevive" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="131" s_name="UI_PlayerAtterName-MpReviveSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="132" s_name="UI_PlayerAtterName-ResourceAtk" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="133" s_name="UI_PlayerAtterName-Jump" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="134" s_name="UI_PlayerAtterName-Swim" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="135" s_name="UI_PlayerAtterName-AttackDistance" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="136" s_name="UI_PlayerAtterName-ResourceSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="137" s_name="UI_PlayerAtterName-ChaseSpd" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="138" s_name="UI_PlayerAtterName-BossDmgIncrease" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+        <Record n_ID="139" s_name="UI_PlayerAtterName-BossDmgDecrease" n_Class="2" s_attri_icon="" s_achieve_attri_icon="" />
+    </Table>
+</ExData>

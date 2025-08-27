@@ -1,0 +1,38 @@
+<ExData>
+    <Table Name="PowerCalAttr">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="s_name" DataType="4" />
+            <Column Name="n_calType" DataType="1" />
+            <Column Name="n_Power" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_towercount" DataType="1" Value="12" />
+        <Record n_ID="1" s_name="最大生命值" n_calType="1" n_Power="1" />
+        <Record n_ID="2" s_name="最大魔力" n_calType="1" n_Power="0" />
+        <Record n_ID="3" s_name="物理攻擊" n_calType="1" n_Power="14" />
+        <Record n_ID="5" s_name="物理防禦" n_calType="1" n_Power="18" />
+        <Record n_ID="4" s_name="魔法攻擊" n_calType="1" n_Power="14" />
+        <Record n_ID="6" s_name="魔法防禦" n_calType="1" n_Power="18" />
+        <Record n_ID="17" s_name="物理爆擊率" n_calType="3" n_Power="7" />
+        <Record n_ID="18" s_name="魔法爆击率" n_calType="3" n_Power="7" />
+        <Record n_ID="19" s_name="物理爆擊增傷" n_calType="3" n_Power="3" />
+        <Record n_ID="20" s_name="魔法爆擊增傷" n_calType="3" n_Power="3" />
+        <Record n_ID="21" s_name="物裡韌性" n_calType="3" n_Power="2" />
+        <Record n_ID="22" s_name="魔法韌性" n_calType="3" n_Power="2" />
+        <Record n_ID="15" s_name="物裡穿透" n_calType="3" n_Power="4" />
+        <Record n_ID="16" s_name="魔法穿透" n_calType="3" n_Power="4" />
+        <Record n_ID="7" s_name="物理減免" n_calType="3" n_Power="20" />
+        <Record n_ID="24" s_name="控制抵抗" n_calType="3" n_Power="5" />
+        <Record n_ID="25" s_name="攻击速度" n_calType="4" n_Power="400" />
+        <Record n_ID="37" s_name="追击速度（显示为移动速度）" n_calType="1" n_Power="4" />
+        <Record n_ID="8" s_name="火" n_calType="3" n_Power="3" />
+        <Record n_ID="9" s_name="冰" n_calType="3" n_Power="3" />
+        <Record n_ID="10" s_name="雷" n_calType="3" n_Power="3" />
+        <Record n_ID="11" s_name="土" n_calType="3" n_Power="3" />
+        <Record n_ID="12" s_name="毒" n_calType="3" n_Power="3" />
+        <Record n_ID="13" s_name="光" n_calType="3" n_Power="3" />
+        <Record n_ID="14" s_name="暗" n_calType="3" n_Power="3" />
+        <Record n_ID="28" s_name="生命恢复" n_calType="2" n_Power="2" />
+        <Record n_ID="30" s_name="法力回复" n_calType="2" n_Power="1" />
+    </Table>
+</ExData>

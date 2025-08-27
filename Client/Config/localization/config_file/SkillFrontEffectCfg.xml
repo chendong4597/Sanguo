@@ -1,0 +1,14 @@
+<ExData>
+    <Table Name="SkillFrontEffectCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_SockName" DataType="4" />
+            <Column Name="s_DemoPath" DataType="4" />
+            <Column Name="f_tm" DataType="3" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="/Game/effect/skill" />
+        <Record n_ID="2001" n_Type="0" s_SockName="S_MagicFoot" s_DemoPath="GroundThorn/GroundEff.GroundEff" f_tm="4.000000" s_desc="大锤子砸地前置特效" />
+    </Table>
+</ExData>

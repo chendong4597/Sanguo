@@ -1,0 +1,35 @@
+<ExData>
+    <Table Name="MonsterType">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_FocusSpeed" DataType="1" />
+            <Column Name="n_PartalSpeed" DataType="1" />
+            <Column Name="s_SubFoder" DataType="4" />
+            <Column Name="s_BPName" DataType="4" />
+            <Column Name="n_AttackNum" DataType="1" />
+            <Column Name="n_AttackDis" DataType="1" />
+            <Column Name="n_AtkSight" DataType="1" />
+            <Column Name="n_LoseSight" DataType="1" />
+            <Column Name="n_AtkAngle" DataType="1" />
+            <Column Name="n_AI" DataType="1" />
+            <Column Name="n_SkillID1" DataType="1" />
+            <Column Name="n_SkillID2" DataType="1" />
+            <Column Name="n_SkillID3" DataType="1" />
+            <Column Name="n_SkillID4" DataType="1" />
+            <Column Name="s_desc" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_AniName" DataType="4" Value="" />
+        <Attribute Name="s_Death" DataType="4" Value="dead_Montage" />
+        <Attribute Name="s_Hit" DataType="4" Value="hurt_Montage" />
+        <Attribute Name="s_Path" DataType="4" Value="/Game/Models/Monster/entity_s" />
+        <Record n_ID="102" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="106" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="107" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="10001" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="10002" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="10003" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+        <Record n_ID="10004" n_Type="1" s_Name="Ä¾ÄËÒÁ" n_FocusSpeed="600" n_PartalSpeed="100" s_SubFoder="mantis" s_BPName="BP_mantis" n_AttackNum="2" n_AttackDis="200" n_AtkSight="5000" n_LoseSight="15000" n_AtkAngle="360" n_AI="1" n_SkillID1="2001" n_SkillID2="2002" n_SkillID3="2003" n_SkillID4="2003" s_desc="Ä¾ÄËÒÁ" />
+    </Table>
+</ExData>

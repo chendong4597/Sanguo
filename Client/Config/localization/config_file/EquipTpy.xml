@@ -1,0 +1,44 @@
+<ExData>
+    <Table Name="EquipTpy">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_ManFoder" DataType="4" />
+            <Column Name="s_WomanFoder" DataType="4" />
+            <Column Name="n_IsWrap" DataType="1" />
+            <Column Name="s_Head" DataType="4" />
+            <Column Name="s_Body" DataType="4" />
+            <Column Name="s_Legs" DataType="4" />
+            <Column Name="s_Cape" DataType="4" />
+            <Column Name="s_Wrap" DataType="4" />
+            <Column Name="s_Head1" DataType="4" />
+            <Column Name="s_Body1" DataType="4" />
+            <Column Name="s_Legs1" DataType="4" />
+            <Column Name="s_Cape1" DataType="4" />
+            <Column Name="s_Wrap1" DataType="4" />
+            <Column Name="n_ShowHair" DataType="1" />
+        </ColumnList>
+        <Attribute Name="s_DmanBodyNonePath" DataType="4" Value="/Game/Player/man/mesh/equip/normal/body/diffuse.diffuse" />
+        <Attribute Name="s_DmanLegsNonePath" DataType="4" Value="/Game/Player/man/mesh/equip/normal/legs/diffuse.diffuse" />
+        <Attribute Name="s_DwomanBodyNonePath" DataType="4" Value="/Game/Player/woman/mesh/equip/normal/body/diffuse.diffuse" />
+        <Attribute Name="s_DwomanLegsNonePath" DataType="4" Value="/Game/Player/woman/mesh/equip/normal/legs/diffuse.diffuse" />
+        <Attribute Name="s_manBodyNonePath" DataType="4" Value="/Game/Player/man/mesh/equip/normal/body/body.body" />
+        <Attribute Name="s_manLegsNonePath" DataType="4" Value="/Game/Player/man/mesh/equip/normal/legs/legs.legs" />
+        <Attribute Name="s_manPath" DataType="4" Value="/Game/Player/man/mesh/equip" />
+        <Attribute Name="s_womanBodyNonePath" DataType="4" Value="/Game/Player/woman/mesh/equip/normal/body/body.body" />
+        <Attribute Name="s_womanLegsNonePath" DataType="4" Value="/Game/Player/woman/mesh/equip/normal/legs/leg.leg" />
+        <Attribute Name="s_womanPath" DataType="4" Value="/Game/Player/woman/mesh/equip" />
+        <Record n_ID="1" n_Type="2" s_ManFoder="normal" s_WomanFoder="normal" n_IsWrap="0" s_Head="" s_Body="body" s_Legs="" s_Cape="" s_Wrap="" s_Head1="" s_Body1="body" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="2" n_Type="3" s_ManFoder="normal" s_WomanFoder="normal" n_IsWrap="0" s_Head="" s_Body="" s_Legs="legs" s_Cape="" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="legs" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100001" n_Type="1" s_ManFoder="man_copper_01" s_WomanFoder="woman_copper_01" n_IsWrap="0" s_Head="man_copper_01_head" s_Body="" s_Legs="" s_Cape="" s_Wrap="" s_Head1="woman_copper_01_head" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100002" n_Type="2" s_ManFoder="man_copper_01" s_WomanFoder="woman_copper_01" n_IsWrap="0" s_Head="" s_Body="man_copper_01_body" s_Legs="" s_Cape="" s_Wrap="" s_Head1="" s_Body1="woman_copper_01_body" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100003" n_Type="3" s_ManFoder="man_copper_01" s_WomanFoder="woman_copper_01" n_IsWrap="0" s_Head="" s_Body="" s_Legs="man_copper_01_leg" s_Cape="" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="woman_copper_01_leg" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100004" n_Type="4" s_ManFoder="man_copper_01" s_WomanFoder="woman_copper_01" n_IsWrap="0" s_Head="" s_Body="" s_Legs="" s_Cape="man_copper_01_cape" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="woman_copper_01_cape" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100005" n_Type="5" s_ManFoder="man_zorro" s_WomanFoder="woman_zorro" n_IsWrap="1" s_Head="man_zorro_hat" s_Body="man_zorro_body" s_Legs="man_zorro_pants" s_Cape="" s_Wrap="" s_Head1="woman_zorro_hat" s_Body1="woman_zorro_coat" s_Legs1="woman_zorro_pants" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="100006" n_Type="5" s_ManFoder="suit_chef" s_WomanFoder="suit_chef" n_IsWrap="1" s_Head="" s_Body="" s_Legs="" s_Cape="" s_Wrap="suit_chef" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="suit_chef" n_ShowHair="0" />
+        <Record n_ID="1320001" n_Type="1" s_ManFoder="man_wood_01" s_WomanFoder="woman_wood_01" n_IsWrap="0" s_Head="man_wood_01_head" s_Body="" s_Legs="" s_Cape="" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="1320002" n_Type="2" s_ManFoder="man_wood_01" s_WomanFoder="woman_wood_01" n_IsWrap="0" s_Head="" s_Body="man_wood_01_body" s_Legs="" s_Cape="" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="1320003" n_Type="3" s_ManFoder="man_wood_01" s_WomanFoder="woman_wood_01" n_IsWrap="0" s_Head="" s_Body="" s_Legs="man_wood_01_leg" s_Cape="" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+        <Record n_ID="1320004" n_Type="4" s_ManFoder="man_wood_01" s_WomanFoder="woman_wood_01" n_IsWrap="0" s_Head="" s_Body="" s_Legs="" s_Cape="man_wood_01_cape" s_Wrap="" s_Head1="" s_Body1="" s_Legs1="" s_Cape1="" s_Wrap1="" n_ShowHair="0" />
+    </Table>
+</ExData>

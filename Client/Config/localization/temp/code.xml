@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <trans key="CLI_HandlerAchieve-ACHIEVE_RESUT_FAILURE" numchar="-1" from="code.po" />
+    <trans key="CLI_HandlerAchieve-ACHIEVE_RESUT_ITEM_FULL" numchar="-1" from="code.po" />
+    <trans key="CLI_HandlerAchieve-ACHIEVE_RESUT_NOT_ACCOMPLISH" numchar="-1" from="code.po" />
+    <trans key="CLI_HandlerAchieve-ACHIEVE_RESUT_RECEIVED" numchar="-1" from="code.po" />
+    <trans key="CLI_HandlerAchieve-ACHIEVE_RESUT_TEMPLATE_ERROR" numchar="-1" from="code.po" />
+    <trans key="CLI_ItemTipBox-First Eating food: {0}+{1}" numchar="-1" from="code.po" />
+    <trans key="CLI_Npc-Availible Gift For LV{0}:" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-NPC_REVIVE_FAILURE" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-NPC_REVIVE_FAILURE_BECAUSE_OF_NO_ENOUGH_COIN" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-NPC_REVIVE_SUCCESS" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-Undefined BuildRoom config!" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-Undefined Room Condition Type" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-room comfort is not enough" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-room height not enough" numchar="-1" from="code.po" />
+    <trans key="CLI_NpcBadgeSys-room space param error" numchar="-1" from="code.po" />
+    <trans key="MsgConvoyS2C_Result_suc" numchar="-1" from="code.po" />
+    <trans key="MsgConvoyS2C_recall_suc" numchar="-1" from="code.po" />
+    <trans key="REVIVE_IN_CD" numchar="-1" from="code.po" />
+    <trans key="SRV_MsgProtectorEquipResS2C-MsgProtectorUseEssenceResS2C_RESULT_SUCCESS , then use les = {0}/{1}" numchar="-1" from="code.po" />
+    <trans key="SRV_MsgProtectorRebornAtOnceS2C-EC_ProtectorResult_NpcNotExist" numchar="-1" from="code.po" />
+    <trans key="SRV_MsgProtectorRebornAtOnceS2C-EC_ProtectorResult_RebornLackCost" numchar="-1" from="code.po" />
+    <trans key="UI_ARMY_DONATE_MATERIAL_CONFIRM" numchar="-1" from="code.po" />
+    <trans key="UI_ARMY_DONATE_RATE_TIP" numchar="-1" from="code.po" />
+    <trans key="UI_COMMON_PLAYER_GET_CASH" numchar="-1" from="code.po" />
+    <trans key="UI_COMMON_PLAYER_GET_COIN" numchar="-1" from="code.po" />
+    <trans key="UI_DONATE_SHOW" numchar="-1" from="code.po" />
+    <trans key="UI_HOUSE_IN_TIPS" numchar="-1" from="code.po" />
+    <trans key="UI_HOUSE_OUT_TIPS" numchar="-1" from="code.po" />
+    <trans key="UI_HUD_STALL_NAME" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_CRAFT_BEGIN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_CRAFT_END" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_CRAFT_GET" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_BEGIN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_END" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_FLAG_BEGIN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_FLAG_END" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_ROAD_BEGIN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_ROAD_END" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_WALL_BEGIN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_HOUSE_UP_WALL_END" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_LOTTERY_0" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_LOTTERY_1" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_LOTTERY_2" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_NPC_IN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_NPC_LV" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_NPC_OUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_CUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_FARM_CUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_FARM_IN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_FARM_OUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_FARM_OUT_NPC" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_IN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_MAN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_MINE_IN" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_MINE_OUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_OUT" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_PLANT_OUT_NPC" numchar="-1" from="code.po" />
+    <trans key="UI_NOTES_TIPS_RENT" numchar="-1" from="code.po" />
+    <trans key="UI_NPC_QUIP_SUCCESS" numchar="-1" from="code.po" />
+    <trans key="UI_NPC_TALK_CONVOY_RECALL" numchar="-1" from="code.po" />
+    <trans key="UI_TIME_SHOW_DAYS" numchar="-1" from="code.po" />
+    <trans key="UI_TIME_SHOW_HOURS" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_BUY_CONFIRM_NOT_ENOUGH" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_CONFIRM_BUY" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_CONFIRM_SELL" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_CONFIRM_T_BUY" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_CONFIRM_T_SELL" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_GO_BEING" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_GO_END" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_IS_FULL" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_NOT_GUID" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_NPC_BUY_FAILED" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_NPC_SELL_FAILED" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_RECALLITEM_BUY" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_RECALLITEM_COST" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_RECALLITEM_GET" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_RECALLITEM_SELL" numchar="-1" from="code.po" />
+    <trans key="UI_TRADE_SELL_CONFIRM_NOT_ENOUGH" numchar="-1" from="code.po" />
+    <trans key="UI_TXT_DES_G_TRADE1" numchar="-1" from="code.po" />
+    <trans key="UI_TXT_DES_G_TRADE2" numchar="-1" from="code.po" />
+    <trans key="UI_TXT_TITLE_TRADE1" numchar="-1" from="code.po" />
+    <trans key="UI_TXT_TITLE_TRADE2" numchar="-1" from="code.po" />
+    <trans key="UI_USE_ITEM_SUCCESS" numchar="-1" from="code.po" />
+    <trans key="cfg_donate_name_0" numchar="-1" from="code.po" />
+</root>

@@ -1,0 +1,30 @@
+
+---------代入翻译的同学看下面这行即可
+负责代入多语言的同学只需要在temp目录下打开empty_keys_xx.xml（XX代表语种缩写），然后在对应列录入翻译后保存提交即可,如果用EXCEL打开编辑后导出的，需要先把翻译列做升序一下，然后把没有翻译的行全部删除并且命名为empty_keys_xx_name.xml，name是提交人的名字，如果有多份重复提交，就在名字后加1,2,3……如此，原先的empty_keys_xx.xml不要覆盖
+修改旧翻译的，直接打开i18n.xml修改保存提交即可，如果是用EXCEL打开编辑的，导出后可以执行FORMAT后再提交
+
+
+
+
+
+
+---------------------以下为仅限我本人操作
+
+
+
+方法一
+1.创建EXCEL表，将KEY放在A列，翻译放在B列，首行作为标签，A1单元格内容必须为key，B1单元格内容为对应语言的缩写，例如zh_tw
+2.执行Xlsx2Xml.exe将翻译表导出XML表
+3.将导出的XML表改名为empty_en_us.xml(不同的语种，相应不同的语言文件名，例如日本为empty_jp.xml)
+4.将XML文件剪切到\localization\extra里
+5.执行 pack_translation_des.bat ,输入对应语言缩写，会在BIN目录下生成 .mo 文件
+6.在BIN目录下将MO文件提交
+
+
+方法二
+
+3.把翻译的文件改名为empty_xx.xml（xx代表语种）
+4.把文件剪切到\localization\extra里
+5.执行 pack_translation_des.bat ,输入对应语言缩写，会在BIN目录下生成 .mo 文件
+6.在BIN目录下将MO文件提交
+

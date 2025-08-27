@@ -1,0 +1,25 @@
+<ExData>
+    <Table Name="DonateCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Num" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_DonateNum" DataType="1" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="n_AD" DataType="1" />
+            <Column Name="n_AP" DataType="1" />
+            <Column Name="n_HPM" DataType="1" />
+            <Column Name="n_MPM" DataType="1" />
+            <Column Name="n_ARM" DataType="1" />
+            <Column Name="n_MARM" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_DonateNum" DataType="1" Value="95" />
+        <Attribute Name="n_LessDonate" DataType="1" Value="10000" />
+        <Record n_ID="1" n_Num="3" s_Name="cfg_donate_name_1" n_DonateNum="0" s_icon="xsj_jw_02" n_AD="100" n_AP="100" n_HPM="1500" n_MPM="1500" n_ARM="50" n_MARM="50" />
+        <Record n_ID="2" n_Num="12" s_Name="cfg_donate_name_2" n_DonateNum="0" s_icon="xsj_jw_04" n_AD="50" n_AP="50" n_HPM="1000" n_MPM="1000" n_ARM="30" n_MARM="30" />
+        <Record n_ID="3" n_Num="30" s_Name="cfg_donate_name_3" n_DonateNum="0" s_icon="xsj_jw_05" n_AD="30" n_AP="30" n_HPM="800" n_MPM="800" n_ARM="10" n_MARM="10" />
+        <Record n_ID="4" n_Num="50" s_Name="cfg_donate_name_4" n_DonateNum="0" s_icon="xsj_jw_06" n_AD="20" n_AP="20" n_HPM="500" n_MPM="500" n_ARM="5" n_MARM="5" />
+        <Record n_ID="5" n_Num="0" s_Name="cfg_donate_name_5" n_DonateNum="100000" s_icon="xsj_jw_07" n_AD="10" n_AP="10" n_HPM="200" n_MPM="200" n_ARM="0" n_MARM="0" />
+        <Record n_ID="6" n_Num="0" s_Name="cfg_donate_name_6" n_DonateNum="10000" s_icon="xsj_jw_08" n_AD="0" n_AP="0" n_HPM="100" n_MPM="100" n_ARM="0" n_MARM="0" />
+    </Table>
+</ExData>

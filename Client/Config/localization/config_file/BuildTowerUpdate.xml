@@ -1,0 +1,129 @@
+<ExData>
+    <Table Name="BuildTowerUpdate">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_build_cfg_type" DataType="1" />
+            <Column Name="n_level" DataType="1" />
+            <Column Name="n_coin" DataType="1" />
+            <Column Name="n_item_type_1" DataType="1" />
+            <Column Name="n_item_count_1" DataType="1" />
+            <Column Name="n_item_type_2" DataType="1" />
+            <Column Name="n_item_count_2" DataType="1" />
+            <Column Name="n_item_type_3" DataType="1" />
+            <Column Name="n_item_count_3" DataType="1" />
+        </ColumnList>
+        <Attribute Name="n_test" DataType="1" Value="2300" />
+        <Attribute Name="s_test" DataType="4" Value="test" />
+        <Record n_ID="1480001" n_build_cfg_type="1480001" n_level="1" n_coin="80" n_item_type_1="1421001" n_item_count_1="2" n_item_type_2="1421002" n_item_count_2="1" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480002" n_build_cfg_type="1480001" n_level="2" n_coin="160" n_item_type_1="1421001" n_item_count_1="3" n_item_type_2="1421002" n_item_count_2="2" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480003" n_build_cfg_type="1480001" n_level="3" n_coin="260" n_item_type_1="1421001" n_item_count_1="7" n_item_type_2="1421002" n_item_count_2="3" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480004" n_build_cfg_type="1480001" n_level="4" n_coin="400" n_item_type_1="1421001" n_item_count_1="10" n_item_type_2="1421002" n_item_count_2="5" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480005" n_build_cfg_type="1480001" n_level="5" n_coin="580" n_item_type_1="1421001" n_item_count_1="14" n_item_type_2="1421002" n_item_count_2="6" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480006" n_build_cfg_type="1480001" n_level="6" n_coin="920" n_item_type_1="1421001" n_item_count_1="23" n_item_type_2="1421002" n_item_count_2="10" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480007" n_build_cfg_type="1480001" n_level="7" n_coin="1160" n_item_type_1="1421001" n_item_count_1="29" n_item_type_2="1421002" n_item_count_2="13" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480008" n_build_cfg_type="1480001" n_level="8" n_coin="1450" n_item_type_1="1421001" n_item_count_1="36" n_item_type_2="1421002" n_item_count_2="16" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480009" n_build_cfg_type="1480001" n_level="9" n_coin="1790" n_item_type_1="1421001" n_item_count_1="44" n_item_type_2="1421002" n_item_count_2="20" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480010" n_build_cfg_type="1480001" n_level="10" n_coin="2200" n_item_type_1="1421001" n_item_count_1="54" n_item_type_2="1421002" n_item_count_2="24" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480011" n_build_cfg_type="1480001" n_level="11" n_coin="2650" n_item_type_1="1421001" n_item_count_1="66" n_item_type_2="1421002" n_item_count_2="29" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480012" n_build_cfg_type="1480001" n_level="12" n_coin="3170" n_item_type_1="1421001" n_item_count_1="78" n_item_type_2="1421002" n_item_count_2="35" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480013" n_build_cfg_type="1480001" n_level="13" n_coin="3780" n_item_type_1="1421001" n_item_count_1="93" n_item_type_2="1421002" n_item_count_2="41" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480014" n_build_cfg_type="1480001" n_level="14" n_coin="4440" n_item_type_1="1421001" n_item_count_1="110" n_item_type_2="1421002" n_item_count_2="48" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480015" n_build_cfg_type="1480001" n_level="15" n_coin="5190" n_item_type_1="1421001" n_item_count_1="129" n_item_type_2="1421002" n_item_count_2="56" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480016" n_build_cfg_type="1480001" n_level="16" n_coin="6690" n_item_type_1="1421001" n_item_count_1="166" n_item_type_2="1421002" n_item_count_2="72" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480017" n_build_cfg_type="1480001" n_level="17" n_coin="7610" n_item_type_1="1421001" n_item_count_1="189" n_item_type_2="1421002" n_item_count_2="83" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480018" n_build_cfg_type="1480001" n_level="18" n_coin="8610" n_item_type_1="1421001" n_item_count_1="213" n_item_type_2="1421002" n_item_count_2="94" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480019" n_build_cfg_type="1480001" n_level="19" n_coin="9750" n_item_type_1="1421001" n_item_count_1="242" n_item_type_2="1421002" n_item_count_2="106" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480020" n_build_cfg_type="1480001" n_level="20" n_coin="10980" n_item_type_1="1421001" n_item_count_1="271" n_item_type_2="1421002" n_item_count_2="120" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480021" n_build_cfg_type="1480001" n_level="21" n_coin="12310" n_item_type_1="1421001" n_item_count_1="306" n_item_type_2="1421002" n_item_count_2="135" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480022" n_build_cfg_type="1480001" n_level="22" n_coin="13800" n_item_type_1="1421001" n_item_count_1="342" n_item_type_2="1421002" n_item_count_2="151" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480023" n_build_cfg_type="1480001" n_level="23" n_coin="15410" n_item_type_1="1421001" n_item_count_1="382" n_item_type_2="1421002" n_item_count_2="168" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480024" n_build_cfg_type="1480001" n_level="24" n_coin="17140" n_item_type_1="1421001" n_item_count_1="426" n_item_type_2="1421002" n_item_count_2="187" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480025" n_build_cfg_type="1480001" n_level="25" n_coin="18980" n_item_type_1="1421001" n_item_count_1="470" n_item_type_2="1421002" n_item_count_2="207" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480026" n_build_cfg_type="1480001" n_level="26" n_coin="21050" n_item_type_1="1421001" n_item_count_1="520" n_item_type_2="1421002" n_item_count_2="229" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480027" n_build_cfg_type="1480001" n_level="27" n_coin="23120" n_item_type_1="1421001" n_item_count_1="573" n_item_type_2="1421002" n_item_count_2="252" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480028" n_build_cfg_type="1480001" n_level="28" n_coin="25420" n_item_type_1="1421001" n_item_count_1="629" n_item_type_2="1421002" n_item_count_2="277" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480029" n_build_cfg_type="1480001" n_level="29" n_coin="27830" n_item_type_1="1421001" n_item_count_1="689" n_item_type_2="1421002" n_item_count_2="304" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1480030" n_build_cfg_type="1480001" n_level="30" n_coin="30360" n_item_type_1="1421001" n_item_count_1="751" n_item_type_2="1421002" n_item_count_2="331" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481001" n_build_cfg_type="1481001" n_level="1" n_coin="80" n_item_type_1="1421001" n_item_count_1="1" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481002" n_build_cfg_type="1481001" n_level="2" n_coin="160" n_item_type_1="1421001" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481003" n_build_cfg_type="1481001" n_level="3" n_coin="260" n_item_type_1="1421001" n_item_count_1="7" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481004" n_build_cfg_type="1481001" n_level="4" n_coin="400" n_item_type_1="1421001" n_item_count_1="10" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481005" n_build_cfg_type="1481001" n_level="5" n_coin="580" n_item_type_1="1421001" n_item_count_1="14" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481006" n_build_cfg_type="1481001" n_level="6" n_coin="920" n_item_type_1="1421001" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481007" n_build_cfg_type="1481001" n_level="7" n_coin="1160" n_item_type_1="1421001" n_item_count_1="29" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481008" n_build_cfg_type="1481001" n_level="8" n_coin="1450" n_item_type_1="1421001" n_item_count_1="36" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1481009" n_build_cfg_type="1481001" n_level="9" n_coin="1790" n_item_type_1="1421001" n_item_count_1="44" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482001" n_build_cfg_type="1482001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482002" n_build_cfg_type="1482001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482003" n_build_cfg_type="1482001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482004" n_build_cfg_type="1482001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482005" n_build_cfg_type="1482001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482006" n_build_cfg_type="1482001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482007" n_build_cfg_type="1482001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482008" n_build_cfg_type="1482001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1482009" n_build_cfg_type="1482001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483001" n_build_cfg_type="1483001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483002" n_build_cfg_type="1483001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483003" n_build_cfg_type="1483001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483004" n_build_cfg_type="1483001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483005" n_build_cfg_type="1483001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483006" n_build_cfg_type="1483001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483007" n_build_cfg_type="1483001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483008" n_build_cfg_type="1483001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1483009" n_build_cfg_type="1483001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484001" n_build_cfg_type="1484001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484002" n_build_cfg_type="1484001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484003" n_build_cfg_type="1484001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484004" n_build_cfg_type="1484001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484005" n_build_cfg_type="1484001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484006" n_build_cfg_type="1484001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484007" n_build_cfg_type="1484001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484008" n_build_cfg_type="1484001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1484009" n_build_cfg_type="1484001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485001" n_build_cfg_type="1485001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485002" n_build_cfg_type="1485001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485003" n_build_cfg_type="1485001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485004" n_build_cfg_type="1485001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485005" n_build_cfg_type="1485001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485006" n_build_cfg_type="1485001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485007" n_build_cfg_type="1485001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485008" n_build_cfg_type="1485001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1485009" n_build_cfg_type="1485001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486001" n_build_cfg_type="1486001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486002" n_build_cfg_type="1486001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486003" n_build_cfg_type="1486001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486004" n_build_cfg_type="1486001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486005" n_build_cfg_type="1486001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486006" n_build_cfg_type="1486001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486007" n_build_cfg_type="1486001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486008" n_build_cfg_type="1486001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1486009" n_build_cfg_type="1486001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487001" n_build_cfg_type="1487001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487002" n_build_cfg_type="1487001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487003" n_build_cfg_type="1487001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487004" n_build_cfg_type="1487001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487005" n_build_cfg_type="1487001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487006" n_build_cfg_type="1487001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487007" n_build_cfg_type="1487001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487008" n_build_cfg_type="1487001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1487009" n_build_cfg_type="1487001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488001" n_build_cfg_type="1488001" n_level="1" n_coin="65" n_item_type_1="1421001" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488002" n_build_cfg_type="1488001" n_level="2" n_coin="130" n_item_type_1="1421001" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488003" n_build_cfg_type="1488001" n_level="3" n_coin="210" n_item_type_1="1421001" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488004" n_build_cfg_type="1488001" n_level="4" n_coin="320" n_item_type_1="1421001" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488005" n_build_cfg_type="1488001" n_level="5" n_coin="450" n_item_type_1="1421001" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488006" n_build_cfg_type="1488001" n_level="6" n_coin="720" n_item_type_1="1421001" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488007" n_build_cfg_type="1488001" n_level="7" n_coin="910" n_item_type_1="1421001" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488008" n_build_cfg_type="1488001" n_level="8" n_coin="1130" n_item_type_1="1421001" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1488009" n_build_cfg_type="1488001" n_level="9" n_coin="1400" n_item_type_1="1421001" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489001" n_build_cfg_type="1489001" n_level="1" n_coin="65" n_item_type_1="1421002" n_item_count_1="2" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489002" n_build_cfg_type="1489001" n_level="2" n_coin="130" n_item_type_1="1421002" n_item_count_1="3" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489003" n_build_cfg_type="1489001" n_level="3" n_coin="210" n_item_type_1="1421002" n_item_count_1="5" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489004" n_build_cfg_type="1489001" n_level="4" n_coin="320" n_item_type_1="1421002" n_item_count_1="8" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489005" n_build_cfg_type="1489001" n_level="5" n_coin="450" n_item_type_1="1421002" n_item_count_1="11" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489006" n_build_cfg_type="1489001" n_level="6" n_coin="720" n_item_type_1="1421002" n_item_count_1="18" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489007" n_build_cfg_type="1489001" n_level="7" n_coin="910" n_item_type_1="1421002" n_item_count_1="23" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489008" n_build_cfg_type="1489001" n_level="8" n_coin="1130" n_item_type_1="1421002" n_item_count_1="28" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+        <Record n_ID="1489009" n_build_cfg_type="1489001" n_level="9" n_coin="1400" n_item_type_1="1421002" n_item_count_1="34" n_item_type_2="0" n_item_count_2="0" n_item_type_3="0" n_item_count_3="0" />
+    </Table>
+</ExData>

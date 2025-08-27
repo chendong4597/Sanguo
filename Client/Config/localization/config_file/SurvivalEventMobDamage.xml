@@ -1,0 +1,49 @@
+<ExData>
+    <Table Name="SurvivalEventMobDamage">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_mob_id" DataType="1" />
+            <Column Name="n_mob_lvl" DataType="1" />
+            <Column Name="n_mob_damage" DataType="1" />
+            <Column Name="n_mob_frequnce" DataType="1" />
+        </ColumnList>
+        <Record n_ID="1" n_mob_id="10001" n_mob_lvl="11" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="2" n_mob_id="10002" n_mob_lvl="12" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="3" n_mob_id="10003" n_mob_lvl="12" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="4" n_mob_id="10004" n_mob_lvl="13" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="5" n_mob_id="10005" n_mob_lvl="12" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="6" n_mob_id="10006" n_mob_lvl="12" n_mob_damage="7" n_mob_frequnce="1800" />
+        <Record n_ID="7" n_mob_id="10007" n_mob_lvl="13" n_mob_damage="7" n_mob_frequnce="1800" />
+        <Record n_ID="8" n_mob_id="10008" n_mob_lvl="15" n_mob_damage="8" n_mob_frequnce="1600" />
+        <Record n_ID="9" n_mob_id="10011" n_mob_lvl="20" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="10" n_mob_id="10012" n_mob_lvl="20" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="11" n_mob_id="10013" n_mob_lvl="21" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="12" n_mob_id="10014" n_mob_lvl="21" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="13" n_mob_id="10015" n_mob_lvl="22" n_mob_damage="7" n_mob_frequnce="1800" />
+        <Record n_ID="14" n_mob_id="10016" n_mob_lvl="23" n_mob_damage="7" n_mob_frequnce="1800" />
+        <Record n_ID="15" n_mob_id="10017" n_mob_lvl="24" n_mob_damage="8" n_mob_frequnce="1600" />
+        <Record n_ID="16" n_mob_id="10018" n_mob_lvl="25" n_mob_damage="8" n_mob_frequnce="1600" />
+        <Record n_ID="17" n_mob_id="30044" n_mob_lvl="5" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="18" n_mob_id="30045" n_mob_lvl="5" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="19" n_mob_id="30046" n_mob_lvl="6" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="20" n_mob_id="30047" n_mob_lvl="7" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="21" n_mob_id="30048" n_mob_lvl="7" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="22" n_mob_id="30049" n_mob_lvl="8" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="23" n_mob_id="30050" n_mob_lvl="9" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="24" n_mob_id="30051" n_mob_lvl="9" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="25" n_mob_id="30052" n_mob_lvl="10" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="26" n_mob_id="30053" n_mob_lvl="6" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="27" n_mob_id="30054" n_mob_lvl="7" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="28" n_mob_id="30055" n_mob_lvl="8" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="29" n_mob_id="30056" n_mob_lvl="9" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="30" n_mob_id="30057" n_mob_lvl="10" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="31" n_mob_id="30058" n_mob_lvl="11" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="32" n_mob_id="30101" n_mob_lvl="15" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="33" n_mob_id="30102" n_mob_lvl="15" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="34" n_mob_id="30103" n_mob_lvl="14" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="35" n_mob_id="30104" n_mob_lvl="16" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="36" n_mob_id="30151" n_mob_lvl="17" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="37" n_mob_id="30152" n_mob_lvl="18" n_mob_damage="6" n_mob_frequnce="2000" />
+        <Record n_ID="38" n_mob_id="30153" n_mob_lvl="19" n_mob_damage="6" n_mob_frequnce="2000" />
+    </Table>
+</ExData>

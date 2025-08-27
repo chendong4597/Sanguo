@@ -1,0 +1,50 @@
+<ExData>
+    <Table Name="HouseTpyCfg">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_Type" DataType="1" />
+            <Column Name="s_Name" DataType="4" />
+            <Column Name="n_Quality" DataType="1" />
+            <Column Name="s_icon" DataType="4" />
+            <Column Name="s_Path" DataType="4" />
+            <Column Name="n_Honor" DataType="1" />
+            <Column Name="s_items" DataType="4" />
+            <Column Name="n_upgradeTm" DataType="1" />
+            <Column Name="n_Lev" DataType="1" />
+            <Column Name="n_Innum" DataType="1" />
+            <Column Name="n_NextId" DataType="1" />
+            <Column Name="n_Prosperous" DataType="1" />
+            <Column Name="n_RentRate" DataType="1" />
+            <Column Name="n_PlantRate" DataType="1" />
+            <Column Name="n_FarmRate" DataType="1" />
+            <Column Name="n_MineRate" DataType="1" />
+            <Column Name="n_ShopRate" DataType="1" />
+            <Column Name="n_CraftRate" DataType="1" />
+            <Column Name="n_buildRate" DataType="1" />
+        </ColumnList>
+        <Record n_ID="2001" n_Type="1" s_Name="cfg_wall_tpy_2001" n_Quality="1" s_icon="wall_1" s_Path="" n_Honor="100" s_items="[1040:15000],[1020:2000]" n_upgradeTm="3600" n_Lev="1" n_Innum="0" n_NextId="2002" n_Prosperous="1000" n_RentRate="0" n_PlantRate="4" n_FarmRate="4" n_MineRate="4" n_ShopRate="100" n_CraftRate="50" n_buildRate="5" />
+        <Record n_ID="2002" n_Type="1" s_Name="cfg_wall_tpy_2002" n_Quality="2" s_icon="wall_3" s_Path="" n_Honor="500" s_items="[1042:20000],[1021:1000]" n_upgradeTm="7200" n_Lev="2" n_Innum="0" n_NextId="2003" n_Prosperous="1100" n_RentRate="0" n_PlantRate="5" n_FarmRate="5" n_MineRate="5" n_ShopRate="200" n_CraftRate="60" n_buildRate="5" />
+        <Record n_ID="2003" n_Type="1" s_Name="cfg_wall_tpy_2003" n_Quality="2" s_icon="wall_2" s_Path="" n_Honor="1000" s_items="[1041:15000],[1042:8000],[1021:1000]" n_upgradeTm="9600" n_Lev="3" n_Innum="0" n_NextId="2004" n_Prosperous="1000" n_RentRate="0" n_PlantRate="7" n_FarmRate="7" n_MineRate="7" n_ShopRate="300" n_CraftRate="60" n_buildRate="7" />
+        <Record n_ID="2004" n_Type="1" s_Name="cfg_wall_tpy_2004" n_Quality="3" s_icon="wall_4" s_Path="" n_Honor="2000" s_items="[1041:25000],[[1042:20000],[1023:1500]" n_upgradeTm="6800" n_Lev="4" n_Innum="0" n_NextId="2005" n_Prosperous="1200" n_RentRate="0" n_PlantRate="10" n_FarmRate="10" n_MineRate="10" n_ShopRate="350" n_CraftRate="70" n_buildRate="10" />
+        <Record n_ID="2005" n_Type="1" s_Name="cfg_wall_tpy_2005" n_Quality="3" s_icon="wall_5" s_Path="" n_Honor="3000" s_items="[1040:9000],[1041:8000],[1043:15000],[1020:2000]" n_upgradeTm="9800" n_Lev="5" n_Innum="0" n_NextId="2006" n_Prosperous="1200" n_RentRate="0" n_PlantRate="12" n_FarmRate="12" n_MineRate="12" n_ShopRate="370" n_CraftRate="75" n_buildRate="12" />
+        <Record n_ID="2006" n_Type="1" s_Name="cfg_wall_tpy_2006" n_Quality="4" s_icon="wall_6" s_Path="" n_Honor="5000" s_items="[1040:20000],[1041:9000],[1020:1000]" n_upgradeTm="10240" n_Lev="6" n_Innum="0" n_NextId="2007" n_Prosperous="1220" n_RentRate="0" n_PlantRate="15" n_FarmRate="15" n_MineRate="15" n_ShopRate="390" n_CraftRate="80" n_buildRate="12" />
+        <Record n_ID="2007" n_Type="1" s_Name="cfg_wall_tpy_2007" n_Quality="5" s_icon="wall_7" s_Path="" n_Honor="7000" s_items="[1042:20000],[1043:9000],[1024:1000]" n_upgradeTm="15600" n_Lev="7" n_Innum="0" n_NextId="0" n_Prosperous="1250" n_RentRate="0" n_PlantRate="8" n_FarmRate="8" n_MineRate="8" n_ShopRate="400" n_CraftRate="90" n_buildRate="14" />
+        <Record n_ID="1000" n_Type="9" s_Name="cfg_house_tpy_1000" n_Quality="1" s_icon="1000" s_Path="/Game/Models/House/BP/BP_HouseIns1.BP_HouseIns0" n_Honor="0" s_items="[1000:2]" n_upgradeTm="120" n_Lev="0" n_Innum="0" n_NextId="1001" n_Prosperous="0" n_RentRate="0" n_PlantRate="0" n_FarmRate="0" n_MineRate="0" n_ShopRate="0" n_CraftRate="0" n_buildRate="15" />
+        <Record n_ID="1001" n_Type="9" s_Name="cfg_house_tpy_1001" n_Quality="1" s_icon="1001" s_Path="/Game/Models/House/BP/BP_HouseIns1.BP_HouseIns1" n_Honor="0" s_items="[1040:100],[1020:50]" n_upgradeTm="480" n_Lev="1" n_Innum="1" n_NextId="1002" n_Prosperous="5" n_RentRate="0" n_PlantRate="50" n_FarmRate="50" n_MineRate="50" n_ShopRate="500" n_CraftRate="100" n_buildRate="100" />
+        <Record n_ID="1002" n_Type="9" s_Name="cfg_house_tpy_1002" n_Quality="2" s_icon="1002" s_Path="/Game/Models/House/BP/BP_HouseIns2.BP_HouseIns2" n_Honor="5" s_items="[1042:100],[1023:150]" n_upgradeTm="680" n_Lev="1" n_Innum="1" n_NextId="1003" n_Prosperous="7" n_RentRate="20" n_PlantRate="70" n_FarmRate="70" n_MineRate="70" n_ShopRate="700" n_CraftRate="100" n_buildRate="100" />
+        <Record n_ID="1003" n_Type="9" s_Name="cfg_house_tpy_1003" n_Quality="2" s_icon="1003" s_Path="/Game/Models/House/BP/BP_HouseIns3.BP_HouseIns3" n_Honor="10" s_items="[1041:100],[1021:150]" n_upgradeTm="720" n_Lev="2" n_Innum="2" n_NextId="1004" n_Prosperous="10" n_RentRate="30" n_PlantRate="80" n_FarmRate="80" n_MineRate="80" n_ShopRate="900" n_CraftRate="200" n_buildRate="200" />
+        <Record n_ID="1004" n_Type="9" s_Name="cfg_house_tpy_1004" n_Quality="3" s_icon="1004" s_Path="/Game/Models/House/BP/BP_HouseIns4.BP_HouseIns4" n_Honor="20" s_items="[1042:60],[1021:250],[1024:50]" n_upgradeTm="960" n_Lev="3" n_Innum="2" n_NextId="1005" n_Prosperous="15" n_RentRate="50" n_PlantRate="90" n_FarmRate="90" n_MineRate="90" n_ShopRate="1000" n_CraftRate="300" n_buildRate="300" />
+        <Record n_ID="1005" n_Type="9" s_Name="cfg_house_tpy_1005" n_Quality="3" s_icon="1005" s_Path="/Game/Models/House/BP/BP_HouseIns5.BP_HouseIns5" n_Honor="50" s_items="[1043:160],[1022:350],[1023:150]" n_upgradeTm="1200" n_Lev="4" n_Innum="3" n_NextId="1006" n_Prosperous="20" n_RentRate="60" n_PlantRate="95" n_FarmRate="95" n_MineRate="95" n_ShopRate="1200" n_CraftRate="350" n_buildRate="350" />
+        <Record n_ID="1006" n_Type="9" s_Name="cfg_house_tpy_1006" n_Quality="4" s_icon="1006" s_Path="/Game/Models/House/BP/BP_HouseIns6.BP_HouseIns6" n_Honor="100" s_items="[1043:300],[1022:400],[1025:450],[1014:150]" n_upgradeTm="1800" n_Lev="5" n_Innum="4" n_NextId="0" n_Prosperous="30" n_RentRate="70" n_PlantRate="100" n_FarmRate="100" n_MineRate="100" n_ShopRate="1500" n_CraftRate="400" n_buildRate="400" />
+        <Record n_ID="3001" n_Type="2" s_Name="cfg_Mid_tpy_3001" n_Quality="1" s_icon="Charm1" s_Path="/Game/Models/House/entry_s/MiddleGold/MiddleGold.MiddleGold" n_Honor="100" s_items="[1020:200],[1014:50]" n_upgradeTm="3600" n_Lev="1" n_Innum="0" n_NextId="3002" n_Prosperous="500" n_RentRate="0" n_PlantRate="8" n_FarmRate="8" n_MineRate="8" n_ShopRate="100" n_CraftRate="50" n_buildRate="5" />
+        <Record n_ID="3002" n_Type="2" s_Name="cfg_Mid_tpy_3002" n_Quality="1" s_icon="Charm2" s_Path="/Game/Models/House/entry_s/Middle/Middle.Middle" n_Honor="100" s_items="[1021:150,[1023:200],[1015:5]" n_upgradeTm="7500" n_Lev="2" n_Innum="0" n_NextId="3003" n_Prosperous="510" n_RentRate="0" n_PlantRate="2" n_FarmRate="2" n_MineRate="2" n_ShopRate="150" n_CraftRate="60" n_buildRate="5" />
+        <Record n_ID="3003" n_Type="2" s_Name="cfg_Mid_tpy_3003" n_Quality="2" s_icon="Charm3" s_Path="/Game/Models/House/entry_s/MiddleGold/MiddleGold.MiddleGold" n_Honor="100" s_items="[1022:250,[1023:300],[1015:8]" n_upgradeTm="8600" n_Lev="3" n_Innum="0" n_NextId="3004" n_Prosperous="520" n_RentRate="0" n_PlantRate="3" n_FarmRate="3" n_MineRate="3" n_ShopRate="140" n_CraftRate="60" n_buildRate="7" />
+        <Record n_ID="3004" n_Type="2" s_Name="cfg_Mid_tpy_3004" n_Quality="2" s_icon="Charm4" s_Path="/Game/Models/House/entry_s/MiddleTotem/MiddleTotem.MiddleTotem" n_Honor="100" s_items="[1022:250,[1024:400],[1015:8]" n_upgradeTm="9900" n_Lev="4" n_Innum="0" n_NextId="3005" n_Prosperous="530" n_RentRate="0" n_PlantRate="5" n_FarmRate="5" n_MineRate="5" n_ShopRate="170" n_CraftRate="70" n_buildRate="10" />
+        <Record n_ID="3005" n_Type="2" s_Name="cfg_Mid_tpy_3005" n_Quality="3" s_icon="Charm5" s_Path="/Game/Models/House/entry_s/Dragon/dragon.dragon" n_Honor="100" s_items="[1022:450,[1025:500],[1015:8]" n_upgradeTm="12690" n_Lev="5" n_Innum="0" n_NextId="0" n_Prosperous="540" n_RentRate="0" n_PlantRate="2" n_FarmRate="2" n_MineRate="2" n_ShopRate="100" n_CraftRate="75" n_buildRate="12" />
+        <Record n_ID="4001" n_Type="3" s_Name="cfg_Road_tpy_4001" n_Quality="1" s_icon="1" s_Path="" n_Honor="100" s_items="[1040:12000]" n_upgradeTm="3600" n_Lev="1" n_Innum="0" n_NextId="4002" n_Prosperous="300" n_RentRate="0" n_PlantRate="4" n_FarmRate="4" n_MineRate="4" n_ShopRate="100" n_CraftRate="80" n_buildRate="12" />
+        <Record n_ID="4002" n_Type="3" s_Name="cfg_Road_tpy_4002" n_Quality="1" s_icon="2" s_Path="" n_Honor="100" s_items="[1040:8000],[1041:15000]" n_upgradeTm="8600" n_Lev="2" n_Innum="0" n_NextId="4003" n_Prosperous="300" n_RentRate="0" n_PlantRate="6" n_FarmRate="6" n_MineRate="6" n_ShopRate="100" n_CraftRate="30" n_buildRate="14" />
+        <Record n_ID="4003" n_Type="3" s_Name="cfg_Road_tpy_4003" n_Quality="2" s_icon="3" s_Path="" n_Honor="100" s_items="[1041:8000],[1042:15000]" n_upgradeTm="9600" n_Lev="3" n_Innum="0" n_NextId="4004" n_Prosperous="310" n_RentRate="0" n_PlantRate="8" n_FarmRate="8" n_MineRate="8" n_ShopRate="150" n_CraftRate="50" n_buildRate="15" />
+        <Record n_ID="4004" n_Type="3" s_Name="cfg_Road_tpy_4004" n_Quality="2" s_icon="4" s_Path="" n_Honor="100" s_items="[1042:8000],[1043:15000]" n_upgradeTm="12586" n_Lev="4" n_Innum="0" n_NextId="4005" n_Prosperous="310" n_RentRate="0" n_PlantRate="9" n_FarmRate="9" n_MineRate="9" n_ShopRate="200" n_CraftRate="60" n_buildRate="15" />
+        <Record n_ID="4005" n_Type="3" s_Name="cfg_Road_tpy_4005" n_Quality="3" s_icon="5" s_Path="" n_Honor="100" s_items="[1043:20000],[1015:150]" n_upgradeTm="24000" n_Lev="5" n_Innum="0" n_NextId="4006" n_Prosperous="320" n_RentRate="0" n_PlantRate="8" n_FarmRate="8" n_MineRate="8" n_ShopRate="200" n_CraftRate="60" n_buildRate="15" />
+    </Table>
+</ExData>

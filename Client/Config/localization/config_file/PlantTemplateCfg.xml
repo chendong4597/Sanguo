@@ -1,0 +1,139 @@
+<ExData>
+    <Table Name="PlantTemplate">
+        <ColumnList>
+            <Column Name="n_ID" DataType="1" />
+            <Column Name="n_plant_type" DataType="1" />
+            <Column Name="n_stage" DataType="1" />
+            <Column Name="n_next_stage_time" DataType="1" />
+            <Column Name="n_dropid" DataType="1" />
+            <Column Name="s_Path" DataType="4" />
+            <Column Name="s_Animals" DataType="4" />
+        </ColumnList>
+        <Attribute Name="s_Path" DataType="4" Value="/Game/Models/plants/entity_s" />
+        <Attribute Name="s_PathAni" DataType="4" Value="/Game/Models/animals/entity" />
+        <Attribute Name="s_PathMine" DataType="4" Value="/Game/Models/Mine" />
+        <Record n_ID="1" n_plant_type="1700010" n_stage="1" n_next_stage_time="30" n_dropid="1700010" s_Path="cactus/BP_CactusSeed" s_Animals="" />
+        <Record n_ID="2" n_plant_type="1700010" n_stage="2" n_next_stage_time="60" n_dropid="1700010" s_Path="cactus/BP_CactusBig" s_Animals="" />
+        <Record n_ID="3" n_plant_type="1700010" n_stage="3" n_next_stage_time="180" n_dropid="1700010" s_Path="cactus/BP_Cactus" s_Animals="" />
+        <Record n_ID="4" n_plant_type="1700010" n_stage="4" n_next_stage_time="0" n_dropid="1700010" s_Path="cactus/BP_Cactus" s_Animals="" />
+        <Record n_ID="5" n_plant_type="1700020" n_stage="1" n_next_stage_time="30" n_dropid="1700020" s_Path="circle_fern/BP_Circle" s_Animals="" />
+        <Record n_ID="6" n_plant_type="1700020" n_stage="2" n_next_stage_time="240" n_dropid="1700020" s_Path="circle_fern/BP_Circle" s_Animals="" />
+        <Record n_ID="7" n_plant_type="1700020" n_stage="3" n_next_stage_time="0" n_dropid="1700020" s_Path="circle_fern/BP_Circle" s_Animals="" />
+        <Record n_ID="8" n_plant_type="1700030" n_stage="1" n_next_stage_time="30" n_dropid="1700030" s_Path="clover_01/BP_clover" s_Animals="" />
+        <Record n_ID="9" n_plant_type="1700030" n_stage="2" n_next_stage_time="60" n_dropid="1700030" s_Path="clover_01/BP_clover" s_Animals="" />
+        <Record n_ID="10" n_plant_type="1700030" n_stage="3" n_next_stage_time="200" n_dropid="1700030" s_Path="clover_01/BP_clover" s_Animals="" />
+        <Record n_ID="11" n_plant_type="1700030" n_stage="4" n_next_stage_time="0" n_dropid="1700030" s_Path="clover_01/BP_clover" s_Animals="" />
+        <Record n_ID="12" n_plant_type="1700040" n_stage="1" n_next_stage_time="30" n_dropid="1700040" s_Path="cotton/BP_Contton1" s_Animals="" />
+        <Record n_ID="13" n_plant_type="1700040" n_stage="2" n_next_stage_time="60" n_dropid="1700040" s_Path="cotton/BP_Contton2" s_Animals="" />
+        <Record n_ID="14" n_plant_type="1700040" n_stage="3" n_next_stage_time="180" n_dropid="1700040" s_Path="cotton/BP_Contton3" s_Animals="" />
+        <Record n_ID="15" n_plant_type="1700040" n_stage="4" n_next_stage_time="0" n_dropid="1700040" s_Path="cotton/BP_Contton3" s_Animals="" />
+        <Record n_ID="16" n_plant_type="1700050" n_stage="1" n_next_stage_time="30" n_dropid="1700050" s_Path="drywood_01/BP_Drywood_001" s_Animals="" />
+        <Record n_ID="17" n_plant_type="1700050" n_stage="2" n_next_stage_time="60" n_dropid="1700050" s_Path="drywood_01/BP_Drywood_001" s_Animals="" />
+        <Record n_ID="18" n_plant_type="1700050" n_stage="3" n_next_stage_time="150" n_dropid="1700050" s_Path="drywood_01/BP_Drywood_002" s_Animals="" />
+        <Record n_ID="19" n_plant_type="1700050" n_stage="4" n_next_stage_time="0" n_dropid="1700050" s_Path="drywood_01/BP_Drywood_002" s_Animals="" />
+        <Record n_ID="20" n_plant_type="1700060" n_stage="1" n_next_stage_time="30" n_dropid="1700060" s_Path="fairy_hat/BP_fairy_hat" s_Animals="" />
+        <Record n_ID="21" n_plant_type="1700060" n_stage="2" n_next_stage_time="60" n_dropid="1700060" s_Path="fairy_hat/BP_fairy_hat" s_Animals="" />
+        <Record n_ID="22" n_plant_type="1700060" n_stage="3" n_next_stage_time="220" n_dropid="1700060" s_Path="fairy_hat/BP_fairy_hat" s_Animals="" />
+        <Record n_ID="23" n_plant_type="1700060" n_stage="4" n_next_stage_time="0" n_dropid="1700060" s_Path="fairy_hat/BP_fairy_hat" s_Animals="" />
+        <Record n_ID="24" n_plant_type="1700070" n_stage="1" n_next_stage_time="30" n_dropid="1700070" s_Path="flamingo/BP_flam" s_Animals="" />
+        <Record n_ID="25" n_plant_type="1700070" n_stage="2" n_next_stage_time="60" n_dropid="1700070" s_Path="flamingo/BP_flam" s_Animals="" />
+        <Record n_ID="26" n_plant_type="1700070" n_stage="3" n_next_stage_time="300" n_dropid="1700070" s_Path="flamingo/BP_flam" s_Animals="" />
+        <Record n_ID="27" n_plant_type="1700070" n_stage="4" n_next_stage_time="0" n_dropid="1700070" s_Path="flamingo/BP_flam" s_Animals="" />
+        <Record n_ID="28" n_plant_type="1700080" n_stage="1" n_next_stage_time="30" n_dropid="1700080" s_Path="item_sunflow/BP_Sunflow" s_Animals="" />
+        <Record n_ID="29" n_plant_type="1700080" n_stage="2" n_next_stage_time="60" n_dropid="1700080" s_Path="item_sunflow/BP_Sunflow" s_Animals="" />
+        <Record n_ID="30" n_plant_type="1700080" n_stage="3" n_next_stage_time="150" n_dropid="1700080" s_Path="item_sunflow/BP_Sunflow" s_Animals="" />
+        <Record n_ID="31" n_plant_type="1700080" n_stage="4" n_next_stage_time="0" n_dropid="1700080" s_Path="item_sunflow/BP_Sunflow" s_Animals="" />
+        <Record n_ID="32" n_plant_type="1700090" n_stage="1" n_next_stage_time="30" n_dropid="1700090" s_Path="lavender/BP_Lavender1" s_Animals="" />
+        <Record n_ID="33" n_plant_type="1700090" n_stage="2" n_next_stage_time="60" n_dropid="1700090" s_Path="lavender/BP_Lavender1" s_Animals="" />
+        <Record n_ID="34" n_plant_type="1700090" n_stage="3" n_next_stage_time="190" n_dropid="1700090" s_Path="lavender/BP_Lavender" s_Animals="" />
+        <Record n_ID="35" n_plant_type="1700090" n_stage="4" n_next_stage_time="0" n_dropid="1700090" s_Path="lavender/BP_Lavender" s_Animals="" />
+        <Record n_ID="36" n_plant_type="1700100" n_stage="1" n_next_stage_time="30" n_dropid="1700100" s_Path="lily/BP_lily_seed" s_Animals="" />
+        <Record n_ID="37" n_plant_type="1700100" n_stage="2" n_next_stage_time="60" n_dropid="1700100" s_Path="lily/BP_lily_seed" s_Animals="" />
+        <Record n_ID="38" n_plant_type="1700100" n_stage="3" n_next_stage_time="160" n_dropid="1700100" s_Path="lily/BP_lily" s_Animals="" />
+        <Record n_ID="39" n_plant_type="1700100" n_stage="4" n_next_stage_time="0" n_dropid="1700100" s_Path="lily/BP_lily" s_Animals="" />
+        <Record n_ID="40" n_plant_type="1700110" n_stage="1" n_next_stage_time="30" n_dropid="1700110" s_Path="mistletoe/BP_Mistletce" s_Animals="" />
+        <Record n_ID="41" n_plant_type="1700110" n_stage="2" n_next_stage_time="60" n_dropid="1700110" s_Path="mistletoe/BP_Mistletce" s_Animals="" />
+        <Record n_ID="42" n_plant_type="1700110" n_stage="3" n_next_stage_time="220" n_dropid="1700110" s_Path="mistletoe/BP_Mistletce" s_Animals="" />
+        <Record n_ID="43" n_plant_type="1700110" n_stage="4" n_next_stage_time="0" n_dropid="1700110" s_Path="mistletoe/BP_Mistletce" s_Animals="" />
+        <Record n_ID="44" n_plant_type="1700120" n_stage="1" n_next_stage_time="30" n_dropid="1700120" s_Path="oak/BP_Oak1" s_Animals="" />
+        <Record n_ID="45" n_plant_type="1700120" n_stage="2" n_next_stage_time="60" n_dropid="1700120" s_Path="oak/BP_Oak2" s_Animals="" />
+        <Record n_ID="46" n_plant_type="1700120" n_stage="3" n_next_stage_time="250" n_dropid="1700120" s_Path="oak/BP_Oak3" s_Animals="" />
+        <Record n_ID="47" n_plant_type="1700120" n_stage="4" n_next_stage_time="0" n_dropid="1700120" s_Path="oak/BP_Oak3" s_Animals="" />
+        <Record n_ID="48" n_plant_type="1700130" n_stage="1" n_next_stage_time="30" n_dropid="1700130" s_Path="patota/BP_Potato1" s_Animals="" />
+        <Record n_ID="49" n_plant_type="1700130" n_stage="2" n_next_stage_time="60" n_dropid="1700130" s_Path="patota/BP_Potato1" s_Animals="" />
+        <Record n_ID="50" n_plant_type="1700130" n_stage="3" n_next_stage_time="180" n_dropid="1700130" s_Path="patota/BP_Potato2" s_Animals="" />
+        <Record n_ID="51" n_plant_type="1700130" n_stage="4" n_next_stage_time="0" n_dropid="1700130" s_Path="patota/BP_Potato2" s_Animals="" />
+        <Record n_ID="52" n_plant_type="1700140" n_stage="1" n_next_stage_time="30" n_dropid="1700140" s_Path="red_dot/BP_Reddot_2" s_Animals="" />
+        <Record n_ID="53" n_plant_type="1700140" n_stage="2" n_next_stage_time="60" n_dropid="1700140" s_Path="red_dot/BP_Reddot_2" s_Animals="" />
+        <Record n_ID="54" n_plant_type="1700140" n_stage="3" n_next_stage_time="200" n_dropid="1700140" s_Path="red_dot/BP_Reddot" s_Animals="" />
+        <Record n_ID="55" n_plant_type="1700140" n_stage="4" n_next_stage_time="0" n_dropid="1700140" s_Path="red_dot/BP_Reddot" s_Animals="" />
+        <Record n_ID="56" n_plant_type="1700150" n_stage="1" n_next_stage_time="30" n_dropid="1700150" s_Path="rice/BP_rice1" s_Animals="" />
+        <Record n_ID="57" n_plant_type="1700150" n_stage="2" n_next_stage_time="40" n_dropid="1700150" s_Path="rice/BP_rice2" s_Animals="" />
+        <Record n_ID="58" n_plant_type="1700150" n_stage="3" n_next_stage_time="70" n_dropid="1700150" s_Path="rice/BP_rice3" s_Animals="" />
+        <Record n_ID="59" n_plant_type="1700150" n_stage="4" n_next_stage_time="0" n_dropid="1700150" s_Path="rice/BP_rice3" s_Animals="" />
+        <Record n_ID="60" n_plant_type="1700160" n_stage="1" n_next_stage_time="30" n_dropid="1700160" s_Path="sakura_big/BP_Sakura" s_Animals="" />
+        <Record n_ID="61" n_plant_type="1700160" n_stage="2" n_next_stage_time="60" n_dropid="1700160" s_Path="sakura_big/BP_Sakura1" s_Animals="" />
+        <Record n_ID="62" n_plant_type="1700160" n_stage="3" n_next_stage_time="210" n_dropid="1700160" s_Path="sakura_big/BP_Sakura1" s_Animals="" />
+        <Record n_ID="63" n_plant_type="1700160" n_stage="4" n_next_stage_time="0" n_dropid="1700160" s_Path="sakura_big/BP_Sakura1" s_Animals="" />
+        <Record n_ID="64" n_plant_type="1700170" n_stage="1" n_next_stage_time="30" n_dropid="1700170" s_Path="shrub_01/BP_shrub1" s_Animals="" />
+        <Record n_ID="65" n_plant_type="1700170" n_stage="2" n_next_stage_time="60" n_dropid="1700170" s_Path="shrub_01/BP_shrub1" s_Animals="" />
+        <Record n_ID="66" n_plant_type="1700170" n_stage="3" n_next_stage_time="300" n_dropid="1700170" s_Path="shrub_01/BP_shrub1" s_Animals="" />
+        <Record n_ID="67" n_plant_type="1700170" n_stage="4" n_next_stage_time="0" n_dropid="1700170" s_Path="shrub_01/BP_shrub1" s_Animals="" />
+        <Record n_ID="68" n_plant_type="1700180" n_stage="1" n_next_stage_time="30" n_dropid="1700180" s_Path="snow/BP_snow01" s_Animals="" />
+        <Record n_ID="69" n_plant_type="1700180" n_stage="2" n_next_stage_time="60" n_dropid="1700180" s_Path="snow/BP_snow02" s_Animals="" />
+        <Record n_ID="70" n_plant_type="1700180" n_stage="3" n_next_stage_time="320" n_dropid="1700180" s_Path="snow/BP_snow03" s_Animals="" />
+        <Record n_ID="71" n_plant_type="1700180" n_stage="4" n_next_stage_time="0" n_dropid="1700180" s_Path="snow/BP_snow03" s_Animals="" />
+        <Record n_ID="72" n_plant_type="1700190" n_stage="1" n_next_stage_time="30" n_dropid="1700190" s_Path="succulent/BP_Succulent01" s_Animals="" />
+        <Record n_ID="73" n_plant_type="1700190" n_stage="2" n_next_stage_time="60" n_dropid="1700190" s_Path="succulent/BP_Succulent02" s_Animals="" />
+        <Record n_ID="74" n_plant_type="1700190" n_stage="3" n_next_stage_time="260" n_dropid="1700190" s_Path="succulent/BP_Succulent03" s_Animals="" />
+        <Record n_ID="75" n_plant_type="1700190" n_stage="4" n_next_stage_time="0" n_dropid="1700190" s_Path="succulent/BP_Succulent03" s_Animals="" />
+        <Record n_ID="76" n_plant_type="1700200" n_stage="1" n_next_stage_time="30" n_dropid="1700200" s_Path="toxic_grape_01/BP_Grade01" s_Animals="" />
+        <Record n_ID="77" n_plant_type="1700200" n_stage="2" n_next_stage_time="60" n_dropid="1700200" s_Path="toxic_grape_01/BP_Grade01_2" s_Animals="" />
+        <Record n_ID="78" n_plant_type="1700200" n_stage="3" n_next_stage_time="240" n_dropid="1700200" s_Path="toxic_grape_01/BP_Grade01_2" s_Animals="" />
+        <Record n_ID="79" n_plant_type="1700200" n_stage="4" n_next_stage_time="0" n_dropid="1700200" s_Path="toxic_grape_01/BP_Grade01_2" s_Animals="" />
+        <Record n_ID="80" n_plant_type="1700210" n_stage="1" n_next_stage_time="30" n_dropid="1700210" s_Path="watermelon_b/BP_waterMelon1" s_Animals="" />
+        <Record n_ID="81" n_plant_type="1700210" n_stage="2" n_next_stage_time="60" n_dropid="1700210" s_Path="watermelon_b/BP_waterMelon1" s_Animals="" />
+        <Record n_ID="82" n_plant_type="1700210" n_stage="3" n_next_stage_time="150" n_dropid="1700210" s_Path="watermelon_b/BP_waterMelon1" s_Animals="" />
+        <Record n_ID="83" n_plant_type="1700210" n_stage="4" n_next_stage_time="0" n_dropid="1700210" s_Path="watermelon_b/BP_waterMelon1" s_Animals="" />
+        <Record n_ID="84" n_plant_type="1700220" n_stage="1" n_next_stage_time="30" n_dropid="1700220" s_Path="wheat/BP_Wheat1" s_Animals="" />
+        <Record n_ID="85" n_plant_type="1700220" n_stage="2" n_next_stage_time="60" n_dropid="1700220" s_Path="wheat/BP_Wheat2" s_Animals="" />
+        <Record n_ID="86" n_plant_type="1700220" n_stage="3" n_next_stage_time="90" n_dropid="1700220" s_Path="wheat/BP_Wheat3" s_Animals="" />
+        <Record n_ID="87" n_plant_type="1700220" n_stage="4" n_next_stage_time="0" n_dropid="1700220" s_Path="wheat/BP_Wheat3" s_Animals="" />
+        <Record n_ID="88" n_plant_type="1700230" n_stage="1" n_next_stage_time="30" n_dropid="1700230" s_Path="chicken_02/BP_Chicken02Farm" s_Animals="1,1;2,4;3,4" />
+        <Record n_ID="89" n_plant_type="1700230" n_stage="2" n_next_stage_time="60" n_dropid="1700230" s_Path="chicken_02/BP_Chicken02Farm" s_Animals="1,1;2,4;3,4" />
+        <Record n_ID="90" n_plant_type="1700230" n_stage="3" n_next_stage_time="120" n_dropid="1700230" s_Path="chicken_02/BP_Chicken02Farm" s_Animals="1,1;2,4;3,4" />
+        <Record n_ID="91" n_plant_type="1700230" n_stage="4" n_next_stage_time="0" n_dropid="1700230" s_Path="chicken_02/BP_Chicken02Farm" s_Animals="1,1;2,4;3,4" />
+        <Record n_ID="92" n_plant_type="1700240" n_stage="1" n_next_stage_time="30" n_dropid="1700240" s_Path="cow_01/BP_Cow01_Farm" s_Animals="4,2;5,3;6,2" />
+        <Record n_ID="93" n_plant_type="1700240" n_stage="2" n_next_stage_time="60" n_dropid="1700240" s_Path="cow_01/BP_Cow01_Farm" s_Animals="4,1;5,4;6,4" />
+        <Record n_ID="94" n_plant_type="1700240" n_stage="3" n_next_stage_time="240" n_dropid="1700240" s_Path="cow_01/BP_Cow01_Farm" s_Animals="4,1;5,4;6,5" />
+        <Record n_ID="95" n_plant_type="1700240" n_stage="4" n_next_stage_time="0" n_dropid="1700240" s_Path="cow_01/BP_Cow01_Farm" s_Animals="4,1;5,4;6,5" />
+        <Record n_ID="96" n_plant_type="1700250" n_stage="1" n_next_stage_time="30" n_dropid="1700250" s_Path="horse_01/BP_Horse01Farm" s_Animals="7,1;8,4;9,5" />
+        <Record n_ID="97" n_plant_type="1700250" n_stage="2" n_next_stage_time="60" n_dropid="1700250" s_Path="horse_01/BP_Horse01Farm" s_Animals="7,2;8,3;9,2" />
+        <Record n_ID="98" n_plant_type="1700250" n_stage="3" n_next_stage_time="190" n_dropid="1700250" s_Path="horse_01/BP_Horse01Farm" s_Animals="7,1;8,4;9,4" />
+        <Record n_ID="99" n_plant_type="1700250" n_stage="4" n_next_stage_time="0" n_dropid="1700250" s_Path="horse_01/BP_Horse01Farm" s_Animals="7,1;8,4;9,5" />
+        <Record n_ID="100" n_plant_type="1700260" n_stage="1" n_next_stage_time="30" n_dropid="1700260" s_Path="pig_01/BP_PigFarm" s_Animals="10,1;11,4;12,4" />
+        <Record n_ID="101" n_plant_type="1700260" n_stage="2" n_next_stage_time="60" n_dropid="1700260" s_Path="pig_01/BP_PigFarm" s_Animals="10,2;11,3;12,2" />
+        <Record n_ID="102" n_plant_type="1700260" n_stage="3" n_next_stage_time="250" n_dropid="1700260" s_Path="pig_01/BP_PigFarm" s_Animals="10,1;11,4;12,4" />
+        <Record n_ID="103" n_plant_type="1700260" n_stage="4" n_next_stage_time="0" n_dropid="1700260" s_Path="pig_01/BP_PigFarm" s_Animals="10,1;11,4;12,4" />
+        <Record n_ID="104" n_plant_type="1700270" n_stage="1" n_next_stage_time="30" n_dropid="1700270" s_Path="sheep_01/BP_SleepFarm" s_Animals="13,2;14,3;15,2" />
+        <Record n_ID="105" n_plant_type="1700270" n_stage="2" n_next_stage_time="60" n_dropid="1700270" s_Path="sheep_01/BP_SleepFarm" s_Animals="13,2;14,3;15,2" />
+        <Record n_ID="106" n_plant_type="1700270" n_stage="3" n_next_stage_time="230" n_dropid="1700270" s_Path="sheep_01/BP_SleepFarm" s_Animals="13,1;14,4;15,4" />
+        <Record n_ID="107" n_plant_type="1700270" n_stage="4" n_next_stage_time="0" n_dropid="1700270" s_Path="sheep_01/BP_SleepFarm" s_Animals="13,1;14,4;15,4" />
+        <Record n_ID="108" n_plant_type="1700280" n_stage="1" n_next_stage_time="420" n_dropid="1700280" s_Path="fox_01/BP_FoxFarm" s_Animals="16,3;16,5" />
+        <Record n_ID="109" n_plant_type="1700280" n_stage="2" n_next_stage_time="0" n_dropid="1700280" s_Path="fox_01/BP_FoxFarm" s_Animals="16,3;16,5" />
+        <Record n_ID="110" n_plant_type="1700290" n_stage="1" n_next_stage_time="450" n_dropid="1700290" s_Path="lizard_01/BP_LizardFarm" s_Animals="17,3;17,5" />
+        <Record n_ID="111" n_plant_type="1700290" n_stage="2" n_next_stage_time="0" n_dropid="1700290" s_Path="lizard_01/BP_LizardFarm" s_Animals="17,3;17,5" />
+        <Record n_ID="112" n_plant_type="1700300" n_stage="1" n_next_stage_time="180" n_dropid="1700300" s_Path="horse_01/BP_Horse01Farm" s_Animals="18,5" />
+        <Record n_ID="113" n_plant_type="1700300" n_stage="2" n_next_stage_time="0" n_dropid="1700300" s_Path="horse_01/BP_Horse01Farm" s_Animals="18,5" />
+        <Record n_ID="114" n_plant_type="1701001" n_stage="1" n_next_stage_time="60" n_dropid="1701001" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="115" n_plant_type="1701001" n_stage="2" n_next_stage_time="0" n_dropid="1701001" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="116" n_plant_type="1701002" n_stage="1" n_next_stage_time="150" n_dropid="1701002" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="117" n_plant_type="1701002" n_stage="2" n_next_stage_time="0" n_dropid="1701002" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="118" n_plant_type="1701003" n_stage="1" n_next_stage_time="210" n_dropid="1701003" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="119" n_plant_type="1701003" n_stage="2" n_next_stage_time="0" n_dropid="1701003" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="120" n_plant_type="1701004" n_stage="1" n_next_stage_time="240" n_dropid="1701004" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="121" n_plant_type="1701004" n_stage="2" n_next_stage_time="0" n_dropid="1701004" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="122" n_plant_type="1701005" n_stage="1" n_next_stage_time="280" n_dropid="1701005" s_Path="Mine1/BP_Mine" s_Animals="" />
+        <Record n_ID="123" n_plant_type="1701005" n_stage="2" n_next_stage_time="0" n_dropid="1701005" s_Path="Mine1/BP_Mine" s_Animals="" />
+    </Table>
+</ExData>
