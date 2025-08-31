@@ -27,7 +27,7 @@ public class Sanguo : ModuleRules
         else
         {
             PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "Slate", "SlateCore", "InputCore",
-                "EnhancedInput", "HeadMountedDisplay", "NavigationSystem", "Niagara", "AIModule", "PakFile", "UMG", "AIModule",
+                "EnhancedInput", "HeadMountedDisplay", "NavigationSystem", "Niagara", "AIModule", "PakFile", "UMG", "AIModule", "CinematicCamera",
                 "ThirdGameModel"});
 
             PublicDefinitions.Add("FMT_GCC_VERSION=11"); // 根据实际 GCC 版本修改

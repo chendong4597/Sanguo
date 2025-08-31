@@ -53,6 +53,8 @@ void ARole::BeginPlay()
 {
 	Super::BeginPlay();
 
+	if (UReichGameInstance::IsEditorMode()) return;
+
 	UI_REGISTER_MYEVENT(DeathEvent, &ARole::onDeathEvent);
 	UI_REGISTER_MYEVENT(BeatBackEvent, &ARole::onBeatBackEvent);
 

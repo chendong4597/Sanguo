@@ -8,6 +8,7 @@
 #include "Kismet/GameplayStatics.h"
 
 #include "UIWindow.h"
+#include "UILobby.h"
 #include "../Player/IPlayer.h"
 
 extern UWorld* gp_UWorld;
@@ -158,6 +159,11 @@ UUserWidget* UIManager::GetWidget(UI_TPY nTpy)
 		switch (nTpy) {
 		case UI_TPY_Lobby:
 		{
+			UUILobby* pLobby = Cast<UUILobby>(m_vecWidgets[i]);
+			if (pLobby)
+			{
+				return pLobby;
+			}
 		}
 			break;
 		default:break;

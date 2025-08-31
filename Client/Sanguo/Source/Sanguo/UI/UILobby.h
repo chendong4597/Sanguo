@@ -9,6 +9,7 @@
 #include "Components/CanvasPanel.h"
 #include "Components/Image.h"
 #include "../Player/Hero.h"
+#include "Camera/CameraActor.h"
 #include "../Common/CommonDefines.h"
 #include "Delegates/DelegateCombinations.h"
 
@@ -132,6 +133,9 @@ protected:
 	UFUNCTION()
 	void OnClickExit();
 
+	UFUNCTION()
+	void OnClickSwitchMode();
+
 protected:
 	UFUNCTION()
 	void onBtnAtkClick();
@@ -173,6 +177,17 @@ private:
 	UButton* m_btnCharacter{ nullptr };
 	UButton* m_btnBag{ nullptr };
 	UButton* m_btnExit{ nullptr };
+
+	bool bIsUsingCineCam{ false };
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
+	ACameraActor* CineCamera{ nullptr };
+
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+	UCameraComponent* PlayerCamera{ nullptr };
+
+	APlayerController* PlayerController{ nullptr };
+
 };
 
 

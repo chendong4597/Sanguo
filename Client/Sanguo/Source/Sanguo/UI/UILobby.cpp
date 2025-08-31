@@ -45,6 +45,7 @@
 
 
 extern bool g_bPlaying;
+extern UWorld* gp_UWorld;
 
 bool UUILobby::Initialize()
 {
@@ -56,6 +57,7 @@ bool UUILobby::Initialize()
 	REGISTER_BTN_CLICK("BtnHero", OnClickCharacter);
 	REGISTER_BTN_CLICK("BtnBag", OnClickBag);
 	REGISTER_BTN_CLICK("BtnSetup", OnSetup);
+	REGISTER_BTN_CLICK("BtnSwitch", OnClickSwitchMode);
 
 	REGISTER_BTN_CLICK("BtnAttack", onBtnAtkClick);
 	REGISTER_BTN_PRESSED("BtnAttack", onBtnAtkPressed);
@@ -90,8 +92,9 @@ bool UUILobby::Initialize()
 
 	UI_REGISTER_MYEVENT(UILayoutEvent, &UUILobby::onUILayoutEvent);
 
-	LayoutLobby();
+	//LayoutLobby();
 
+	
 	return true;
 }
 
@@ -346,33 +349,11 @@ void UUILobby::SetTouchOutLobby(int nTouchUITpy , FVector2D vec)
 
 bool UUILobby::IsTouchImageCancel(FVector2D vec)
 {
-	UCanvasPanelSlot* slot = Cast<UCanvasPanelSlot>(m_imgCancel->Slot);
-	if (!slot) {
-		return false;
-	}
-	int nBang = UIManager::getInstance().GetLayoutBang();
-	if (g_objDisplayMgr.IsTouchSlot(this, slot, FVector2D(vec.X + nBang, vec.Y))) {
-		return true;
-	}
 	return false;
 }
 
 void UUILobby::SetTouchCancelHover(FVector2D vec, bool bRelease)
 {
-	float fOpacity = 0.4f;
-	if (m_imgCancel && !bRelease)
-	{
-		if (GetAttackHitType() == SkillEffectHitTpy::SkillEffectHitTpy_ScrollHit ||
-			GetAttackHitType() == SkillEffectHitTpy::SkillEffectHitTpy_ArrowHit) {
-			UCanvasPanelSlot* slot = Cast<UCanvasPanelSlot>(m_imgCancel->Slot);
-			int nBang = UIManager::getInstance().GetLayoutBang();
-			if (slot && g_objDisplayMgr.IsTouchSlot(this, slot, FVector2D(vec.X + nBang, vec.Y))) {
-				fOpacity = 1.0f;
-			}
-		}
-		
-	}
-	m_imgCancel->SetOpacity(fOpacity);
 }
 
 
@@ -432,6 +413,61 @@ void UUILobby::OnSetup()
 	WindowEvent evt;
 	evt.m_type = WindowEvent::EventType::Window_SetUp;
 	UI_DISPATCH_MYEVENT(WindowEvent, evt);
+}
+
+void UUILobby::OnClickSwitchMode()
+{
+	if (!PlayerController) {
+		PlayerController = gp_UWorld->GetFirstPlayerController();
+
+		if (PlayerController)
+		{
+			TArray<AActor*> arrActors;
+			UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
+			if (arrActors.Num() > 0)
+			{
+				CineCamera = Cast<ACameraActor>(arrActors[0]);
+
+				if (CineCamera) {
+					UCameraComponent* CameraComp = CineCamera->GetCameraComponent();
+					if (CameraComp) {
+						FVector2D ViewportSize;
+						if (GEngine && GEngine->GameViewport)
+						{
+							GEngine->GameViewport->GetViewportSize(ViewportSize);
+						}
+
+						float AspectRatio = ViewportSize.X / ViewportSize.Y;
+
+						// 调整摄像机设置
+						//CameraComp->SetAspectRatio(0); // 禁用宽高比约束
+						CameraComp->SetAspectRatio(AspectRatio); // 基于16:9调整
+					}
+				}
+			}
+
+			if (PlayerController && PlayerController->GetPawn())
+			{
+				// 获取玩家摄像机组件
+				PlayerCamera = PlayerController->GetPawn()->FindComponentByClass<UCameraComponent>();
+			}
+		}
+	}
+	if (!PlayerController || !CineCamera || !PlayerCamera) {
+		return;
+	}
+	if (bIsUsingCineCam && PlayerController->GetPawn())
+	{
+		// 切换到玩家摄像机
+		PlayerController->SetViewTargetWithBlend(PlayerController->GetPawn(), 0.f);
+		bIsUsingCineCam = false;
+	}
+	else if (CineCamera)
+	{
+		// 切换到Cine摄像机
+		PlayerController->SetViewTargetWithBlend(CineCamera, 0.f);
+		bIsUsingCineCam = true;
+	}
 }
 
 void UUILobby::onUILayoutEvent(const UILayoutEvent& evt)

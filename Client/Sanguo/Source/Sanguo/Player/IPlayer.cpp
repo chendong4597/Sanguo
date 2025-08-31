@@ -68,22 +68,22 @@ void AIPlayer::Init()
 void AIPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	AttachWeaponById();
-	ResetAttr();
-	CreateMyCollision(100);
+	//AttachWeaponById();
+	//ResetAttr();
+	//CreateMyCollision(100);
 
-	RG_REGISTER_MYEVENT(MsgInteractionS2C, &AIPlayer::onMsgInteractionS2C);
-	RG_REGISTER_MYEVENT(MsgMagicEffectAppenceS2C, &AIPlayer::onMsgMagicEffectAppenceS2C);
-	RG_REGISTER_MYEVENT(MsgPlayerInfoGS2C, &AIPlayer::onMsgPlayerInfoGS2C);
+	//RG_REGISTER_MYEVENT(MsgInteractionS2C, &AIPlayer::onMsgInteractionS2C);
+	//RG_REGISTER_MYEVENT(MsgMagicEffectAppenceS2C, &AIPlayer::onMsgMagicEffectAppenceS2C);
+	//RG_REGISTER_MYEVENT(MsgPlayerInfoGS2C, &AIPlayer::onMsgPlayerInfoGS2C);
 }
 
 void AIPlayer::EndPlay(EEndPlayReason::Type EndPlayReason)
 {
 	Super::EndPlay(EndPlayReason);
-	UNRG_REGISTER_MYEVENT(MsgMapObjectUnderAttackG2C, this);
-	UNRG_REGISTER_MYEVENT(MsgInteractionS2C, this);
-	UNRG_REGISTER_MYEVENT(MsgMagicEffectAppenceS2C, this);
-	UNRG_REGISTER_MYEVENT(MsgPlayerInfoGS2C, this);
+	//UNRG_REGISTER_MYEVENT(MsgMapObjectUnderAttackG2C, this);
+	//UNRG_REGISTER_MYEVENT(MsgInteractionS2C, this);
+	//UNRG_REGISTER_MYEVENT(MsgMagicEffectAppenceS2C, this);
+	//UNRG_REGISTER_MYEVENT(MsgPlayerInfoGS2C, this);
 	m_EquipInfo.nWeaponId = 110001;
 }
 

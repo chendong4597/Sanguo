@@ -89,41 +89,30 @@ void AHero::BeginPlay()
 		AIPlayerMgr::getInstance().AddPlayer(this);
 	}
 
-	if (m_playerData && m_playerData->getGender() == 1)
+	/*if (m_playerData && m_playerData->getGender() == 1)
 	{
 		SetProfessIdx(2);
 	}
 	else {
 		SetProfessIdx(0);
-	}
+	}*/
 
-	UE_LOG(LogOutputDevice, Log, TEXT("AHero::BeginPlay"));
-	SetCamp(CampState::CAMP_HERO);
+	//UE_LOG(LogOutputDevice, Log, TEXT("AHero::BeginPlay"));
+	//SetCamp(CampState::CAMP_HERO);
 	//InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AHero::MoveToTouchLocation);
 	UI_REGISTER_MYEVENT(BallEvent , &AHero::onWalkEvent);
-	UI_REGISTER_MYEVENT(SightEvent, &AHero::onSightEvent);
 	UI_REGISTER_MYEVENT(AttackEvent, &AHero::onAttackEvent);
-	UI_REGISTER_MYEVENT(StartContinueAttackEvent, &AHero::onStartContinueAttackEvent);
-	UI_REGISTER_MYEVENT(StopContinueAttackEvent, &AHero::onStopContinueAttackEvent);
-	UI_REGISTER_MYEVENT(HoverAttackEvent, &AHero::onHoveAttackEvent);
-	UI_REGISTER_MYEVENT(UseWeaponExternEvent, &AHero::onUseWeaponExternEvent);
-	UI_REGISTER_MYEVENT(WeaponEvent, &AHero::onWeaponEvent);
-	UI_REGISTER_MYEVENT(BuildEvent, &AHero::onBuildEvent);
 	UI_REGISTER_MYEVENT(WindowEvent, &AHero::onWindowEvent);
-	UI_REGISTER_MYEVENT(HorseEvent, &AHero::onHorseEvent);
-	UI_REGISTER_MYEVENT(ProfessEvent, &AHero::onProfessEvent);
 	UI_REGISTER_MYEVENT(SkillEvent, &AHero::onSkillEvent);
-	UI_REGISTER_MYEVENT(HorseSkillEvent, &AHero::onHorseSkillEvent);
-	UI_REGISTER_MYEVENT(UITapLoginEvent, &AHero::onUITapLoginEvent);
 
-	RG_REGISTER_MYEVENT(HandlerItemEvent, &AHero::onItemEvent);
-	RG_REGISTER_MYEVENT(HandlerTipsEvent, &AHero::onHandlerTipsEvent);
-	RG_REGISTER_MYEVENT(HandlerItemGetEvent, &AHero::onHandlerItemGetEvent);
-	RG_REGISTER_MYEVENT(HandlerNetEvent, &AHero::onHandlerNetEvent);
-	RG_REGISTER_MYEVENT(HandlerHeroAppearanceEvent, &AHero::onHandlerHeroAppearanceEvent);
-	RG_REGISTER_MYEVENT(HandlerHeroAttrChangeEvent, &AHero::onHandlerHeroAttrChangeEvent);
-	RG_REGISTER_MYEVENT(HandlerSoundEvent, &AHero::onHandlerSoundEvent);
-	RG_REGISTER_MYEVENT(MsgDeleteAccountS2C, &AHero::onMsgDeleteAccountS2C);
+	//RG_REGISTER_MYEVENT(HandlerItemEvent, &AHero::onItemEvent);
+	//RG_REGISTER_MYEVENT(HandlerTipsEvent, &AHero::onHandlerTipsEvent);
+	//RG_REGISTER_MYEVENT(HandlerItemGetEvent, &AHero::onHandlerItemGetEvent);
+	//RG_REGISTER_MYEVENT(HandlerNetEvent, &AHero::onHandlerNetEvent);
+	//RG_REGISTER_MYEVENT(HandlerHeroAppearanceEvent, &AHero::onHandlerHeroAppearanceEvent);
+	//RG_REGISTER_MYEVENT(HandlerHeroAttrChangeEvent, &AHero::onHandlerHeroAttrChangeEvent);
+	//RG_REGISTER_MYEVENT(HandlerSoundEvent, &AHero::onHandlerSoundEvent);
+	//RG_REGISTER_MYEVENT(MsgDeleteAccountS2C, &AHero::onMsgDeleteAccountS2C);
 
 	TouchHis his1;
 	m_mapTouchHis[ETouchIndex::Type::Touch1] = his1;
@@ -135,34 +124,30 @@ void AHero::BeginPlay()
 	m_fPreSightValueRecord = 0.f;
 	m_nProfessionIdx = 0;
 
-	LoadSightInfo();
-	if (IsInMainCity()) {
-		ResetTouchSight(m_nTouchSightTpy);
-	}
-	else {
-		ResetTouchSight(TouchSightTpy_B, false);
-	}
+	//LoadSightInfo();
+	//if (IsInMainCity()) {
+	//	ResetTouchSight(m_nTouchSightTpy);
+	//}
+	//else {
+	//	ResetTouchSight(TouchSightTpy_B, false);
+	//}
 	
 
-	GameAppExtern::requestEnterMap();
+	//GameAppExtern::requestEnterMap();
 
-	g_heroX = GetActorLocation().X * 1000000;
-	g_heroY = GetActorLocation().Y * 1000000;
+	//g_heroX = GetActorLocation().X * 1000000;
+	//g_heroY = GetActorLocation().Y * 1000000;
 
-	InitPreEquipWeapons();
-	InitCurrencyItems();
-	ResetWeapon();
-	ResetHorse();
 	RefreshEquipAttr();   //属性计算
 
-	EvtPreGetGenByff();
+	//EvtPreGetGenByff();
 
 	HeroInitEvent evt;
 	UI_DISPATCH_MYEVENT(HeroInitEvent, evt);
 
-	if (IsInMainCity() && m_playerData->getHp() <= 0) {
-		Death();
-	}
+	//if (IsInMainCity() && m_playerData->getHp() <= 0) {
+	//	Death();
+	//}
 }
 
 // Called every frame
@@ -178,112 +163,6 @@ void AHero::Tick(float DeltaTime)
 	if (m_ArrowActor && !m_ArrowActor->IsHidden())
 	{
 		m_ArrowActor->SetActorLocation(GetActorLocation());
-	}
-	if (!GameAppExtern::IsServer() && m_playerData) {
-		if (g_interwalk >= 50) {
-			FVector pos = GetActorLocation();
-			FRotator rot = GetActorRotation();
-			NS::I64 nX = pos.X * 1000000;
-			NS::I64 nY = pos.Y * 1000000;
-			NS::I64 nZ = pos.Z * 1000000;
-			if (nX != g_heroX || nY != g_heroY) {
-				MsgInteractionWalkC2S msg;
-				msg.set_objid(m_playerData->getId());
-				msg.set_player_iggid(m_playerData->getIggId());
-				auto& P = *msg.mutable_p();
-				P.set_x(nX);
-				P.set_y(nY);
-				P.set_z(nZ);
-				auto& R = *msg.mutable_r();
-				R.set_r(rot.Roll * 1000000);
-				R.set_p(rot.Pitch * 1000000);
-				R.set_y(rot.Yaw * 1000000);
-				GameAppExtern::sendMsg(msg.msgtype(), msg);
-				g_interwalk = 0;
-				g_heroX = nX;
-				g_heroY = nY;
-				//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, pos.ToString());
-			}
-		}
-		else {
-			g_interwalk += DeltaTime * 1000;
-		}
-	}
-
-	if (m_playerData && !IsDeath()) {
-		static int ss_nDec = 60;//GlobalCfg::getInstance().GetStrenthDec();
-		static int ss_nInc = 500;//GlobalCfg::getInstance().GetStrenthInc();
-		static int ss_nBreath = 1;//GlobalCfg::getInstance().GetBreathInc();
-		int nRunStrenth = 0;
-		int nRestStrenth = 0;
-		if (GetHorseId() > 0) {
-			auto&& pWeapon = WeaponInfoTypeCfg::getInstance().GetWeaponById(GetHorseId());
-			if (pWeapon != nullptr)
-			{
-				nRunStrenth = pWeapon->n_runStrenth;
-				nRestStrenth = pWeapon->n_restStrenth;
-			}
-		}
-		if (GetVelocity().Size() > 100.f) {
-			if (m_playerData->getFood() > 0) {
-				m_fFoodDec += DeltaTime;
-				if (m_fFoodDec >= 2.f) {
-					m_fFoodDec -= 2.f;
-					int nStrenth = ss_nDec - nRunStrenth;
-					if (nStrenth > 0) {
-						GameAppExtern::requestSynBase(MsgPlayerSynBaseC2S_MSG_SYN_BASE_TPY_MSG_SYN_BASE_TPY_STRENTH, false, nStrenth);
-					}
-				}
-			}
-		} else {
-			if (m_playerData->getFood() < m_playerData->getMaxFood()) {
-				m_fFoodInc += DeltaTime;
-				if (m_fFoodInc >= 5.f) {
-					m_fFoodInc -= 5.f;
-					int nStrenth = ss_nInc + nRestStrenth;
-					GameAppExtern::requestSynBase(MsgPlayerSynBaseC2S_MSG_SYN_BASE_TPY_MSG_SYN_BASE_TPY_STRENTH, true, nStrenth);
-				}
-			}
-		}
-
-		//怒气自动消失，去掉设置
-		//if (m_playerData->getBreath() < m_playerData->GetMaxBreath()) {
-		//	m_fBreathInc += DeltaTime;
-		//	if (m_fBreathInc >= 3.f) {
-		//		m_fBreathInc -= 3.f;
-		//		GameAppExtern::requestSynBase(MsgPlayerSynBaseC2S_MSG_SYN_BASE_TPY_MSG_SYN_BASE_TPY_ANGER, true, ss_nBreath);
-		//	}
-		//}
-
-		m_fBreathInc += DeltaTime;
-		if (m_fBreathInc >= 0.2f) {
-			m_fBreathInc -= 0.2f;
-		}
-
-		if (GetDamageCollision() && IsInMainCity())
-		{
-			m_fAIReSimInc += DeltaTime;
-			if (m_fAIReSimInc >= 3.f) {
-				m_fAIReSimInc -= 3.f;
-				auto&& monsters = AMonsterMgr::getInstance().GetMonsters();
-				for (auto&& monster : monsters)
-				{
-					if (!this->HasTarget(monster.second) && this->IsCanAttackTarget(monster.second))
-					{
-						this->AddTarget(monster.second);
-					}
-				}
-				ResetFocusObject();
-			}
-		}
-	}
-
-	if (m_fLockLessTm > 0.00001f)
-	{
-		m_fLockLessTm -= DeltaTime;
-		if (m_fLockLessTm <= 0.00001f) {
-			m_strLockObject = "";
-		}
 	}
 }
 
@@ -370,52 +249,36 @@ void AHero::onWalkEvent(const BallEvent& evt)
 //****************************************************************************************
 void AHero::Walk(FVector vec, float fScale)
 {
-	if (IsDeath()) {
-		return;
-	}
-
-	if (!CanMove())
+	AGenerals* pGen = Cast<AGenerals>(GetAttachParentActor());
+	if (pGen)
 	{
-		if (GetContinueIdx() > 0)
-		{
-#if PLATFORM_WINDOWS
-			if (fScale < 0.00001f && fScale > -0.000001f)
-			{
-				return;
-			}
+		FVector CharacterLocation = GetActorLocation();
 
-			auto fRota = GetActorRotation();
-			fRota.Yaw += fScale * 1.2;
-			
-			MsgInteractionTurnC2S msg;
-			msg.set_objid(m_playerData->getId());
-			msg.set_player_iggid(m_playerData->getIggId());
-			auto& R = *msg.mutable_r();
-			R.set_p(fRota.Pitch * 1000000);
-			R.set_y(fRota.Yaw * 1000000);
-			R.set_r(fRota.Roll * 1000000);
-			GameAppExtern::sendMsg(msg.msgtype(), msg);
+		// 获取摄像机位置
+		APlayerCameraManager* CameraManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+		FVector CameraLocation = CameraManager->GetCameraLocation();
 
-			SetActorRotation(FRotator(fRota.Pitch, fRota.Yaw, fRota.Roll));
-#else
-			auto fRota = vec.Rotation();
-			auto oriRota = GetActorRotation();
-			MsgInteractionTurnC2S msg;
-			msg.set_objid(m_playerData->getId());
-			msg.set_player_iggid(m_playerData->getIggId());
-			auto& R = *msg.mutable_r();
-			R.set_p(oriRota.Pitch * 1000000);
-			R.set_y(oriRota.Yaw * 1000000);
-			R.set_r(oriRota.Roll * 1000000);
-			GameAppExtern::sendMsg(msg.msgtype(), msg);
-			SetActorRotation(FRotator(oriRota.Pitch, fRota.Yaw, oriRota.Roll));
-#endif
-		}
-		return;
+		// 计算从摄像机到主角的方向
+		FVector Direction = (CharacterLocation - CameraLocation).GetSafeNormal();
+
+		FRotator rot1 = CameraManager->GetCameraRotation();
+
+		FVector vecDir = vec;// +rot1.Vector();
+		FRotator Rota = vecDir.Rotation();
+		//Rota.Yaw += rot1.Yaw;
+		vecDir = Rota.Vector();
+
+		pGen->AddMovementInput(vecDir, fScale);
+
+		//UActorComponent* pComp = this->GetComponentByClass(USpringArmComponent::StaticClass());
+		//if (pComp) {
+		//	FRotator rRot = UKismetMathLibrary::FindLookAtRotation(pComp->, this);
+		//}
+		
+		//Rota.Yaw = 0;
+		//Rota.Pitch = 0;
+		pGen->SetActorRotation(Rota);
 	}
-	AddMovementInput(vec , fScale);
-	ResetFocusObject();
-	PostHudShow();
 }
 
 void AHero::PostHudShow()
@@ -901,10 +764,7 @@ void AHero::SightAround(ETouchIndex::Type TouchIndex , FVector2D vec, bool bPres
 		if (nTouchUITpy > ENU_TOUCH_UITPY_NONE)
 		{
 			if (nTouchUITpy == ENU_TOUCH_UITPY_BALL) {
-				if (!UIManager::getInstance().IsShowUI() ||
-					UIManager::getInstance().IsUIShowByType(WindowEvent::EventType::Window_Bag)) {
-					pLobby->BallControll(true, vec);
-				}
+				pLobby->BallControll(true, vec);
 			}
 			else if (nTouchUITpy == ENU_TOUCH_UITPY_ATK) {
 				if (!UIManager::getInstance().IsShowUI()) {

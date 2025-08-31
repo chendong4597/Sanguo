@@ -2,12 +2,13 @@
 
 
 #include "UI/UIWindow.h"
+#include "../ReichGameInstance.h"
 
 
 bool UUIWindow::Initialize()
 {
 	if (!Super::Initialize())return false;
-	//if (UReichGameInstance::IsEditorMode()) return false;
+	if (UReichGameInstance::IsEditorMode()) return false;
 
 	//SetInteractable(false);
 	return true;
