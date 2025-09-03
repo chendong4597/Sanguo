@@ -351,6 +351,7 @@ public:
 	enum class EventType
 	{
 		Unknown,
+		Window_Lobby,
 		Window_NpcTalk,
 		Window_NpcFuncTalk,
 		Window_DefeccePlace,
@@ -832,6 +833,26 @@ public:
 	EventType m_type;
 };
 
+//*************************************************************************************************
+//
+//*************************************************************************************************
+class UIGameModeEvent// : public bzbee::Event
+{
+public:
+	enum class EventType
+	{
+		Unknown,
+	};
+public:
+	UIGameModeEvent() {};
+	virtual ~UIGameModeEvent() {};
+
+public:
+	EventType m_type;
+	bool bHero{ false };
+	int  nId{ 0 };
+};
+
 
 
 //*************************************************************************************************
@@ -889,6 +910,7 @@ public:
 	DECLARE_UI_MYEVENT(UIGuidEvent);
 	DECLARE_UI_MYEVENT(UIGenChangeEvent);
 	DECLARE_UI_MYEVENT(UIIosAgreementEvent);
+	DECLARE_UI_MYEVENT(UIGameModeEvent);
 };
 
 

@@ -19,9 +19,11 @@
 #include "TimerManager.h"
 
 #include "UI/UIManager.h"
+#include "UI/UIWindow.h"
 
 #include "HAL/PlatformFilemanager.h"
 
+extern UWorld* gp_UWorld;
 
 FVector CalculateGridPointPosition(
 	const FVector& PointA,      // A点位置
@@ -63,16 +65,9 @@ void AInstanceLevel::BeginPlay()
 
 	if (UReichGameInstance::IsEditorMode()) return;
 
-	m_convoyTrans.SetLocation(FVector(19998, 38211, 143));
-	FRotator rot;
-	rot.Pitch = 0.f;
-	rot.Yaw = -90;
-	rot.Roll = 0.f;
-	m_convoyTrans.SetRotation(rot.Quaternion());
-
-	RG_REGISTER_MYEVENT(MsgDungeonBossChest_MS2C, &AInstanceLevel::onMsgDungeonBossChest_MS2C);
-	RG_REGISTER_MYEVENT(MsgDungeonBossOpenChestRs_MS2C, &AInstanceLevel::onMsgDungeonBossOpenChestRs_MS2C);
-	RG_REGISTER_MYEVENT(MsgDungeonNextMob_S2C, &AInstanceLevel::onMsgDungeonNextMob_S2C);
+	//RG_REGISTER_MYEVENT(MsgDungeonBossChest_MS2C, &AInstanceLevel::onMsgDungeonBossChest_MS2C);
+	//RG_REGISTER_MYEVENT(MsgDungeonBossOpenChestRs_MS2C, &AInstanceLevel::onMsgDungeonBossOpenChestRs_MS2C);
+	//RG_REGISTER_MYEVENT(MsgDungeonNextMob_S2C, &AInstanceLevel::onMsgDungeonNextMob_S2C);
 
 #ifdef PLATFORM_WINDOWS
 	//副本编辑
@@ -80,6 +75,17 @@ void AInstanceLevel::BeginPlay()
 #endif
 	FTimerHandle TimerHandle;
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AInstanceLevel::ShowTroopView, 0.01f, false);
+	
+	UUserWidget* UserWidget = nullptr;
+	TSubclassOf<UUserWidget> WidgetClass = LoadClass<UUserWidget>(nullptr,
+		TEXT("WidgetBlueprint'/Game/UI/BP_UILobby.BP_UILobby_C'"));
+	if (WidgetClass) {
+		UserWidget = CreateWidget<UUserWidget>(gp_UWorld, WidgetClass);
+		if (UserWidget)
+		{
+			UserWidget->AddToViewport();
+		}
+	}
 }
 
 void AInstanceLevel::ExportInstanceMobs()

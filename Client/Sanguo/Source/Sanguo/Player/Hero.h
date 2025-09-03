@@ -89,6 +89,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "HERO")
+	void EvtRecallHero();
+
 	UFUNCTION(BlueprintCallable, Category = "HERO")
 	void Walk(FVector vec, float fScale = 1.0f);
 
@@ -241,6 +244,8 @@ private:
 	//是否在操作选择位置或者方向
 	bool m_bScrollHit{false};
 	int  m_nScrollR{ 0 }; //选择位置的最大距离
+
+	bool m_bStopMovement{ false };
 
 	AActor* m_GroundActor{ nullptr };  //技能位置选择
 	AActor* m_ArrowActor{ nullptr };   //技能方向选中

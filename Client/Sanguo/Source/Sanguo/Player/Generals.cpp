@@ -24,6 +24,9 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Engine/World.h"
 
+#include "NavigationPath.h"
+#include "NavigationSystem.h"
+
 #include "data/ItemData.h"
 #include "data/NpcProtectorData.h"
 #include "config/NpcTypeCfg.h"
@@ -47,12 +50,24 @@
 
 extern UWorld* gp_UWorld;
 
+static FColor genColors[] = { FColor::Green, FColor::Blue, FColor::Yellow, FColor::Cyan,
+FColor::Magenta, FColor::Orange, FColor::Purple, FColor::Turquoise, FColor::Emerald };
+
+static int g_genColorIdx = 0;
+
 void AGenerals::BeginPlay()
 {
 	Super::BeginPlay();
 	if (UReichGameInstance::IsEditorMode()) return;
 
 	CreateMyCollision(100);
+
+	m_myColor = genColors[g_genColorIdx++];
+	if (g_genColorIdx >= 9)
+	{
+		g_genColorIdx = 0;
+	}
+
 	UI_REGISTER_MYEVENT(GeneralsSkillEvent, &AGenerals::onGeneralsSkillEvent);
 
 	RG_REGISTER_MYEVENT(HandlerNpcEvent, &AGenerals::onHandlerNpcEvent);
@@ -70,63 +85,32 @@ void AGenerals::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void AGenerals::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (IsDeath() || !m_npcData || !m_protectData) {
-		return;
-	}
-
-	if (IsInMainCity()) {
-		if (m_npcData->getHp() < m_npcData->getMaxHp())
+	if (m_bGuidNav && m_PathPoints.Num() > 0)
+	{
+		FVector vec = m_PathPoints[0];
+		if (FVector::Dist(vec, GetActorLocation()) < 120)
 		{
-			m_fLifeInterTm += DeltaTime;
-			if (m_fLifeInterTm >= 1.f) {     //恢复血量
-				m_fLifeInterTm -= 1.f;
-				m_npcData->setHp(m_npcData->getHp() + m_npcData->getMaxHp() / 5);
-			}
-		}
-
-
-		if (GetFocusRole() == nullptr &&
-			m_protectData->status == MsgPB::PROTECTOR_STATUS::BADGE_STATUS_PATROL)   //AI找怪有时找不到，暂时用其他办法解决下 每10秒找下附加怪物
-		{
-			m_fFindMonsterInterTm += DeltaTime;
-			if (m_fFindMonsterInterTm >= 10.f) {
-				auto&& monsters = AMonsterMgr::getInstance().GetMonsters();
-				for (auto&& monster : monsters)
-				{
-					ARole* pRole = Cast<ARole>(monster.second);
-					if (!pRole) {
-						continue;
-					}
-					if (!IsCanAttackTarget(pRole)) {
-						continue;
-					}
-					FVector pos1 = pRole->GetActorLocation();
-					FVector pos2 = GetActorLocation();
-					if (FVector::Distance(pos1, pos2) > 1500.f)
-					{
-						continue;
-					}
-
-					AddTarget(pRole);
-				}
-				m_fFindMonsterInterTm = 0.f;
-			}
-		}
-	} else {
-		m_cavInterPlay += DeltaTime;
-		if (m_nGenelTpy == NpcTypeCfg::NpcSubType_Cavalry && 
-			m_npcData && m_npcData->findBuffById(BuffType::BUFF_CAV) && GetFocusRole() != nullptr &&
-			m_cavInterPlay >= 1.5f)
-		{
-			// 获取动画实例
-			UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-
-			// 检查是否正在播放任何蒙太奇
-			if (AnimInstance && !AnimInstance->IsAnyMontagePlaying())
+			m_PathPoints.RemoveAt(0);
+			if (m_PathPoints.IsEmpty())
 			{
-				PlayAttack();
-				m_cavInterPlay = 0.f;
+				m_bGuidNav = false;
 			}
+		}
+		else {
+			auto toRota = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), vec);
+			FVector vecDir = toRota.Vector();
+			AddMovementInput(FVector(vecDir.X, vecDir.Y, 0), 1.f);
+			int nIdx = 0;
+			for (const FVector& Point : m_PathPoints) {
+				DrawDebugSphere(GetWorld(), Point, 20.f, 8, m_myColor, false, 0.2f);
+				if (nIdx < m_PathPoints.Num() - 1)
+				{
+					DrawDebugLine(GetWorld(), Point, m_PathPoints[nIdx + 1], m_myColor, false, 0.1f);
+				}
+				nIdx++;
+			}
+			DrawDebugLine(GetWorld(), FVector(GetActorLocation().X, GetActorLocation().Y, 0),
+				vec, m_myColor, false, 0.1f);
 		}
 	}
 }
@@ -1170,6 +1154,38 @@ std::string AGenerals::GetBattleSound(int nSoundTpy)
 		return m_npcData->GetBattleSound(nSoundTpy);
 	}
 	return "";
+}
+
+
+//****************************************************************************************
+//
+//****************************************************************************************
+void AGenerals::GenSightAround(ETouchIndex::Type TouchIndex, FVector2D vec, bool bPressed)
+{
+	AIPlayerMgr::getInstance().GetHero()->SightAround(TouchIndex, vec, bPressed);
+}
+
+//****************************************************************************************
+//
+//****************************************************************************************
+void AGenerals::GenHeroInputTouch(const ETouchIndex::Type TouchIndex, ETouchType::Type Type, FVector vecPos)
+{
+	AIPlayerMgr::getInstance().GetHero()->HeroInputTouch(TouchIndex, Type, vecPos);
+}
+
+void AGenerals::MoveToDestination(FVector vecDes)
+{
+	UNavigationPath* Path = UNavigationSystemV1::FindPathToLocationSynchronously(
+		GetWorld(),
+		GetActorLocation(),
+		vecDes
+	);
+	if (Path && Path->IsValid()) {
+		for (const FVector& Point : Path->PathPoints) {
+			m_PathPoints = Path->PathPoints;
+			m_bGuidNav = true;
+		}
+	}
 }
 
 //********************************************************************************************************************************************************************************

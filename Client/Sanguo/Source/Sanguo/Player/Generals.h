@@ -29,6 +29,14 @@ class SANGUO_API AGenerals : public ARole
 	void onHandlerProtectorEvent(const HandlerProtectorEvent& msg);
 	void onHandlerNpcAliveEvent(const HandlerNpcAliveEvent& msg);
 public:
+	//旋转人物，放大缩小视野等功能
+	UFUNCTION(BlueprintCallable, Category = "HERO")
+	void GenSightAround(ETouchIndex::Type TouchIndex, FVector2D vec, bool bPressed);
+
+	UFUNCTION(BlueprintCallable, Category = "PLAYER")
+	void GenHeroInputTouch(const ETouchIndex::Type TouchIndex, ETouchType::Type Type, FVector vecPos);
+public:
+
 	UFUNCTION(BlueprintCallable, Category = "Generals")
 	void SetWeaponId(int nWeaponId);
 
@@ -37,9 +45,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Generals")
 	void SetSubWeaponId(int nSubWeaponId);
-
-	UFUNCTION(BlueprintImplementableEvent, Category = "Generals")
-	void EventPlayAttack();
 
 	UFUNCTION(BlueprintCallable, Category = "Generals")
 	bool IsTooFarToPlayer();
@@ -59,6 +64,12 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Generals")
 	void BTSetHorse(bool bHorse);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Generals")
+	void EventPlayAttack();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Generals")
+	void AttachHero();
 
 	virtual float GetNormalAttackInterTm() override;
 
@@ -88,6 +99,14 @@ public:
 
 	bool IsDefenceing();		//是否是防御状态，只对步兵有用
 	void ResortAttackTargets();
+
+public:
+	void MoveToDestination(FVector vecDes);
+	void SetGuidNav(bool bNav) { m_bGuidNav = bNav; }
+private:
+	bool m_bGuidNav{ false };
+	TArray<FVector> m_PathPoints;
+	FColor m_myColor;
 public:
 	virtual int GetObjectId() override;
 	virtual bool IsDeath() override;

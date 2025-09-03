@@ -14,6 +14,7 @@
 #include "Delegates/DelegateCombinations.h"
 
 #include "UIWindow.h"
+#include "Components/ListView.h"
 
 #include "UILobby.generated.h"
 
@@ -31,11 +32,11 @@ protected:
 	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 public:
 	void ShowUI(bool bShowUI);
+
+	void SetFocusGenerals(int nId);
 public:
-	void onHorseChangeEvent(const HorseChangeEvent& evt);
-	void onSkillCoolTimeEvent(const SkillCoolTimeEvent& evt);
-	void onWeaponPreEquipEvent(const WeaponPreEquipEvent& evt);
 	void onUILayoutEvent(const UILayoutEvent& evt);
+	void onUIGameModeEvent(const UIGameModeEvent& evt);
 public:
 	//void onBtnChallengeEvent(const HandlerLoginStateEvent& evt);
 	ENU_TOUCH_UITPY SetTouchInLobby(ETouchIndex::Type TouchIndex , FVector2D vec);
@@ -113,10 +114,6 @@ public:
 	void SetLayoutBang(float fValue);
 
 protected:
-	void ResetHorseCoolTime();
-	void ResetExtSkillCoolTime();
-	void ResetWeaponETag();
-
 	void LayoutLobby();
 
 protected:
@@ -135,6 +132,9 @@ protected:
 
 	UFUNCTION()
 	void OnClickSwitchMode();
+
+	UFUNCTION()
+	void OnClickResetCameraPos();
 
 protected:
 	UFUNCTION()
@@ -162,6 +162,9 @@ private:
 	UCanvasPanel* m_panBall{nullptr};
 	UCanvasPanel* m_RightPanel{ nullptr };
 	UCanvasPanel* m_TopRightPanel{ nullptr };
+	UCanvasPanel* m_TopCheckPanel{ nullptr };
+	UCanvasPanel* m_GenPanel{ nullptr };
+	UCanvasPanel* m_HeadPanel{ nullptr };
 
 	UImage*  m_imgCancel{nullptr};
 	UImage* m_imgAchieveRed{ nullptr };
@@ -178,7 +181,10 @@ private:
 	UButton* m_btnBag{ nullptr };
 	UButton* m_btnExit{ nullptr };
 
-	bool bIsUsingCineCam{ false };
+	UListView* m_lstGenView{ nullptr };
+	UListView* m_lstTarView{ nullptr };
+
+	FVector    m_vecOriCameraPos;
 
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera")
 	ACameraActor* CineCamera{ nullptr };

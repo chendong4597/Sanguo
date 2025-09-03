@@ -58,6 +58,7 @@ static NS::I64 g_heroY = 0;
 static NS::I64 g_i64RiderHorseUUID = 0;
 
 extern UWorld* gp_UWorld;
+extern bool g_bIsUsingCineCam;
 
 // Sets default values
 AHero::AHero()
@@ -145,6 +146,9 @@ void AHero::BeginPlay()
 	HeroInitEvent evt;
 	UI_DISPATCH_MYEVENT(HeroInitEvent, evt);
 
+	//UIGameModeEvent evtM;
+	//UI_DISPATCH_MYEVENT(UIGameModeEvent, evtM);
+
 	//if (IsInMainCity() && m_playerData->getHp() <= 0) {
 	//	Death();
 	//}
@@ -160,10 +164,7 @@ void AHero::Tick(float DeltaTime)
 		Around(DeltaTime);
 	}
 #endif
-	if (m_ArrowActor && !m_ArrowActor->IsHidden())
-	{
-		m_ArrowActor->SetActorLocation(GetActorLocation());
-	}
+	
 }
 
 
@@ -175,25 +176,26 @@ void AHero::Around(float DeltaTime)
 		return;
 	}
 	PostUITouchEvent(vec.X, vec.Y, 1);
-	if (m_nTouchSightTpy != TouchSightTpy_A
-		|| UIManager::getInstance().IsShowUI()) {
+	
+	if (!g_bIsUsingCineCam) {
+		m_MoveRoundVec = vec;
 		return;
 	}
 	
 	if (vec.X > m_MoveRoundVec.X)
 	{
-		Round(true, DeltaTime*std::abs(m_MoveRoundVec.X - vec.X));
+		Round(true, DeltaTime*std::abs(m_MoveRoundVec.X - vec.X)*1000);
 	}
 	else if (vec.X < m_MoveRoundVec.X) {
-		Round(false, DeltaTime*std::abs(m_MoveRoundVec.X - vec.X));
+		Round(false, DeltaTime*std::abs(m_MoveRoundVec.X - vec.X) * 1000);
 	}
 
 	if (vec.Y > m_MoveRoundVec.Y)
 	{
-		UpAndDown(true, DeltaTime*std::abs(m_MoveRoundVec.Y - vec.Y));
+		UpAndDown(true, DeltaTime*std::abs(m_MoveRoundVec.Y - vec.Y) * 500);
 	}
 	else if (vec.Y < m_MoveRoundVec.Y) {
-		UpAndDown(false, DeltaTime*std::abs(m_MoveRoundVec.Y - vec.Y));
+		UpAndDown(false, DeltaTime*std::abs(m_MoveRoundVec.Y - vec.Y) * 500);
 	}
 	m_MoveRoundVec = vec;
 }
@@ -252,31 +254,10 @@ void AHero::Walk(FVector vec, float fScale)
 	AGenerals* pGen = Cast<AGenerals>(GetAttachParentActor());
 	if (pGen)
 	{
-		FVector CharacterLocation = GetActorLocation();
-
-		// 获取摄像机位置
-		APlayerCameraManager* CameraManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
-		FVector CameraLocation = CameraManager->GetCameraLocation();
-
-		// 计算从摄像机到主角的方向
-		FVector Direction = (CharacterLocation - CameraLocation).GetSafeNormal();
-
-		FRotator rot1 = CameraManager->GetCameraRotation();
-
 		FVector vecDir = vec;// +rot1.Vector();
-		FRotator Rota = vecDir.Rotation();
-		//Rota.Yaw += rot1.Yaw;
-		vecDir = Rota.Vector();
+		FRotator Rota = (vecDir*fScale).Rotation();
 
-		pGen->AddMovementInput(vecDir, fScale);
-
-		//UActorComponent* pComp = this->GetComponentByClass(USpringArmComponent::StaticClass());
-		//if (pComp) {
-		//	FRotator rRot = UKismetMathLibrary::FindLookAtRotation(pComp->, this);
-		//}
-		
-		//Rota.Yaw = 0;
-		//Rota.Pitch = 0;
+		pGen->AddMovementInput(vec, fScale);
 		pGen->SetActorRotation(Rota);
 	}
 }
@@ -669,8 +650,6 @@ void AHero::HeroInputTouch(const ETouchIndex::Type TouchIndex, ETouchType::Type 
 		SightAround(TouchIndex , vec, true);
 		if (TouchIndex == ETouchIndex::Type::Touch1) {
 			s_vecBegin = vec;
-			UE_LOG(LogOutputDevice, Log, 
-				TEXT("HeroInputTouch Touch1 Begin oriVec.X = %0.2f oriVec.Y = %0.2f Scale = 0.2f"), oriVec.X, oriVec.Y, Scale);
 		}
 		else if (TouchIndex == ETouchIndex::Type::Touch2) {
 			m_fPreSightValue = m_fPreSightValueRecord;
@@ -761,10 +740,21 @@ void AHero::SightAround(ETouchIndex::Type TouchIndex , FVector2D vec, bool bPres
 #if PLATFORM_WINDOWS
 	if (bPressed) {
 		ENU_TOUCH_UITPY nTouchUITpy = pLobby->SetTouchInLobby(TouchIndex, vec);
+		if (g_bIsUsingCineCam)
+		{
+			nTouchUITpy = ENU_TOUCH_UITPY_NONE;
+		}
 		if (nTouchUITpy > ENU_TOUCH_UITPY_NONE)
 		{
 			if (nTouchUITpy == ENU_TOUCH_UITPY_BALL) {
 				pLobby->BallControll(true, vec);
+				if (!m_bStopMovement) {
+					AGenerals* pGen = Cast<AGenerals>(this->GetAttachParentActor());
+					if (pGen)
+					{
+						pGen->SetGuidNav(false);
+					}
+				}
 			}
 			else if (nTouchUITpy == ENU_TOUCH_UITPY_ATK) {
 				if (!UIManager::getInstance().IsShowUI()) {
@@ -790,7 +780,7 @@ void AHero::SightAround(ETouchIndex::Type TouchIndex , FVector2D vec, bool bPres
 		StopHoverAttack(!pLobby->IsTouchImageCancel(FVector2D(vec.X , vec.Y)));
 		pLobby->SetTouchCancelHover(FVector2D(vec.X, vec.Y) , true);
 		m_bAround = false;
-		SaveHeroCameraInfo();
+		m_bStopMovement = false;
 	}
 #else
 	if (bPressed) {

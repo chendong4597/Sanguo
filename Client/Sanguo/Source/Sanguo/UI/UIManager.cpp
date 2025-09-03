@@ -204,11 +204,16 @@ void UIManager::onWindowEvent(const WindowEvent& evt)
 {
 	bool bSound = true;
 	int nUIType = static_cast<int>(evt.m_type);
-	//switch (evt.m_type)
-	//{
-	//default:
-	//	break;
-	//}
+	switch (evt.m_type)
+	{
+	case WindowEvent::EventType::Window_Lobby:
+	{
+		
+	}
+		break;
+	default:
+		break;
+	}
 
 	if (!bSound) return;
 

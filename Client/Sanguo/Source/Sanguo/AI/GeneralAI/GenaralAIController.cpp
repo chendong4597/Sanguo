@@ -93,18 +93,7 @@ void AGenaralAIController::OnPerceptionUpdated(const TArray<AActor*>& UpdatedAct
 //****************************************************************************************
 void AGenaralAIController::InitAI()
 {
-	auto pOwnerRole = GetOwnerRole();
-	if (pOwnerRole) {
-		ARole* pRole = Cast<ARole>(pOwnerRole);
-		if (pRole && pRole->GetCurrentLevelTpy() == (int)LevelType::LevelType_MainCity) {
-			SetAISight(5000, 35000, 360);
-		} else {
-			SetAISight(25000, 35000, 360);
-		}
-	} else {
-		SetAISight(2500, 3500, 360);
-	}
-	
+	SetAISight(5000, 35000, 360);
 	
 	SetAIId(1);
 	StartBehaviorTree(1);

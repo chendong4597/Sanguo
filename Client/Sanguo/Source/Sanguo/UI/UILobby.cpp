@@ -35,6 +35,10 @@
 #include "UIRoundProcessBar.h"
 #include "UIMsgBox.h"
 #include "UIMsgBoxToast.h"
+#include "UIGenData.h"
+
+#include "../Player/Generals.h"
+#include "../SanguoPlayerController.h"
 
 #if PLATFORM_ANDROID
 #include "../JNI/java_com_wskj_thirdreich.h"
@@ -47,6 +51,10 @@
 extern bool g_bPlaying;
 extern UWorld* gp_UWorld;
 
+bool g_bIsUsingCineCam = false;
+
+static int ggg_genIdx = 0;
+
 bool UUILobby::Initialize()
 {
 	UE_LOG(LogOutputDevice, Log, TEXT("UUILobby::Initialize begin"));
@@ -58,6 +66,7 @@ bool UUILobby::Initialize()
 	REGISTER_BTN_CLICK("BtnBag", OnClickBag);
 	REGISTER_BTN_CLICK("BtnSetup", OnSetup);
 	REGISTER_BTN_CLICK("BtnSwitch", OnClickSwitchMode);
+	REGISTER_BTN_CLICK("BtnResetCamera", OnClickResetCameraPos);
 
 	REGISTER_BTN_CLICK("BtnAttack", onBtnAtkClick);
 	REGISTER_BTN_PRESSED("BtnAttack", onBtnAtkPressed);
@@ -67,7 +76,13 @@ bool UUILobby::Initialize()
 
 	m_panBall = Cast<UCanvasPanel>(GetWidgetFromName(FName("LeftDownPanel")));
 	m_RightPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("RightPanel")));
-	m_TopRightPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("TopRightPanel")));
+	m_TopRightPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("SwitchPanel")));
+	m_GenPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("GenPanel")));
+	m_TopCheckPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("CheckPosPan")));
+	m_HeadPanel = Cast<UCanvasPanel>(GetWidgetFromName(FName("HeadPanel")));
+
+	m_lstGenView = Cast<UListView>(GetWidgetFromName(FName("ListGen")));
+	m_lstTarView = Cast<UListView>(GetWidgetFromName(FName("ListTarget")));
 
 
 	m_panAtkBg = Cast<UCanvasPanel>(GetWidgetFromName(FName("AttackPanelBg")));
@@ -90,20 +105,47 @@ bool UUILobby::Initialize()
 			ESlateVisibility::Visible : ESlateVisibility::Hidden);
 	}
 
-	UI_REGISTER_MYEVENT(UILayoutEvent, &UUILobby::onUILayoutEvent);
+	//UI_REGISTER_MYEVENT(UILayoutEvent, &UUILobby::onUILayoutEvent);
+	UI_REGISTER_MYEVENT(UIGameModeEvent, &UUILobby::onUIGameModeEvent);
+
+	if (m_lstGenView) {
+		m_lstGenView->ClearListItems();
+
+		for (size_t i = 0; i < 5; i++)
+		{
+			auto&& pObjData = Cast<UUIGenData>(NewObject<UUIGenData>(this));
+			if (pObjData)
+			{
+				m_lstGenView->AddItem(pObjData);
+			}
+		}
+	}
+
+	if (m_lstTarView) {
+		m_lstTarView->ClearListItems();
+
+		for (size_t i = 0; i < 10; i++)
+		{
+			auto&& pObjData = Cast<UUIGenData>(NewObject<UUIGenData>(this));
+			if (pObjData)
+			{
+				m_lstTarView->AddItem(pObjData);
+			}
+		}
+	}
 
 	//LayoutLobby();
 
-	
+	//SetFocusGenerals(0);
 	return true;
 }
 
 void UUILobby::UnInit()
 {
-	UI_UN_REGISTER_MYEVENT(WeaponChangeEvent, this);
-	UI_UN_REGISTER_MYEVENT(HorseChangeEvent, this);
-	UI_UN_REGISTER_MYEVENT(SkillCoolTimeEvent, this);
-	UI_UN_REGISTER_MYEVENT(WeaponPreEquipEvent, this);
+	//UI_UN_REGISTER_MYEVENT(WeaponChangeEvent, this);
+	//UI_UN_REGISTER_MYEVENT(HorseChangeEvent, this);
+	//UI_UN_REGISTER_MYEVENT(SkillCoolTimeEvent, this);
+	//UI_UN_REGISTER_MYEVENT(WeaponPreEquipEvent, this);
 }
 
 void UUILobby::NativeDestruct()
@@ -124,16 +166,59 @@ void UUILobby::BeginDestroy()
 void UUILobby::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 {
 	Super::NativeTick(MyGeometry, InDeltaTime);
-	auto&& hero = AIPlayerMgr::getInstance().GetHero();
-	if (!hero || !hero->m_playerData) {
-		return;
+	if (m_panBall)
+	{
+		m_panBall->SetVisibility(g_bIsUsingCineCam ? 
+			ESlateVisibility::Hidden : ESlateVisibility::HitTestInvisible);
 	}
 
-	static bool ssss_bLobyBang = false;
-	if (!ssss_bLobyBang)
+	if (m_RightPanel)
 	{
-		LayoutLobby();
+		m_RightPanel->SetVisibility(g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
 	}
+
+	if (m_TopCheckPanel) {
+		m_TopCheckPanel->SetVisibility(!g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	if (m_GenPanel)
+	{
+		m_GenPanel->SetVisibility(!g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	if (m_HeadPanel) {
+		m_HeadPanel->SetVisibility(g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	static float sssss_1 = 0.f;
+	if (sssss_1 < 0.5f)
+	{
+		sssss_1 += InDeltaTime;
+		if (sssss_1 >= 0.5f)
+		{
+			SetFocusGenerals(0);
+			OnClickSwitchMode();
+		}
+	}
+}
+
+void UUILobby::SetFocusGenerals(int nId)
+{
+	TArray<AActor*> arrActors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AGenerals::StaticClass(), arrActors);
+	if (arrActors.Num() <= 0 || ggg_genIdx >= arrActors.Num())
+	{
+		return;
+	}
+	AGenerals* pGen = Cast<AGenerals>(arrActors[ggg_genIdx]);
+	if (!pGen) {
+		return;
+	}
+	pGen->AttachHero();
 }
 
 
@@ -152,6 +237,16 @@ void UUILobby::SendWalk(float x, float y)
 	evt.x = x;
 	evt.y = y;
 	UI_DISPATCH_MYEVENT(BallEvent , evt);
+
+	//FString HealthMessage = FString::Printf(TEXT("UUILobby::SendWalk , vec.x = %0.2f , vec.y = %0.2f"),
+	//	evt.x, evt.y);
+	//FLinearColor Color = FLinearColor::Green;
+
+	//// 简单屏幕日志
+	//if (GEngine)
+	//{
+	//	GEngine->AddOnScreenDebugMessage(-1, 3.0f, Color.ToFColor(true), HealthMessage);
+	//}
 }
 
 
@@ -419,60 +514,94 @@ void UUILobby::OnClickSwitchMode()
 {
 	if (!PlayerController) {
 		PlayerController = gp_UWorld->GetFirstPlayerController();
+	}
 
-		if (PlayerController)
+	if (!PlayerController)
+	{
+		return;
+	}
+	
+	if (!CineCamera) {
+		TArray<AActor*> arrActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
+		if (arrActors.Num() > 0)
 		{
-			TArray<AActor*> arrActors;
-			UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
-			if (arrActors.Num() > 0)
-			{
-				CineCamera = Cast<ACameraActor>(arrActors[0]);
+			CineCamera = Cast<ACameraActor>(arrActors[0]);
 
-				if (CineCamera) {
-					UCameraComponent* CameraComp = CineCamera->GetCameraComponent();
-					if (CameraComp) {
-						FVector2D ViewportSize;
-						if (GEngine && GEngine->GameViewport)
-						{
-							GEngine->GameViewport->GetViewportSize(ViewportSize);
-						}
-
-						float AspectRatio = ViewportSize.X / ViewportSize.Y;
-
-						// 调整摄像机设置
-						//CameraComp->SetAspectRatio(0); // 禁用宽高比约束
-						CameraComp->SetAspectRatio(AspectRatio); // 基于16:9调整
+			if (CineCamera) {
+				m_vecOriCameraPos = CineCamera->GetActorLocation();
+				UCameraComponent* CameraComp = CineCamera->GetCameraComponent();
+				if (CameraComp) {
+					FVector2D ViewportSize;
+					if (GEngine && GEngine->GameViewport)
+					{
+						GEngine->GameViewport->GetViewportSize(ViewportSize);
 					}
-				}
-			}
 
-			if (PlayerController && PlayerController->GetPawn())
-			{
-				// 获取玩家摄像机组件
-				PlayerCamera = PlayerController->GetPawn()->FindComponentByClass<UCameraComponent>();
+					float AspectRatio = ViewportSize.X / ViewportSize.Y;
+
+					// 调整摄像机设置
+					//CameraComp->SetAspectRatio(0); // 禁用宽高比约束
+					CameraComp->SetAspectRatio(AspectRatio); // 基于16:9调整
+				}
 			}
 		}
 	}
-	if (!PlayerController || !CineCamera || !PlayerCamera) {
+
+	if (!PlayerController || !CineCamera) {
 		return;
 	}
-	if (bIsUsingCineCam && PlayerController->GetPawn())
+
+	if (g_bIsUsingCineCam && PlayerController->GetPawn())
 	{
 		// 切换到玩家摄像机
-		PlayerController->SetViewTargetWithBlend(PlayerController->GetPawn(), 0.f);
-		bIsUsingCineCam = false;
+		PlayerController->SetViewTargetWithBlend(AIPlayerMgr::getInstance().GetHero(), 0.f);
+		g_bIsUsingCineCam = false;
+		AIPlayerMgr::getInstance().GetHero()->EvtRecallHero();
+
+		SetFocusGenerals(0);
+		ggg_genIdx++;
+		if (ggg_genIdx == 5) {
+			ggg_genIdx = 0;
+		}
 	}
 	else if (CineCamera)
 	{
 		// 切换到Cine摄像机
 		PlayerController->SetViewTargetWithBlend(CineCamera, 0.f);
-		bIsUsingCineCam = true;
+		g_bIsUsingCineCam = true;
+	}
+	ASanguoPlayerController* pSanController = Cast<ASanguoPlayerController>(PlayerController);
+	if (!pSanController)
+	{
+		return;
+	}
+	pSanController->ResetPawn(!g_bIsUsingCineCam);
+}
+
+void UUILobby::OnClickResetCameraPos()
+{
+	if (CineCamera) {
+		CineCamera->SetActorLocation(m_vecOriCameraPos);
 	}
 }
 
 void UUILobby::onUILayoutEvent(const UILayoutEvent& evt)
 {
 	LayoutLobby();
+}
+
+void UUILobby::onUIGameModeEvent(const UIGameModeEvent& evt)
+{
+	if (evt.bHero && !g_bIsUsingCineCam)
+	{
+		return;
+	}
+	if (!evt.bHero && g_bIsUsingCineCam)
+	{
+		return;
+	}
+	OnClickSwitchMode();
 }
 
 //****************************************************************************************

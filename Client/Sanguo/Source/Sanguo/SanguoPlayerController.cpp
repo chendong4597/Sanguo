@@ -11,8 +11,18 @@
 #include "InputActionValue.h"
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
+#include "Camera/CameraActor.h"
+#include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
+
+#include "Player/IPlayer.h"
+#include "Player/Hero.h"
+
+#include "Player/Generals.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
+
+bool g_bIsUsingCineCam = false;
 
 ASanguoPlayerController::ASanguoPlayerController()
 {
@@ -62,12 +72,21 @@ void ASanguoPlayerController::SetupInputComponent()
 
 void ASanguoPlayerController::OnInputStarted()
 {
-	StopMovement();
+	if (!g_bIsUsingCineCam)
+	{
+		return;
+	}
+	FollowTime = 0.f;
 }
 
 // Triggered every frame when the input is held down
 void ASanguoPlayerController::OnSetDestinationTriggered()
 {
+	if (!g_bIsUsingCineCam)
+	{
+		return;
+	}
+
 	// We flag that the input is being pressed
 	FollowTime += GetWorld()->GetDeltaSeconds();
 	
@@ -88,25 +107,74 @@ void ASanguoPlayerController::OnSetDestinationTriggered()
 	{
 		CachedDestination = Hit.Location;
 	}
-	
-	// Move towards mouse pointer or touch
-	APawn* ControlledPawn = GetPawn();
-	if (ControlledPawn != nullptr)
+}
+
+void ASanguoPlayerController::ResetPawn(bool bHero)
+{
+	AHero* pHero = AIPlayerMgr::getInstance().GetHero();
+	if (!pHero)
 	{
-		FVector WorldDirection = (CachedDestination - ControlledPawn->GetActorLocation()).GetSafeNormal();
-		ControlledPawn->AddMovementInput(WorldDirection, 1.0, false);
+		return;
+	}
+	if (bHero)
+	{
+		this->SetPawn(pHero);
+		Possess(pHero);
+		return;
+	}
+	AGenerals* pGen = Cast<AGenerals>(this->GetPawn()->GetAttachParentActor());
+	if (!pGen)
+	{
+		this->SetPawn(pHero);
+		Possess(pHero);
+		return;
+	}
+	//UnProcess();
+	this->SetPawn(pGen);
+	Possess(pGen);
+
+	// ÆôÓÃÊäÈë
+	//pGen->EnableInput(this);
+
+	TArray<AActor*> arrActors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
+	if (arrActors.Num() > 0)
+	{
+		ACameraActor* pCamera = Cast<ACameraActor>(arrActors[0]);
+		SetViewTargetWithBlend(pCamera, 0.f);
 	}
 }
 
 void ASanguoPlayerController::OnSetDestinationReleased()
 {
-	// If it was a short press
-	if (FollowTime <= ShortPressThreshold)
+	if (!g_bIsUsingCineCam)
 	{
-		// We move there and spawn some particles
-		UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, CachedDestination);
-		UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, FXCursor, CachedDestination, FRotator::ZeroRotator, FVector(1.f, 1.f, 1.f), true, true, ENCPoolMethod::None, true);
+		return;
 	}
+	// If it was a short press
+	if (FollowTime > ShortPressThreshold)
+	{
+		return;
+	}
+
+	StopMovement();
+
+
+	AHero* pHero = AIPlayerMgr::getInstance().GetHero();
+	if (!pHero)
+	{
+		return;
+	}
+	AGenerals* pGen = Cast<AGenerals>(pHero->GetAttachParentActor());
+	if (!pGen)
+	{
+		return;
+	}
+
+	pGen->MoveToDestination(CachedDestination);
+
+	//UAIBlueprintHelperLibrary::SimpleMoveToLocation(this, CachedDestination);
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this, FXCursor, CachedDestination, FRotator::ZeroRotator, FVector(1.f, 1.f, 1.f), true, true, ENCPoolMethod::None, true);
 
 	FollowTime = 0.f;
 }
