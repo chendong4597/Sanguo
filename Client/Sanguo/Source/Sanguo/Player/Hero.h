@@ -95,6 +95,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "HERO")
 	void Walk(FVector vec, float fScale = 1.0f);
 
+	UFUNCTION(BlueprintCallable, Category = "HERO")
+	void PreWalk(bool bForward, float fMove);
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "HERO")
 	void Sight(int sightValue);
 
@@ -149,6 +152,9 @@ public:
 
 	void RefreshEquipAttr();
 
+private:
+	FVector m_vecWalkDir{ FVector::ZeroVector };
+
 public:
 	void InitPreEquipWeapons();
 	void SavePreEquipWeapons();
@@ -177,6 +183,7 @@ public:
 	void SaveSightInfo();
 	void ResetTouchSight(int nSightTpy = -1, bool bSetSight = true);
 	int GetTouchSight() const { return m_nTouchSightTpy; }
+	int GetCameraSightLength() const { return m_nSightLength; }
 public:
 	FString ReadHeroCfgFile(FString strFile);
 	void SaveHeroCfgFile(FString strFile, FString strData);
@@ -216,6 +223,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "HERO")
 	void SetAutoMediaPercent(int nTpy, int nPerent);
+
+
+	bool ClickGenerals(FVector distPos);
 
 private:
 	bool m_bGuidNav{ false };
@@ -262,6 +272,7 @@ private:
 	bool m_bAround{ false };  //旋转镜头参数设置
 	bool m_bPlantMove{ false }; //是否是种植模式下的移动
 	int m_nProfessionIdx{ 0 };
+	int m_nSightLength{ 4500 };
 
 	bool m_bWaitTrans{ false };	//是否在等待返回起点位置
 	FTimerHandle MyTimerHand;

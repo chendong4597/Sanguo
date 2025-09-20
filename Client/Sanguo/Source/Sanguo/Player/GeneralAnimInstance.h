@@ -36,6 +36,9 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	bool m_bDefenceing; // 是否在防御状态，只对步兵有用
 
+	UPROPERTY(BlueprintReadOnly)
+	float m_fHorseAnim; // 是否在防御状态，只对步兵有用
+
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 
 	virtual void NativeInitializeAnimation() override;

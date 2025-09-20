@@ -19,6 +19,7 @@ void USoldierAnimInstance::NativeUpdateAnimation(float dt)
 		m_fDirection = CalculateDirection(pSoldier->GetVelocity(), pSoldier->GetBaseAimRotation()); // 通过速度和旋转计算方向 (-180~180)
 		m_bFocus = pSoldier->GetFocusRole() != nullptr;
 		m_bDead = pSoldier->IsDeath();
+		m_fHorseRiding = pSoldier->IsRiding() ? 1.f : 0.f;
 		if (pSoldier->GetWeaponTpy() == Weapon_Tpy_Knife) {
 			m_iWeaponTpy = 2;
 		}

@@ -108,6 +108,13 @@ public:
 	void SetMonsterId(int mapObjId, int64 nInsId, int nMonsterId);
 public:
 	std::shared_ptr<Monster> m_pMonsterData;
+public:
+	UFUNCTION(BlueprintCallable, Category = "Soldier")
+	void SetRiding() {m_bRiding = true;}
+
+	bool IsRiding() { return m_bRiding;}
+private:
+	bool m_bRiding{ false };
 };
 
 

@@ -32,6 +32,9 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 		bool m_bDefenceing;
 
+	UPROPERTY(BlueprintReadOnly)
+		float m_fHorseRiding;
+
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 
 	virtual void NativeInitializeAnimation() override;

@@ -41,8 +41,8 @@ void UUIRoleHud::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 {
 	Super::NativeTick(MyGeometry, InDeltaTime);
 	if (m_selArrow) {
-		m_selArrow->SetVisibility((g_bIsUsingCineCam &&
-			AIPlayerMgr::getInstance().GetHero()->GetAttachParentActor() == m_ownerRole) ?
+		m_selArrow->SetVisibility(
+			AIPlayerMgr::getInstance().GetHero()->GetAttachParentActor() == m_ownerRole ?
 			ESlateVisibility::Visible : ESlateVisibility::Hidden);
 	}
 }

@@ -17,6 +17,8 @@
 
 #include "Player/IPlayer.h"
 #include "Player/Hero.h"
+#include "UI/UILobby.h"
+#include "UI/UIManager.h"
 
 #include "Player/Generals.h"
 
@@ -111,38 +113,39 @@ void ASanguoPlayerController::OnSetDestinationTriggered()
 
 void ASanguoPlayerController::ResetPawn(bool bHero)
 {
-	AHero* pHero = AIPlayerMgr::getInstance().GetHero();
-	if (!pHero)
-	{
-		return;
-	}
-	if (bHero)
-	{
-		this->SetPawn(pHero);
-		Possess(pHero);
-		return;
-	}
-	AGenerals* pGen = Cast<AGenerals>(this->GetPawn()->GetAttachParentActor());
-	if (!pGen)
-	{
-		this->SetPawn(pHero);
-		Possess(pHero);
-		return;
-	}
-	//UnProcess();
-	this->SetPawn(pGen);
-	Possess(pGen);
+	return;
+	//AHero* pHero = AIPlayerMgr::getInstance().GetHero();
+	//if (!pHero)
+	//{
+	//	return;
+	//}
+	//if (bHero)
+	//{
+	//	this->SetPawn(pHero);
+	//	Possess(pHero);
+	//	return;
+	//}
+	//AGenerals* pGen = Cast<AGenerals>(pHero->GetAttachParentActor());
+	//if (!pGen)
+	//{
+	//	this->SetPawn(pHero);
+	//	Possess(pHero);
+	//	return;
+	//}
+	////UnProcess();
+	//this->SetPawn(pGen);
+	//Possess(pGen);
 
 	// ÆôÓÃÊäÈë
 	//pGen->EnableInput(this);
 
-	TArray<AActor*> arrActors;
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
-	if (arrActors.Num() > 0)
-	{
-		ACameraActor* pCamera = Cast<ACameraActor>(arrActors[0]);
-		SetViewTargetWithBlend(pCamera, 0.f);
-	}
+	//TArray<AActor*> arrActors;
+	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
+	//if (arrActors.Num() > 0)
+	//{
+	//	ACameraActor* pCamera = Cast<ACameraActor>(arrActors[0]);
+	//	SetViewTargetWithBlend(pCamera, 0.f);
+	//}
 }
 
 void ASanguoPlayerController::OnSetDestinationReleased()
@@ -157,8 +160,28 @@ void ASanguoPlayerController::OnSetDestinationReleased()
 		return;
 	}
 
-	StopMovement();
+	UUserWidget* pWidget = UIManager::getInstance().GetWidget(UI_TPY_Lobby);
+	if (!pWidget)
+	{
+		return;
+	}
+	UUILobby* pLobby = Cast<UUILobby>(pWidget);
+	if (!pLobby)
+	{
+		return;
+	}
 
+	AGenerals* pSelGen = nullptr;
+
+	for (auto&& gen : AGeneralsMgr::getInstance().GetMapGenerals())
+	{
+		if (FVector::Distance(gen.second->GetActorLocation(), 
+			FVector(CachedDestination.X - 150, CachedDestination.Y, CachedDestination.Z)) < 300.f)
+		{
+			pSelGen = gen.second;
+			break;
+		}
+	}
 
 	AHero* pHero = AIPlayerMgr::getInstance().GetHero();
 	if (!pHero)
@@ -168,8 +191,21 @@ void ASanguoPlayerController::OnSetDestinationReleased()
 	AGenerals* pGen = Cast<AGenerals>(pHero->GetAttachParentActor());
 	if (!pGen)
 	{
+		if (pSelGen)
+		{
+			pLobby->SetFocusGenerals(pSelGen->GetMapObjectId());
+		}
 		return;
 	}
+	else {
+		if (pSelGen && pSelGen != pGen)
+		{
+			pLobby->SetFocusGenerals(pSelGen->GetMapObjectId());
+			return;
+		}
+	}
+
+	StopMovement();
 
 	pGen->MoveToDestination(CachedDestination);
 

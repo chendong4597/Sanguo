@@ -15,6 +15,7 @@
 
 #include "UIWindow.h"
 #include "Components/ListView.h"
+#include "Components/Slider.h"
 
 #include "UILobby.generated.h"
 
@@ -33,7 +34,10 @@ protected:
 public:
 	void ShowUI(bool bShowUI);
 
-	void SetFocusGenerals(int nId);
+	bool SetFocusGenerals(int nId);
+
+	void InitGeneralsUI();
+	void InitCamera();
 public:
 	void onUILayoutEvent(const UILayoutEvent& evt);
 	void onUIGameModeEvent(const UIGameModeEvent& evt);
@@ -113,6 +117,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "UI | LOBBY")
 	void SetLayoutBang(float fValue);
 
+	UFUNCTION(BlueprintCallable, Category = "UI | LOBBY")
+	void SelectGenerals(const UObject* Item);
+
+	ACameraActor* GetCameraActor() { return CineCamera; }
+
 protected:
 	void LayoutLobby();
 
@@ -131,10 +140,16 @@ protected:
 	void OnClickExit();
 
 	UFUNCTION()
-	void OnClickSwitchMode();
+	void OnClickSwitchGlobalMode();
+
+	UFUNCTION()
+	void OnClickSwitchHeroMode();
 
 	UFUNCTION()
 	void OnClickResetCameraPos();
+
+	UFUNCTION()
+	void OnSightSliderValueChanged(float Value);
 
 protected:
 	UFUNCTION()
@@ -194,6 +209,14 @@ private:
 
 	APlayerController* PlayerController{ nullptr };
 
+	float m_delayMoveCamera{ 0.f };
+
+	UButton* m_btnGlobalMode{ nullptr };
+	UTextBlock* m_txtGlobal{ nullptr };
+	USlider* m_sliSight{ nullptr };
+
+	UButton* m_btnHeroMode{ nullptr };
+	UTextBlock* m_txtHero{ nullptr };
 };
 
 

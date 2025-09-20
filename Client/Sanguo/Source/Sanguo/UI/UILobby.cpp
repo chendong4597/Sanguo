@@ -36,6 +36,7 @@
 #include "UIMsgBox.h"
 #include "UIMsgBoxToast.h"
 #include "UIGenData.h"
+#include "UIGenItem.h"
 
 #include "../Player/Generals.h"
 #include "../SanguoPlayerController.h"
@@ -65,7 +66,8 @@ bool UUILobby::Initialize()
 	REGISTER_BTN_CLICK("BtnHero", OnClickCharacter);
 	REGISTER_BTN_CLICK("BtnBag", OnClickBag);
 	REGISTER_BTN_CLICK("BtnSetup", OnSetup);
-	REGISTER_BTN_CLICK("BtnSwitch", OnClickSwitchMode);
+	REGISTER_BTN_CLICK_M(m_btnGlobalMode,"BtnSwitch", OnClickSwitchGlobalMode);
+	REGISTER_BTN_CLICK_M(m_btnHeroMode, "BtnHeroMode", OnClickSwitchHeroMode);
 	REGISTER_BTN_CLICK("BtnResetCamera", OnClickResetCameraPos);
 
 	REGISTER_BTN_CLICK("BtnAttack", onBtnAtkClick);
@@ -90,6 +92,15 @@ bool UUILobby::Initialize()
 	m_txtCancel = Cast<UTextBlock>(GetWidgetFromName(FName("txt_cancel")));
 	m_imgAchieveRed = Cast<UImage>(GetWidgetFromName(FName("ImgAchieveRed")));
 
+	m_txtGlobal = Cast<UTextBlock>(GetWidgetFromName(FName("TxtGenMode")));
+	m_txtHero = Cast<UTextBlock>(GetWidgetFromName(FName("TxtHeroMode")));
+
+	m_sliSight = Cast<USlider>(GetWidgetFromName(FName("SliSight")));
+	if (m_sliSight)
+	{
+		m_sliSight->OnValueChanged.AddDynamic(this, &UUILobby::OnSightSliderValueChanged);
+	}
+
 #if PLATFORM_ANDROID || PLATFORM_IOS
 	UButton* pBtnDebug = Cast<UButton>(GetWidgetFromName(FName("BtnDebug")));
 	if (pBtnDebug)
@@ -108,35 +119,8 @@ bool UUILobby::Initialize()
 	//UI_REGISTER_MYEVENT(UILayoutEvent, &UUILobby::onUILayoutEvent);
 	UI_REGISTER_MYEVENT(UIGameModeEvent, &UUILobby::onUIGameModeEvent);
 
-	if (m_lstGenView) {
-		m_lstGenView->ClearListItems();
-
-		for (size_t i = 0; i < 5; i++)
-		{
-			auto&& pObjData = Cast<UUIGenData>(NewObject<UUIGenData>(this));
-			if (pObjData)
-			{
-				m_lstGenView->AddItem(pObjData);
-			}
-		}
-	}
-
-	if (m_lstTarView) {
-		m_lstTarView->ClearListItems();
-
-		for (size_t i = 0; i < 10; i++)
-		{
-			auto&& pObjData = Cast<UUIGenData>(NewObject<UUIGenData>(this));
-			if (pObjData)
-			{
-				m_lstTarView->AddItem(pObjData);
-			}
-		}
-	}
-
-	//LayoutLobby();
-
 	//SetFocusGenerals(0);
+	//InitGeneralsUI();
 	return true;
 }
 
@@ -194,31 +178,160 @@ void UUILobby::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 			ESlateVisibility::Hidden : ESlateVisibility::Visible);
 	}
 
-	static float sssss_1 = 0.f;
-	if (sssss_1 < 0.5f)
+	if (m_btnGlobalMode) {
+		m_btnGlobalMode->SetVisibility(g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	if (m_txtGlobal) {
+		m_txtGlobal->SetVisibility(g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::SelfHitTestInvisible);
+	}
+
+	if (m_btnHeroMode) {
+		m_btnHeroMode->SetVisibility(!g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	if (m_txtHero) {
+		m_txtHero->SetVisibility(!g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::SelfHitTestInvisible);
+	}
+
+	if (m_sliSight) {
+		m_sliSight->SetVisibility(g_bIsUsingCineCam ?
+			ESlateVisibility::Hidden : ESlateVisibility::Visible);
+	}
+
+	if (m_delayMoveCamera < 0.5f)
 	{
-		sssss_1 += InDeltaTime;
-		if (sssss_1 >= 0.5f)
+		m_delayMoveCamera += InDeltaTime;
+		if (m_delayMoveCamera >= 0.5f)
 		{
-			SetFocusGenerals(0);
-			OnClickSwitchMode();
+			InitCamera();
+			InitGeneralsUI();
+			OnClickSwitchGlobalMode();
 		}
 	}
 }
 
-void UUILobby::SetFocusGenerals(int nId)
+void UUILobby::InitCamera()
+{
+	if (!PlayerController) {
+		PlayerController = gp_UWorld->GetFirstPlayerController();
+	}
+
+	if (!CineCamera) {
+		TArray<AActor*> arrActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
+		if (arrActors.Num() > 0)
+		{
+			CineCamera = Cast<ACameraActor>(arrActors[0]);
+
+			if (CineCamera) {
+				m_vecOriCameraPos = CineCamera->GetActorLocation();
+				UCameraComponent* CameraComp = CineCamera->GetCameraComponent();
+				if (CameraComp) {
+					FVector2D ViewportSize;
+					if (GEngine && GEngine->GameViewport)
+					{
+						GEngine->GameViewport->GetViewportSize(ViewportSize);
+					}
+
+					float AspectRatio = ViewportSize.X / ViewportSize.Y;
+
+					// 调整摄像机设置
+					//CameraComp->SetAspectRatio(0); // 禁用宽高比约束
+					CameraComp->SetAspectRatio(AspectRatio); // 基于16:9调整
+				}
+			}
+		}
+	}
+}
+
+void UUILobby::InitGeneralsUI()
+{
+	if (m_lstGenView) {
+		m_lstGenView->ClearListItems();
+		m_lstGenView->SetSelectionMode(ESelectionMode::Single);
+
+		auto&& generals = AGeneralsMgr::getInstance().GetMapGenerals();
+		for (auto&& gen : generals)
+		{
+			AGenerals* pRole = Cast<AGenerals>(gen.second);
+			if (!pRole) {
+				continue;
+			}
+			auto&& pObjData = Cast<UUIGenData>(NewObject<UUIGenData>(this));
+			if (pObjData)
+			{
+				pObjData->m_Id = pRole->GetMapObjectId();
+				m_lstGenView->AddItem(pObjData);
+			}
+		}
+	}
+}
+
+
+void UUILobby::SelectGenerals(const UObject* Item)
+{
+	if (!Item) return;
+	auto&& pObjData = Cast<UUIGenData>(Item);
+	if (pObjData)
+	{
+		SetFocusGenerals(pObjData->m_Id);
+	}
+}
+
+bool UUILobby::SetFocusGenerals(int nId)
 {
 	TArray<AActor*> arrActors;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AGenerals::StaticClass(), arrActors);
-	if (arrActors.Num() <= 0 || ggg_genIdx >= arrActors.Num())
+	for (auto&& pGen : arrActors)
 	{
-		return;
+		if (!pGen)
+		{
+			continue;
+		}
+		AGenerals* pGens = Cast<AGenerals>(pGen);
+		if (!pGens)
+		{
+			continue;
+		}
+		if (pGens->GetMapObjectId() == nId)
+		{
+			pGens->AttachHero();
+
+			if (CineCamera) {
+				FRotator rot = CineCamera->GetActorRotation();
+				FVector vecCamePos = pGens->GetActorLocation() + rot.Vector() * -1.f * 6000;
+				vecCamePos.Z = CineCamera->GetActorLocation().Z;
+				CineCamera->SetActorLocation(vecCamePos);
+
+				ASanguoPlayerController* pSanController = Cast<ASanguoPlayerController>(PlayerController);
+				if (pSanController)
+				{
+					pSanController->ResetPawn(!g_bIsUsingCineCam);
+				}
+				PlayerController->SetViewTargetWithBlend(CineCamera, 0.1f, VTBlend_Linear , 0, true);
+			}
+			for (auto&& i : m_lstGenView->GetListItems())
+			{
+				UUIGenItem* pItem = Cast<UUIGenItem>(m_lstGenView->GetEntryWidgetFromItem(i));
+				if (!pItem)
+				{
+					continue;
+				}
+				auto&& pObjData = Cast<UUIGenData>(m_lstGenView->GetListObjectFromEntry(*Cast<UUserWidget>(pItem)));
+				if (pObjData)
+				{
+					pItem->EvtSelect(nId == pObjData->m_Id);
+				}
+			}
+			return true;
+		}
 	}
-	AGenerals* pGen = Cast<AGenerals>(arrActors[ggg_genIdx]);
-	if (!pGen) {
-		return;
-	}
-	pGen->AttachHero();
+	return false;
 }
 
 
@@ -510,73 +623,44 @@ void UUILobby::OnSetup()
 	UI_DISPATCH_MYEVENT(WindowEvent, evt);
 }
 
-void UUILobby::OnClickSwitchMode()
+void UUILobby::OnClickSwitchGlobalMode()
 {
-	if (!PlayerController) {
-		PlayerController = gp_UWorld->GetFirstPlayerController();
-	}
-
-	if (!PlayerController)
+	if (!PlayerController || !CineCamera)
 	{
 		return;
 	}
-	
-	if (!CineCamera) {
-		TArray<AActor*> arrActors;
-		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACameraActor::StaticClass(), arrActors);
-		if (arrActors.Num() > 0)
+
+	// 切换到Cine摄像机
+	if(!g_bIsUsingCineCam)
+	{
+		PlayerController->SetViewTargetWithBlend(CineCamera, 0.f);
+		g_bIsUsingCineCam = true;
+
+		FRotator rot = CineCamera->GetActorRotation();
+		AGenerals* pGen = Cast<AGenerals>(AIPlayerMgr::getInstance().GetHero()->GetAttachParentActor());
+		if (pGen)
 		{
-			CineCamera = Cast<ACameraActor>(arrActors[0]);
-
-			if (CineCamera) {
-				m_vecOriCameraPos = CineCamera->GetActorLocation();
-				UCameraComponent* CameraComp = CineCamera->GetCameraComponent();
-				if (CameraComp) {
-					FVector2D ViewportSize;
-					if (GEngine && GEngine->GameViewport)
-					{
-						GEngine->GameViewport->GetViewportSize(ViewportSize);
-					}
-
-					float AspectRatio = ViewportSize.X / ViewportSize.Y;
-
-					// 调整摄像机设置
-					//CameraComp->SetAspectRatio(0); // 禁用宽高比约束
-					CameraComp->SetAspectRatio(AspectRatio); // 基于16:9调整
-				}
-			}
+			FVector vecCamePos = pGen->GetActorLocation() + rot.Vector() * -1.f * 6000;
+			vecCamePos.Z = CineCamera->GetActorLocation().Z;
+			CineCamera->SetActorLocation(vecCamePos);
 		}
 	}
+}
 
-	if (!PlayerController || !CineCamera) {
+void UUILobby::OnClickSwitchHeroMode()
+{
+	if (!AIPlayerMgr::getInstance().GetHero() ||
+		AIPlayerMgr::getInstance().GetHero()->GetAttachParentActor() == nullptr) {
 		return;
 	}
 
-	if (g_bIsUsingCineCam && PlayerController->GetPawn())
+	if (g_bIsUsingCineCam)
 	{
 		// 切换到玩家摄像机
 		PlayerController->SetViewTargetWithBlend(AIPlayerMgr::getInstance().GetHero(), 0.f);
 		g_bIsUsingCineCam = false;
 		AIPlayerMgr::getInstance().GetHero()->EvtRecallHero();
-
-		SetFocusGenerals(0);
-		ggg_genIdx++;
-		if (ggg_genIdx == 5) {
-			ggg_genIdx = 0;
-		}
 	}
-	else if (CineCamera)
-	{
-		// 切换到Cine摄像机
-		PlayerController->SetViewTargetWithBlend(CineCamera, 0.f);
-		g_bIsUsingCineCam = true;
-	}
-	ASanguoPlayerController* pSanController = Cast<ASanguoPlayerController>(PlayerController);
-	if (!pSanController)
-	{
-		return;
-	}
-	pSanController->ResetPawn(!g_bIsUsingCineCam);
 }
 
 void UUILobby::OnClickResetCameraPos()
@@ -601,7 +685,7 @@ void UUILobby::onUIGameModeEvent(const UIGameModeEvent& evt)
 	{
 		return;
 	}
-	OnClickSwitchMode();
+	//OnClickSwitchGlobalMode();
 }
 
 //****************************************************************************************
@@ -657,4 +741,11 @@ void UUILobby::SetLayoutBang(float fValue)
 	s_bHasBang = true;
 	int nBang = (int)(fValue * 100);
 	UIManager::getInstance().SetLayoutBang(nBang);
+}
+
+void UUILobby::OnSightSliderValueChanged(float Value)
+{
+	SightEvent evt;
+	evt.value = Value;
+	UI_DISPATCH_MYEVENT(SightEvent, evt);
 }

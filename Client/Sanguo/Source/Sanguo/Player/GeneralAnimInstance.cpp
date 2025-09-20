@@ -39,6 +39,7 @@ void UGeneralAnimInstance::NativeUpdateAnimation(float dt)
 	m_bDizz = m_pPlayer->IsDizziess();
 	m_bFreeze = m_pPlayer->IsFreeze();
 	m_fFighting = m_pPlayer->GetFocusRole() != nullptr ? 1.0f : 0.f;
+	m_fHorseAnim = m_pPlayer->IsHorseAnim() ? 1.f : 0.f;
 	UAnimInstance::NativeUpdateAnimation(dt);
 }
 

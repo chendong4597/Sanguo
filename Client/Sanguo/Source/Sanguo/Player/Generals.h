@@ -10,6 +10,7 @@
 #include "config/NpcTypeCfg.h"
 #include "../Common/UIEvents.h"
 #include "../Controls/MyButton.h"
+#include "Navigation/PathFollowingComponent.h"
 #include "Generals.generated.h"
 
 /**
@@ -59,6 +60,13 @@ public:
 	bool IsWaitBegin();
 
 public:
+	UFUNCTION(BlueprintCallable, Category = "Generals")
+	void SetIsHorseAnim();
+
+	bool IsHorseAnim();
+private:
+	bool m_bIsHorseAnim{ false };
+public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Generals")
 	void EventDeath();
 
@@ -102,11 +110,13 @@ public:
 
 public:
 	void MoveToDestination(FVector vecDes);
+	void MoveToDestinationV1(FVector vecDes);
 	void SetGuidNav(bool bNav) { m_bGuidNav = bNav; }
 private:
 	bool m_bGuidNav{ false };
 	TArray<FVector> m_PathPoints;
 	FColor m_myColor;
+	FVector m_PreGenPos{FVector::ZeroVector};
 public:
 	virtual int GetObjectId() override;
 	virtual bool IsDeath() override;
@@ -152,6 +162,8 @@ public:
 private:
 	int  m_nCurSoliderNum{ 0 };
 
+	UPathFollowingComponent* PathFollowingComp = nullptr;
+
 private:
 	AWeapon* m_AWeapon{};
 	AWeapon* m_BWeapon{};
@@ -186,6 +198,7 @@ public:
 	static AGeneralsMgr& getInstance();
 
 	void CreateGenels(int nMapObjectId, int64 nProtectId, int mMonsterId);
+	void AddGenerals(AGenerals* pGen);
 
 	void DestroyGenels(int nNpcId);
 	void DestroyGenelIns(int nObjId);

@@ -22,5 +22,8 @@ protected:
 	virtual void NativeOnListItemObjectSet(UObject* ListItemObject) override;
 public:
 	virtual bool Initialize() override;
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "UI | LOBBY")
+	void EvtSelect(bool bSel);
 private:
 };

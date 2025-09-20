@@ -105,6 +105,7 @@ void AHero::BeginPlay()
 	UI_REGISTER_MYEVENT(AttackEvent, &AHero::onAttackEvent);
 	UI_REGISTER_MYEVENT(WindowEvent, &AHero::onWindowEvent);
 	UI_REGISTER_MYEVENT(SkillEvent, &AHero::onSkillEvent);
+	UI_REGISTER_MYEVENT(SightEvent, &AHero::onSightEvent);
 
 	//RG_REGISTER_MYEVENT(HandlerItemEvent, &AHero::onItemEvent);
 	//RG_REGISTER_MYEVENT(HandlerTipsEvent, &AHero::onHandlerTipsEvent);
@@ -162,6 +163,11 @@ void AHero::Tick(float DeltaTime)
 #if	PLATFORM_WINDOWS
 	if (m_bAround) {
 		Around(DeltaTime);
+	}
+	if (m_vecWalkDir != FVector::ZeroVector)
+	{
+		Walk(m_vecWalkDir, 1.f);
+		m_vecWalkDir = FVector::ZeroVector;
 	}
 #endif
 	
@@ -257,8 +263,24 @@ void AHero::Walk(FVector vec, float fScale)
 		FVector vecDir = vec;// +rot1.Vector();
 		FRotator Rota = (vecDir*fScale).Rotation();
 
-		pGen->AddMovementInput(vec, fScale);
 		pGen->SetActorRotation(Rota);
+		pGen->AddMovementInput(vec, fScale);
+	}
+}
+
+void AHero::PreWalk(bool bForward, float fMove)
+{
+	if (g_bIsUsingCineCam)
+	{
+		return;
+	}
+	if (!bForward)
+	{
+		m_vecWalkDir.X = -fMove;
+	} 
+	else
+	{
+		m_vecWalkDir.Y = fMove;
 	}
 }
 
@@ -286,7 +308,9 @@ void AHero::onSightEvent(const SightEvent& evt)
 	float value = evt.value;
 	auto&& stuSight = GlobalCfg::getInstance().GetSightInfo();
 
-	Sight(stuSight.nMin + value*(stuSight.nMax - stuSight.nMin));
+	m_nSightLength = 1000 + value * (4500 - 1000);
+	Sight(m_nSightLength);
+	//Sight(stuSight.nMin + value*(stuSight.nMax - stuSight.nMin));
 }
 
 //****************************************************************************************
@@ -312,6 +336,60 @@ void AHero::onUseWeaponExternEvent(const UseWeaponExternEvent& evt)
 {
 	if (IsDeath()) return;
 	ResetWaitTrans();
+}
+
+//****************************************************************************************
+//
+//****************************************************************************************
+bool AHero::ClickGenerals(FVector distPos)
+{
+	if (!g_bIsUsingCineCam)
+	{
+		return false;
+	}
+	UUserWidget* pWidget = UIManager::getInstance().GetWidget(UI_TPY_Lobby);
+	if (!pWidget)
+	{
+		return false;
+	}
+	UUILobby* pLobby = Cast<UUILobby>(pWidget);
+	if (!pLobby || !pLobby->GetCameraActor())
+	{
+		return false;
+	}
+
+	FVector TraceStar = pLobby->GetCameraActor()->GetActorLocation();
+	FVector2D screenPos = GetTouchPosition(3);
+	float Scale = UWidgetLayoutLibrary::GetViewportScale(this);
+	int32 X = this->GetWorld()->GetGameViewport()->Viewport->GetSizeXY().X / Scale;
+	int32 Y = this->GetWorld()->GetGameViewport()->Viewport->GetSizeXY().Y / Scale;
+
+	FVector star1;
+	FVector dir;
+	UE_LOG(LogTemp, Log, TEXT("AHero::ResetPlantModelPos Scale=  %0.2f screenPos.x = %0.2f , screenPos.Y = %0.2f X=%d Y=%d "),
+		Scale, screenPos.X, screenPos.Y, X, Y);
+	UGameplayStatics::GetPlayerController(this, 0)->DeprojectScreenPositionToWorld(screenPos.X * Scale, screenPos.Y * Scale, star1, dir);
+	FVector TranceEnd = TraceStar + (dir * 10000);
+
+	FCollisionQueryParams  TraceParams(FName(TEXT("Actor")), true, this);
+
+	TraceParams.bReturnPhysicalMaterial = false;
+	TraceParams.bTraceComplex = true;
+
+	FHitResult hit(ForceInit);
+	//ECC_Camera :: 要用这个参数，未知原因
+	GetWorld()->LineTraceSingleByChannel(hit, TraceStar, TranceEnd, ECC_GameTraceChannel1, TraceParams);
+	auto actor = hit.GetActor();
+	if (!actor)
+	{
+		return false;
+	}
+	if (Cast<AGenerals>(actor) != nullptr)
+	{
+		return true;
+	}
+	return true;
+	//m_BuildTemp->SetTempPos(hit.Location);
 }
 
 //****************************************************************************************
@@ -570,6 +648,7 @@ void AHero::GetNearstGens(NS::I64 uuid, std::vector<NS::I64>& vecUuids)
 		vecUuids.push_back(pRole->GetProtectorUuid());
 	}
 }
+
 
 //****************************************************************************************
 //

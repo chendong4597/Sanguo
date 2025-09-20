@@ -54,6 +54,7 @@ static FColor genColors[] = { FColor::Green, FColor::Blue, FColor::Yellow, FColo
 FColor::Magenta, FColor::Orange, FColor::Purple, FColor::Turquoise, FColor::Emerald };
 
 static int g_genColorIdx = 0;
+static int g_genId = 1;
 
 void AGenerals::BeginPlay()
 {
@@ -67,6 +68,10 @@ void AGenerals::BeginPlay()
 	{
 		g_genColorIdx = 0;
 	}
+
+	SetMapObjectId(g_genId++);
+
+	AGeneralsMgr::getInstance().AddGenerals(this);
 
 	UI_REGISTER_MYEVENT(GeneralsSkillEvent, &AGenerals::onGeneralsSkillEvent);
 
@@ -88,18 +93,26 @@ void AGenerals::Tick(float DeltaTime)
 	if (m_bGuidNav && m_PathPoints.Num() > 0)
 	{
 		FVector vec = m_PathPoints[0];
-		if (FVector::Dist(vec, GetActorLocation()) < 120)
+
+		float fDis = 20.f;
+		//if (GetVelocity().Size() < 50.f) {
+		//	fDis = 1.f;
+		//}
+		//m_PreGenPos = GetActorLocation();
+		if (FVector2D::Distance(FVector2D(vec.X, vec.Y), 
+			FVector2D(GetActorLocation().X, GetActorLocation().Y)) < fDis)
 		{
 			m_PathPoints.RemoveAt(0);
 			if (m_PathPoints.IsEmpty())
 			{
 				m_bGuidNav = false;
+				m_PreGenPos = FVector::ZeroVector;
 			}
 		}
 		else {
 			auto toRota = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), vec);
 			FVector vecDir = toRota.Vector();
-			AddMovementInput(FVector(vecDir.X, vecDir.Y, 0), 1.f);
+			AddMovementInput(FVector(vecDir.X, vecDir.Y, vecDir.Z), 1.f);
 			int nIdx = 0;
 			for (const FVector& Point : m_PathPoints) {
 				DrawDebugSphere(GetWorld(), Point, 20.f, 8, m_myColor, false, 0.2f);
@@ -109,7 +122,7 @@ void AGenerals::Tick(float DeltaTime)
 				}
 				nIdx++;
 			}
-			DrawDebugLine(GetWorld(), FVector(GetActorLocation().X, GetActorLocation().Y, 0),
+			DrawDebugLine(GetWorld(), GetActorLocation(),
 				vec, m_myColor, false, 0.1f);
 		}
 	}
@@ -1188,6 +1201,26 @@ void AGenerals::MoveToDestination(FVector vecDes)
 	}
 }
 
+void AGenerals::MoveToDestinationV1(FVector vecDes)
+{
+	//if (PathFollowingComp == nullptr)
+	//{
+	//	PathFollowingComp = NewObject<UPathFollowingComponent>(this);
+	//	PathFollowingComp->RegisterComponentWithWorld(GetWorld());
+	//	PathFollowingComp->Initialize();
+	//}
+}
+
+void AGenerals::SetIsHorseAnim()
+{
+	m_bIsHorseAnim = true;
+}
+
+bool AGenerals::IsHorseAnim()
+{
+	return m_bIsHorseAnim;
+}
+
 //********************************************************************************************************************************************************************************
 //
 //********************************************************************************************************************************************************************************
@@ -1301,6 +1334,12 @@ AGenerals* AGeneralsMgr::GetGeneralByUuid(int64 uuid)
 		}
 	}
 	return nullptr;
+}
+
+void AGeneralsMgr::AddGenerals(AGenerals* pGen)
+{
+	if (!pGen) return;
+	m_mapGenerals[pGen->GetMapObjectId()] = pGen;
 }
 
 void AGeneralsMgr::CreateGenels(int nMapObjectId, int64 nProtectId, int mMonsterId)
